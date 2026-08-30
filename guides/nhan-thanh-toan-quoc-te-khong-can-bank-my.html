@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cách nhận thanh toán quốc tế không cần tài khoản ngân hàng Mỹ (2026) | Wireloom</title>
-<meta name="description" content="Hướng dẫn chi tiết cách freelancer Việt Nam nhận thanh toán từ khách hàng nước ngoài mà không cần mở tài khoản ngân hàng Mỹ — so sánh Payoneer, Wise, Skrill, và crypto.">
+<title data-i18n="page_title">Cách nhận thanh toán quốc tế không cần tài khoản ngân hàng Mỹ (2026) | Wireloom</title>
+<meta name="description" data-i18n-content="meta_description" content="Hướng dẫn chi tiết cách freelancer Việt Nam nhận thanh toán từ khách hàng nước ngoài mà không cần mở tài khoản ngân hàng Mỹ — so sánh Payoneer, Wise, Skrill, và crypto.">
 <link rel="canonical" href="https://wireloom.vercel.app/guides/nhan-thanh-toan-quoc-te-khong-can-bank-my.html">
 <meta property="og:title" content="Cách nhận thanh toán quốc tế không cần tài khoản ngân hàng Mỹ (2026)">
 <meta property="og:description" content="So sánh Payoneer, Wise, Skrill, và crypto cho freelancer Việt Nam làm việc với khách quốc tế — không cần tài khoản ngân hàng Mỹ.">
@@ -56,6 +56,18 @@
     background:var(--crimson);color:#fff;padding:9px 16px;border-radius:6px;
     font-size:13.5px;font-weight:600;
   }
+  .header-right{display:flex;align-items:center;gap:14px;}
+  .lang-switch select{
+    appearance:none;-webkit-appearance:none;
+    background:var(--bg-alt);border:1px solid var(--border);
+    color:var(--text-dim);font-family:inherit;font-size:13px;font-weight:600;
+    padding:8px 26px 8px 10px;border-radius:6px;cursor:pointer;outline:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239a9aa2' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 8px center;
+  }
+  .lang-switch select:hover{border-color:var(--crimson-dim);color:#fff;}
+  .nav-login-link{font-size:13.5px;font-weight:600;color:var(--text-dim);}
+  .nav-login-link:hover{color:#fff;text-decoration:none;}
 
   article{padding:56px 0 80px;}
   .kicker{
@@ -110,75 +122,494 @@
 
 <header>
   <div class="header-inner">
-    <a href="/landing.html" class="logo"><span class="mark">W</span>Wireloom</a>
-    <a href="https://wireloom.vercel.app/login" class="header-cta">Đăng nhập</a>
+    <a href="/" class="logo"><span class="mark">W</span>Wireloom</a>
+    <div class="header-right">
+      <div class="lang-switch">
+        <select id="lang-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+          <option value="zh">中文</option>
+          <option value="hi">हिन्दी</option>
+          <option value="pt">Português</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="th">ภาษาไทย</option>
+        </select>
+      </div>
+      <a href="https://wireloom.vercel.app/login" class="nav-login-link" data-i18n="nav_login">Đăng nhập</a>
+    </div>
   </div>
 </header>
 
 <article>
   <div class="wrap">
-    <div class="kicker">Hướng dẫn</div>
-    <h1>Cách nhận thanh toán quốc tế không cần tài khoản ngân hàng Mỹ</h1>
-    <p class="meta">Cập nhật tháng 8/2026 · 7 phút đọc</p>
+    <div class="kicker" data-i18n="kicker">Hướng dẫn</div>
+    <h1 data-i18n="article_title">Cách nhận thanh toán quốc tế không cần tài khoản ngân hàng Mỹ</h1>
+    <p class="meta" data-i18n="article_meta">Cập nhật tháng 8/2026 · 7 phút đọc</p>
 
-    <p>Nếu bạn là freelancer Việt Nam làm việc với khách hàng ở Mỹ, châu Âu, hoặc Úc, có lẽ bạn đã từng thấy dòng chữ quen thuộc này khi đăng ký một công cụ quản lý khách hàng: <em>"Sign up available in the US, Canada, UK, and Australia only."</em> Không có tài khoản ngân hàng Mỹ, không có SSN, không có EIN — và thế là bạn bị chặn ngay từ bước đăng ký.</p>
+    <p data-i18n="intro_p1">Nếu bạn là freelancer làm việc với khách hàng ở Mỹ, châu Âu, hoặc Úc, có lẽ bạn đã từng thấy dòng chữ quen thuộc này khi đăng ký một công cụ quản lý khách hàng: <em>"Sign up available in the US, Canada, UK, and Australia only."</em> Không có tài khoản ngân hàng Mỹ, không có SSN, không có EIN — và thế là bạn bị chặn ngay từ bước đăng ký.</p>
 
-    <p>Tin tốt: bạn không cần bất kỳ thứ gì trong số đó để nhận thanh toán quốc tế hợp pháp và đáng tin cậy. Bài viết này so sánh 4 phương thức phổ biến nhất mà freelancer Việt Nam đang thực sự dùng.</p>
+    <p data-i18n="intro_p2">Tin tốt: bạn không cần bất kỳ thứ gì trong số đó để nhận thanh toán quốc tế hợp pháp và đáng tin cậy. Bài viết này so sánh 4 phương thức phổ biến nhất mà freelancer đang thực sự dùng.</p>
 
-    <h2>Vì sao nhiều công cụ lại yêu cầu ngân hàng Mỹ?</h2>
-    <p>Các nền tảng như HoneyBook hay Dubsado được xây dựng để <strong>tự xử lý thanh toán trực tiếp</strong> — nghĩa là tiền chảy qua chính hệ thống của họ trước khi tới bạn. Để làm được điều đó ở Mỹ, họ cần bạn có tài khoản ngân hàng Mỹ hoặc Canada để kết nối. Đây là giới hạn của <em>mô hình xử lý thanh toán</em>, không phải giới hạn kỹ thuật thật sự của việc nhận tiền quốc tế.</p>
+    <h2 data-i18n="h2_why">Vì sao nhiều công cụ lại yêu cầu ngân hàng Mỹ?</h2>
+    <p data-i18n="why_p1">Các nền tảng như HoneyBook hay Dubsado được xây dựng để tự xử lý thanh toán trực tiếp — nghĩa là tiền chảy qua chính hệ thống của họ trước khi tới bạn. Để làm được điều đó ở Mỹ, họ cần bạn có tài khoản ngân hàng Mỹ hoặc Canada để kết nối. Đây là giới hạn của mô hình xử lý thanh toán, không phải giới hạn kỹ thuật thật sự của việc nhận tiền quốc tế.</p>
 
-    <p>Cách tiếp cận khác — và cũng là cách hầu hết freelancer Việt Nam làm remote quốc tế đang thực sự dùng — là <strong>giữ nguyên phương thức thanh toán bạn đã có sẵn</strong>, chỉ cần một nơi để gửi invoice và link thanh toán trỏ tới đó.</p>
+    <p data-i18n="why_p2">Cách tiếp cận khác — và cũng là cách hầu hết freelancer làm remote quốc tế đang thực sự dùng — là giữ nguyên phương thức thanh toán bạn đã có sẵn, chỉ cần một nơi để gửi invoice và link thanh toán trỏ tới đó.</p>
 
-    <h2>4 phương thức nhận thanh toán quốc tế phổ biến nhất</h2>
+    <h2 data-i18n="h2_methods">4 phương thức nhận thanh toán quốc tế phổ biến nhất</h2>
 
-    <h3>1. Payoneer</h3>
-    <p>Lựa chọn quen thuộc nhất với freelancer VN, đặc biệt nếu bạn từng làm qua Upwork hoặc Fiverr — cả hai nền tảng này đều hỗ trợ rút tiền trực tiếp qua Payoneer. Payoneer hỗ trợ chuyển tiền tới hơn 190 quốc gia, có sẵn tính năng tạo "Payment Request" để gửi link thu tiền trực tiếp cho khách, không cần thông qua marketplace nào.</p>
+    <h3 data-i18n="method1_title">1. Payoneer</h3>
+    <p data-i18n="method1_text">Lựa chọn quen thuộc nhất, đặc biệt nếu bạn từng làm qua Upwork hoặc Fiverr — cả hai nền tảng này đều hỗ trợ rút tiền trực tiếp qua Payoneer. Payoneer hỗ trợ chuyển tiền tới hơn 190 quốc gia, có sẵn tính năng tạo "Payment Request" để gửi link thu tiền trực tiếp cho khách, không cần thông qua marketplace nào.</p>
 
-    <h3>2. Wise</h3>
-    <p>Nổi bật vì phí chuyển đổi ngoại tệ thấp hơn đáng kể so với Payoneer hay PayPal — thường chỉ khoảng 0.5-1% thay vì 3-4%. Wise cũng hỗ trợ nhận tiền bằng nhiều loại tiền tệ khác nhau qua tài khoản đa tiền tệ, phù hợp nếu bạn có khách ở nhiều khu vực (USD từ Mỹ, EUR từ châu Âu).</p>
+    <h3 data-i18n="method2_title">2. Wise</h3>
+    <p data-i18n="method2_text">Nổi bật vì phí chuyển đổi ngoại tệ thấp hơn đáng kể so với Payoneer hay PayPal — thường chỉ khoảng 0.5-1% thay vì 3-4%. Wise cũng hỗ trợ nhận tiền bằng nhiều loại tiền tệ khác nhau qua tài khoản đa tiền tệ, phù hợp nếu bạn có khách ở nhiều khu vực (USD từ Mỹ, EUR từ châu Âu).</p>
 
-    <h3>3. Skrill</h3>
-    <p>Ít được nhắc tới hơn nhưng đáng chú ý: Skrill liệt kê rõ ràng Việt Nam, Indonesia, Thái Lan, Philippines, Bangladesh, và Ấn Độ trong danh sách quốc gia được hỗ trợ nhận tiền — tức bao phủ đúng khu vực Đông Nam Á/Nam Á. Đổi lại, phí chuyển đổi ngoại tệ của Skrill (khoảng 3.99%) cao hơn Wise.</p>
+    <h3 data-i18n="method3_title">3. Skrill</h3>
+    <p data-i18n="method3_text">Ít được nhắc tới hơn nhưng đáng chú ý: Skrill liệt kê rõ ràng Việt Nam, Indonesia, Thái Lan, Philippines, Bangladesh, và Ấn Độ trong danh sách quốc gia được hỗ trợ nhận tiền — tức bao phủ đúng khu vực Đông Nam Á/Nam Á. Đổi lại, phí chuyển đổi ngoại tệ của Skrill (khoảng 3.99%) cao hơn Wise.</p>
 
-    <h3>4. Crypto (USDT, USDC)</h3>
-    <p>Ngày càng phổ biến với freelancer nhận thanh toán từ khách hàng quen thuộc với crypto — tốc độ nhận tiền gần như tức thì, không phụ thuộc giờ làm việc ngân hàng. Cần lưu ý: quy định pháp lý về giao dịch crypto tại Việt Nam vẫn đang trong giai đoạn hoàn thiện, nên tìm hiểu kỹ quy định hiện hành trước khi dùng làm phương thức nhận thanh toán chính.</p>
+    <h3 data-i18n="method4_title">4. Crypto (USDT, USDC)</h3>
+    <p data-i18n="method4_text">Ngày càng phổ biến với freelancer nhận thanh toán từ khách hàng quen thuộc với crypto — tốc độ nhận tiền gần như tức thì, không phụ thuộc giờ làm việc ngân hàng. Cần lưu ý: quy định pháp lý về giao dịch crypto khác nhau đáng kể theo từng quốc gia và vẫn đang trong giai đoạn hoàn thiện ở nhiều nơi, nên tìm hiểu kỹ quy định hiện hành tại nơi bạn sống trước khi dùng làm phương thức nhận thanh toán chính.</p>
 
-    <h2>Bảng so sánh nhanh</h2>
+    <h2 data-i18n="h2_table">Bảng so sánh nhanh</h2>
     <table>
       <thead>
-        <tr><th>Phương thức</th><th>Phí chuyển đổi</th><th>Phù hợp nhất khi</th></tr>
+        <tr>
+          <th data-i18n="th_method">Phương thức</th>
+          <th data-i18n="th_fee">Phí chuyển đổi</th>
+          <th data-i18n="th_bestfor">Phù hợp nhất khi</th>
+        </tr>
       </thead>
       <tbody>
-        <tr><td>Payoneer</td><td>~2-3%</td><td>Đã quen dùng từ Upwork/Fiverr</td></tr>
-        <tr><td>Wise</td><td>~0.5-1%</td><td>Muốn phí thấp nhất, nhận nhiều loại tiền tệ</td></tr>
-        <tr><td>Skrill</td><td>~3.99%</td><td>Khách ở SEA/Nam Á, cần độ phủ khu vực rõ ràng</td></tr>
-        <tr><td>Crypto</td><td>Phí mạng lưới</td><td>Khách quen thuộc crypto, cần tốc độ nhanh</td></tr>
+        <tr><td>Payoneer</td><td>~2-3%</td><td data-i18n="row1_bestfor">Đã quen dùng từ Upwork/Fiverr</td></tr>
+        <tr><td>Wise</td><td>~0.5-1%</td><td data-i18n="row2_bestfor">Muốn phí thấp nhất, nhận nhiều loại tiền tệ</td></tr>
+        <tr><td>Skrill</td><td>~3.99%</td><td data-i18n="row3_bestfor">Khách ở SEA/Nam Á, cần độ phủ khu vực rõ ràng</td></tr>
+        <tr><td>Crypto</td><td data-i18n="row4_fee">Phí mạng lưới</td><td data-i18n="row4_bestfor">Khách quen thuộc crypto, cần tốc độ nhanh</td></tr>
       </tbody>
     </table>
 
-    <div class="callout">
+    <div class="callout" data-i18n-html="callout">
       <strong>Lưu ý quan trọng:</strong> dù chọn phương thức nào, hãy luôn giữ lại hồ sơ đầy đủ (invoice, ngày nhận tiền, số tiền) — đây là dữ liệu bạn sẽ cần khi quyết toán thuế thu nhập cá nhân cuối năm, dù thu nhập đến từ nước ngoài.
     </div>
 
-    <h2>Vậy quản lý cả quá trình này như thế nào?</h2>
-    <p>Chọn được phương thức nhận tiền chỉ là một nửa vấn đề. Nửa còn lại: gửi proposal, ký hợp đồng, xuất invoice có link thanh toán đúng, và nhắc thanh toán khi khách quên — tất cả thường bị rải rác qua Google Docs, Canva, và tin nhắn WhatsApp.</p>
+    <h2 data-i18n="h2_manage">Vậy quản lý cả quá trình này như thế nào?</h2>
+    <p data-i18n="manage_p1">Chọn được phương thức nhận tiền chỉ là một nửa vấn đề. Nửa còn lại: gửi proposal, ký hợp đồng, xuất invoice có link thanh toán đúng, và nhắc thanh toán khi khách quên — tất cả thường bị rải rác qua Google Docs, Canva, và tin nhắn WhatsApp.</p>
 
-    <p><a href="/landing.html">Wireloom</a> gộp toàn bộ quy trình đó vào một nơi — invoice tạo ra sẵn link trỏ tới Payoneer, Wise, Skrill, hoặc crypto bạn đã chọn, không giữ tiền qua platform, không yêu cầu tài khoản ngân hàng Mỹ để đăng ký.</p>
+    <p data-i18n-html="manage_p2"><a href="/">Wireloom</a> gộp toàn bộ quy trình đó vào một nơi — invoice tạo ra sẵn link trỏ tới Payoneer, Wise, Skrill, hoặc crypto bạn đã chọn, không giữ tiền qua platform, không yêu cầu tài khoản ngân hàng Mỹ để đăng ký.</p>
 
     <div class="cta-box">
-      <h3>Đang tìm công cụ quản lý khách hàng quốc tế?</h3>
-      <p>Proposal, hợp đồng, invoice với payment link Payoneer/Wise/Skrill/crypto — xây riêng cho freelancer không có tài khoản ngân hàng Mỹ.</p>
-      <a href="/landing.html#early-access" class="cta-btn">Đăng ký dùng thử sớm →</a>
+      <h3 data-i18n="cta_title">Đang tìm công cụ quản lý khách hàng quốc tế?</h3>
+      <p data-i18n="cta_text">Proposal, hợp đồng, invoice với payment link Payoneer/Wise/Skrill/crypto — xây riêng cho freelancer không có tài khoản ngân hàng Mỹ.</p>
+      <a href="/#early-access" class="cta-btn" data-i18n="cta_button">Đăng ký dùng thử sớm →</a>
     </div>
   </div>
 </article>
 
 <footer>
   <div class="wrap">
-    <p>© 2026 Wireloom. Bài viết mang tính tham khảo, không phải tư vấn tài chính hay pháp lý.</p>
+    <p data-i18n="footer_text">© 2026 Wireloom. Bài viết mang tính tham khảo, không phải tư vấn tài chính hay pháp lý.</p>
   </div>
 </footer>
+
+
+<script>
+  const translations = {
+  "en": {
+    "page_title": "How to Get Paid Internationally Without a US Bank Account (2026) | Wireloom",
+    "meta_description": "A practical guide for freelancers getting paid by international clients without a US bank account — comparing Payoneer, Wise, Skrill, and crypto.",
+    "nav_login": "Log in",
+    "kicker": "Guide",
+    "article_title": "How to Get Paid Internationally Without a US Bank Account",
+    "article_meta": "Updated August 2026 · 7 min read",
+    "intro_p1": "If you're a freelancer working with clients in the US, Europe, or Australia, you've probably seen this line before when signing up for a client management tool: \"Sign up available in the US, Canada, UK, and Australia only.\" No US bank account, no SSN, no EIN — and you're blocked right at the signup step.",
+    "intro_p2": "Good news: you don't need any of that to receive international payments legitimately and reliably. This guide compares the four most common methods freelancers actually use today.",
+    "h2_why": "Why do so many tools require a US bank account?",
+    "why_p1": "Platforms like HoneyBook or Dubsado are built to process payments directly — meaning money flows through their own system before reaching you. To do that in the US, they need you to have a US or Canadian bank account to connect. That's a limitation of the payment-processing model, not a real technical limit on receiving international money.",
+    "why_p2": "The alternative approach — and what most freelancers doing international remote work actually use — is to keep the payment method you already have, and just need one place to send an invoice with a payment link pointing to it.",
+    "h2_methods": "The 4 most common ways to receive international payments",
+    "method1_title": "1. Payoneer",
+    "method1_text": "The most familiar option, especially if you've worked through Upwork or Fiverr — both platforms support direct withdrawal via Payoneer. Payoneer supports transfers to over 190 countries and has a built-in \"Payment Request\" feature to send a payment link straight to a client, no marketplace needed.",
+    "method2_title": "2. Wise",
+    "method2_text": "Stands out for significantly lower currency conversion fees than Payoneer or PayPal — usually around 0.5-1% instead of 3-4%. Wise also supports holding and receiving multiple currencies through a multi-currency account, useful if you have clients across several regions (USD from the US, EUR from Europe).",
+    "method3_title": "3. Skrill",
+    "method3_text": "Talked about less but worth knowing: Skrill explicitly lists Vietnam, Indonesia, Thailand, the Philippines, Bangladesh, and India among its supported receiving countries — covering exactly the SEA/South Asia region. In exchange, Skrill's currency conversion fee (around 3.99%) is higher than Wise's.",
+    "method4_title": "4. Crypto (USDT, USDC)",
+    "method4_text": "Increasingly popular with freelancers whose clients are already comfortable with crypto — payments arrive nearly instantly, independent of banking hours. Worth noting: crypto transaction regulations vary significantly by country and are still evolving in many places, so check the current rules where you live before making it your primary payment method.",
+    "h2_table": "Quick comparison",
+    "th_method": "Method",
+    "th_fee": "Conversion fee",
+    "th_bestfor": "Best for",
+    "row1_bestfor": "Already used to it from Upwork/Fiverr",
+    "row2_bestfor": "Want the lowest fees, multi-currency receiving",
+    "row3_bestfor": "Clients in SEA/South Asia, need clear regional coverage",
+    "row4_bestfor": "Clients familiar with crypto, need speed",
+    "row4_fee": "Network fee",
+    "callout": "<strong>Important:</strong> whichever method you choose, always keep a full record (invoices, payment dates, amounts) — this is exactly the data you'll need when filing personal income tax at year-end, even for income earned from abroad.",
+    "h2_manage": "So how do you manage the whole process?",
+    "manage_p1": "Picking a payment method is only half the problem. The other half: sending proposals, signing contracts, issuing invoices with the right payment link, and following up when a client forgets to pay — usually scattered across Google Docs, Canva, and WhatsApp messages.",
+    "manage_p2": "<a href=\"/\">Wireloom</a> brings that whole process into one place — invoices come with a ready-made link to the Payoneer, Wise, Skrill, or crypto method you've chosen, without holding funds through the platform, and without requiring a US bank account to sign up.",
+    "cta_title": "Looking for a client management tool built for this?",
+    "cta_text": "Proposals, contracts, and invoices with Payoneer/Wise/Skrill/crypto payment links — built for freelancers without a US bank account.",
+    "cta_button": "Get Early Access →",
+    "footer_text": "© 2026 Wireloom. This article is for informational purposes only, not financial or legal advice."
+  },
+  "vi": {
+    "page_title": "Cách nhận thanh toán quốc tế không cần tài khoản ngân hàng Mỹ (2026) | Wireloom",
+    "meta_description": "Hướng dẫn chi tiết cách freelancer Việt Nam nhận thanh toán từ khách hàng nước ngoài mà không cần mở tài khoản ngân hàng Mỹ — so sánh Payoneer, Wise, Skrill, và crypto.",
+    "nav_login": "Đăng nhập",
+    "kicker": "Hướng dẫn",
+    "article_title": "Cách nhận thanh toán quốc tế không cần tài khoản ngân hàng Mỹ",
+    "article_meta": "Cập nhật tháng 8/2026 · 7 phút đọc",
+    "intro_p1": "Nếu bạn là freelancer làm việc với khách hàng ở Mỹ, châu Âu, hoặc Úc, có lẽ bạn đã từng thấy dòng chữ quen thuộc này khi đăng ký một công cụ quản lý khách hàng: \"Sign up available in the US, Canada, UK, and Australia only.\" Không có tài khoản ngân hàng Mỹ, không có SSN, không có EIN — và thế là bạn bị chặn ngay từ bước đăng ký.",
+    "intro_p2": "Tin tốt: bạn không cần bất kỳ thứ gì trong số đó để nhận thanh toán quốc tế hợp pháp và đáng tin cậy. Bài viết này so sánh 4 phương thức phổ biến nhất mà freelancer đang thực sự dùng.",
+    "h2_why": "Vì sao nhiều công cụ lại yêu cầu ngân hàng Mỹ?",
+    "why_p1": "Các nền tảng như HoneyBook hay Dubsado được xây dựng để tự xử lý thanh toán trực tiếp — nghĩa là tiền chảy qua chính hệ thống của họ trước khi tới bạn. Để làm được điều đó ở Mỹ, họ cần bạn có tài khoản ngân hàng Mỹ hoặc Canada để kết nối. Đây là giới hạn của mô hình xử lý thanh toán, không phải giới hạn kỹ thuật thật sự của việc nhận tiền quốc tế.",
+    "why_p2": "Cách tiếp cận khác — và cũng là cách hầu hết freelancer làm remote quốc tế đang thực sự dùng — là giữ nguyên phương thức thanh toán bạn đã có sẵn, chỉ cần một nơi để gửi invoice và link thanh toán trỏ tới đó.",
+    "h2_methods": "4 phương thức nhận thanh toán quốc tế phổ biến nhất",
+    "method1_title": "1. Payoneer",
+    "method1_text": "Lựa chọn quen thuộc nhất, đặc biệt nếu bạn từng làm qua Upwork hoặc Fiverr — cả hai nền tảng này đều hỗ trợ rút tiền trực tiếp qua Payoneer. Payoneer hỗ trợ chuyển tiền tới hơn 190 quốc gia, có sẵn tính năng tạo \"Payment Request\" để gửi link thu tiền trực tiếp cho khách, không cần thông qua marketplace nào.",
+    "method2_title": "2. Wise",
+    "method2_text": "Nổi bật vì phí chuyển đổi ngoại tệ thấp hơn đáng kể so với Payoneer hay PayPal — thường chỉ khoảng 0.5-1% thay vì 3-4%. Wise cũng hỗ trợ nhận tiền bằng nhiều loại tiền tệ khác nhau qua tài khoản đa tiền tệ, phù hợp nếu bạn có khách ở nhiều khu vực (USD từ Mỹ, EUR từ châu Âu).",
+    "method3_title": "3. Skrill",
+    "method3_text": "Ít được nhắc tới hơn nhưng đáng chú ý: Skrill liệt kê rõ ràng Việt Nam, Indonesia, Thái Lan, Philippines, Bangladesh, và Ấn Độ trong danh sách quốc gia được hỗ trợ nhận tiền — tức bao phủ đúng khu vực Đông Nam Á/Nam Á. Đổi lại, phí chuyển đổi ngoại tệ của Skrill (khoảng 3.99%) cao hơn Wise.",
+    "method4_title": "4. Crypto (USDT, USDC)",
+    "method4_text": "Ngày càng phổ biến với freelancer nhận thanh toán từ khách hàng quen thuộc với crypto — tốc độ nhận tiền gần như tức thì, không phụ thuộc giờ làm việc ngân hàng. Cần lưu ý: quy định pháp lý về giao dịch crypto khác nhau đáng kể theo từng quốc gia và vẫn đang trong giai đoạn hoàn thiện ở nhiều nơi, nên tìm hiểu kỹ quy định hiện hành tại nơi bạn sống trước khi dùng làm phương thức nhận thanh toán chính.",
+    "h2_table": "Bảng so sánh nhanh",
+    "th_method": "Phương thức",
+    "th_fee": "Phí chuyển đổi",
+    "th_bestfor": "Phù hợp nhất khi",
+    "row1_bestfor": "Đã quen dùng từ Upwork/Fiverr",
+    "row2_bestfor": "Muốn phí thấp nhất, nhận nhiều loại tiền tệ",
+    "row3_bestfor": "Khách ở SEA/Nam Á, cần độ phủ khu vực rõ ràng",
+    "row4_bestfor": "Khách quen thuộc crypto, cần tốc độ nhanh",
+    "row4_fee": "Phí mạng lưới",
+    "callout": "<strong>Lưu ý quan trọng:</strong> dù chọn phương thức nào, hãy luôn giữ lại hồ sơ đầy đủ (invoice, ngày nhận tiền, số tiền) — đây là dữ liệu bạn sẽ cần khi quyết toán thuế thu nhập cá nhân cuối năm, dù thu nhập đến từ nước ngoài.",
+    "h2_manage": "Vậy quản lý cả quá trình này như thế nào?",
+    "manage_p1": "Chọn được phương thức nhận tiền chỉ là một nửa vấn đề. Nửa còn lại: gửi proposal, ký hợp đồng, xuất invoice có link thanh toán đúng, và nhắc thanh toán khi khách quên — tất cả thường bị rải rác qua Google Docs, Canva, và tin nhắn WhatsApp.",
+    "manage_p2": "<a href=\"/\">Wireloom</a> gộp toàn bộ quy trình đó vào một nơi — invoice tạo ra sẵn link trỏ tới Payoneer, Wise, Skrill, hoặc crypto bạn đã chọn, không giữ tiền qua platform, không yêu cầu tài khoản ngân hàng Mỹ để đăng ký.",
+    "cta_title": "Đang tìm công cụ quản lý khách hàng quốc tế?",
+    "cta_text": "Proposal, hợp đồng, invoice với payment link Payoneer/Wise/Skrill/crypto — xây riêng cho freelancer không có tài khoản ngân hàng Mỹ.",
+    "cta_button": "Đăng ký dùng thử sớm →",
+    "footer_text": "© 2026 Wireloom. Bài viết mang tính tham khảo, không phải tư vấn tài chính hay pháp lý."
+  },
+  "fr": {
+    "page_title": "Comment être payé à l'international sans compte bancaire américain (2026) | Wireloom",
+    "meta_description": "Un guide pratique pour les freelances payés par des clients internationaux sans compte bancaire américain — comparaison de Payoneer, Wise, Skrill et crypto.",
+    "nav_login": "Connexion",
+    "kicker": "Guide",
+    "article_title": "Comment être payé à l'international sans compte bancaire américain",
+    "article_meta": "Mis à jour en août 2026 · 7 min de lecture",
+    "intro_p1": "Si vous êtes freelance et travaillez avec des clients aux États-Unis, en Europe ou en Australie, vous avez probablement déjà vu cette phrase en vous inscrivant à un outil de gestion client : « Sign up available in the US, Canada, UK, and Australia only. » Pas de compte bancaire américain, pas de SSN, pas d'EIN — et vous êtes bloqué dès l'inscription.",
+    "intro_p2": "Bonne nouvelle : vous n'avez besoin de rien de tout cela pour recevoir des paiements internationaux de manière légitime et fiable. Ce guide compare les quatre méthodes les plus courantes réellement utilisées par les freelances aujourd'hui.",
+    "h2_why": "Pourquoi tant d'outils exigent-ils un compte bancaire américain ?",
+    "why_p1": "Des plateformes comme HoneyBook ou Dubsado sont conçues pour traiter les paiements directement — l'argent transite donc par leur propre système avant de vous parvenir. Pour cela aux États-Unis, elles ont besoin que vous ayez un compte bancaire américain ou canadien à connecter. C'est une limite du modèle de traitement des paiements, pas une véritable limite technique pour recevoir de l'argent à l'international.",
+    "why_p2": "L'autre approche — celle qu'utilisent réellement la plupart des freelances en télétravail international — consiste à garder le moyen de paiement que vous avez déjà, et à n'avoir besoin que d'un seul endroit pour envoyer une facture avec un lien de paiement qui y renvoie.",
+    "h2_methods": "Les 4 moyens les plus courants de recevoir des paiements internationaux",
+    "method1_title": "1. Payoneer",
+    "method1_text": "L'option la plus familière, surtout si vous avez travaillé via Upwork ou Fiverr — ces deux plateformes prennent en charge le retrait direct via Payoneer. Payoneer prend en charge les transferts vers plus de 190 pays et dispose d'une fonction intégrée « Payment Request » pour envoyer un lien de paiement directement à un client, sans passer par une marketplace.",
+    "method2_title": "2. Wise",
+    "method2_text": "Se distingue par des frais de conversion de devises nettement plus bas que Payoneer ou PayPal — généralement 0,5 à 1 % au lieu de 3 à 4 %. Wise permet aussi de détenir et recevoir plusieurs devises via un compte multidevises, utile si vous avez des clients dans plusieurs régions (USD des États-Unis, EUR d'Europe).",
+    "method3_title": "3. Skrill",
+    "method3_text": "Moins souvent mentionné mais à connaître : Skrill inclut explicitement le Vietnam, l'Indonésie, la Thaïlande, les Philippines, le Bangladesh et l'Inde parmi les pays pris en charge pour la réception d'argent — couvrant exactement la région Asie du Sud-Est/Asie du Sud. En contrepartie, les frais de conversion de devises de Skrill (environ 3,99 %) sont plus élevés que ceux de Wise.",
+    "method4_title": "4. Crypto (USDT, USDC)",
+    "method4_text": "De plus en plus populaire auprès des freelances dont les clients sont déjà à l'aise avec la crypto — les paiements arrivent presque instantanément, indépendamment des horaires bancaires. À noter : la réglementation sur les transactions crypto varie beaucoup selon les pays et continue d'évoluer dans de nombreux endroits, alors vérifiez les règles en vigueur là où vous vivez avant d'en faire votre moyen de paiement principal.",
+    "h2_table": "Comparaison rapide",
+    "th_method": "Méthode",
+    "th_fee": "Frais de conversion",
+    "th_bestfor": "Idéal pour",
+    "row1_bestfor": "Déjà habitué via Upwork/Fiverr",
+    "row2_bestfor": "Vous voulez les frais les plus bas, multidevises",
+    "row3_bestfor": "Clients en Asie du Sud-Est/du Sud, besoin d'une couverture régionale claire",
+    "row4_bestfor": "Clients à l'aise avec la crypto, besoin de rapidité",
+    "row4_fee": "Frais de réseau",
+    "callout": "<strong>Important :</strong> quelle que soit la méthode choisie, conservez toujours un dossier complet (factures, dates de paiement, montants) — ce sont exactement les données dont vous aurez besoin pour déclarer votre impôt sur le revenu en fin d'année, même pour des revenus perçus à l'étranger.",
+    "h2_manage": "Alors, comment gérer tout ce processus ?",
+    "manage_p1": "Choisir un moyen de paiement n'est que la moitié du problème. L'autre moitié : envoyer des propositions, signer des contrats, émettre des factures avec le bon lien de paiement, et relancer quand un client oublie de payer — le tout généralement dispersé entre Google Docs, Canva et des messages WhatsApp.",
+    "manage_p2": "<a href=\"/\">Wireloom</a> réunit tout ce processus en un seul endroit — les factures arrivent avec un lien prêt à l'emploi vers Payoneer, Wise, Skrill ou la crypto que vous avez choisie, sans que la plateforme ne détienne de fonds, et sans exiger de compte bancaire américain pour s'inscrire.",
+    "cta_title": "Vous cherchez un outil de gestion client conçu pour cela ?",
+    "cta_text": "Propositions, contrats et factures avec liens de paiement Payoneer/Wise/Skrill/crypto — conçu pour les freelances sans compte bancaire américain.",
+    "cta_button": "Accès anticipé →",
+    "footer_text": "© 2026 Wireloom. Cet article est fourni à titre informatif uniquement, et ne constitue pas un conseil financier ou juridique."
+  },
+  "es": {
+    "page_title": "Cómo cobrar internacionalmente sin cuenta bancaria en EE. UU. (2026) | Wireloom",
+    "meta_description": "Una guía práctica para freelancers que cobran de clientes internacionales sin cuenta bancaria en EE. UU. — comparando Payoneer, Wise, Skrill y cripto.",
+    "nav_login": "Iniciar sesión",
+    "kicker": "Guía",
+    "article_title": "Cómo cobrar internacionalmente sin una cuenta bancaria en EE. UU.",
+    "article_meta": "Actualizado en agosto de 2026 · 7 min de lectura",
+    "intro_p1": "Si eres freelancer y trabajas con clientes en EE. UU., Europa o Australia, seguramente ya has visto esta frase al registrarte en una herramienta de gestión de clientes: \"Sign up available in the US, Canada, UK, and Australia only.\" Sin cuenta bancaria en EE. UU., sin SSN, sin EIN — y quedas bloqueado justo en el registro.",
+    "intro_p2": "Buenas noticias: no necesitas nada de eso para recibir pagos internacionales de forma legítima y confiable. Esta guía compara los cuatro métodos más comunes que los freelancers usan realmente hoy.",
+    "h2_why": "¿Por qué tantas herramientas exigen una cuenta bancaria en EE. UU.?",
+    "why_p1": "Plataformas como HoneyBook o Dubsado están diseñadas para procesar pagos directamente — es decir, el dinero pasa por su propio sistema antes de llegar a ti. Para hacerlo en EE. UU., necesitan que tengas una cuenta bancaria estadounidense o canadiense para conectar. Esa es una limitación del modelo de procesamiento de pagos, no un límite técnico real para recibir dinero internacional.",
+    "why_p2": "El otro enfoque — y el que realmente usan la mayoría de los freelancers que trabajan remoto a nivel internacional — es mantener el método de pago que ya tienes, y solo necesitar un lugar para enviar una factura con un enlace de pago que apunte a él.",
+    "h2_methods": "Las 4 formas más comunes de recibir pagos internacionales",
+    "method1_title": "1. Payoneer",
+    "method1_text": "La opción más conocida, especialmente si has trabajado en Upwork o Fiverr — ambas plataformas admiten el retiro directo vía Payoneer. Payoneer admite transferencias a más de 190 países y tiene una función integrada de \"Payment Request\" para enviar un enlace de pago directamente a un cliente, sin necesidad de un marketplace.",
+    "method2_title": "2. Wise",
+    "method2_text": "Destaca por tener comisiones de conversión de divisas mucho más bajas que Payoneer o PayPal — normalmente entre 0.5 y 1% en lugar de 3-4%. Wise también admite mantener y recibir varias divisas mediante una cuenta multidivisa, útil si tienes clientes en distintas regiones (USD de EE. UU., EUR de Europa).",
+    "method3_title": "3. Skrill",
+    "method3_text": "Se menciona menos, pero vale la pena conocerlo: Skrill incluye explícitamente a Vietnam, Indonesia, Tailandia, Filipinas, Bangladesh e India entre sus países compatibles para recibir dinero — cubriendo justo la región del Sudeste Asiático/Sur de Asia. A cambio, la comisión de conversión de divisas de Skrill (alrededor del 3.99%) es más alta que la de Wise.",
+    "method4_title": "4. Cripto (USDT, USDC)",
+    "method4_text": "Cada vez más popular entre freelancers cuyos clientes ya se sienten cómodos con las criptomonedas — los pagos llegan casi al instante, sin depender del horario bancario. Ten en cuenta que la normativa sobre transacciones cripto varía mucho según el país y sigue evolucionando en muchos lugares, así que revisa las reglas vigentes donde vives antes de usarlo como tu método de pago principal.",
+    "h2_table": "Comparación rápida",
+    "th_method": "Método",
+    "th_fee": "Comisión de conversión",
+    "th_bestfor": "Ideal para",
+    "row1_bestfor": "Ya acostumbrado desde Upwork/Fiverr",
+    "row2_bestfor": "Quieres las comisiones más bajas, multidivisa",
+    "row3_bestfor": "Clientes en el Sudeste Asiático/Sur de Asia, cobertura regional clara",
+    "row4_bestfor": "Clientes familiarizados con cripto, necesitas velocidad",
+    "row4_fee": "Comisión de red",
+    "callout": "<strong>Importante:</strong> elijas el método que elijas, guarda siempre un registro completo (facturas, fechas de pago, montos) — son exactamente los datos que necesitarás al declarar el impuesto sobre la renta a fin de año, incluso para ingresos del extranjero.",
+    "h2_manage": "Entonces, ¿cómo gestionas todo este proceso?",
+    "manage_p1": "Elegir un método de pago es solo la mitad del problema. La otra mitad: enviar propuestas, firmar contratos, emitir facturas con el enlace de pago correcto y hacer seguimiento cuando un cliente olvida pagar — todo esto suele estar disperso entre Google Docs, Canva y mensajes de WhatsApp.",
+    "manage_p2": "<a href=\"/\">Wireloom</a> reúne todo ese proceso en un solo lugar — las facturas vienen con un enlace ya listo a Payoneer, Wise, Skrill o cripto que hayas elegido, sin que la plataforma retenga fondos, y sin requerir una cuenta bancaria en EE. UU. para registrarte.",
+    "cta_title": "¿Buscas una herramienta de gestión de clientes pensada para esto?",
+    "cta_text": "Propuestas, contratos y facturas con enlaces de pago de Payoneer/Wise/Skrill/cripto — creado para freelancers sin cuenta bancaria en EE. UU.",
+    "cta_button": "Acceso anticipado →",
+    "footer_text": "© 2026 Wireloom. Este artículo tiene fines informativos únicamente, no constituye asesoría financiera ni legal."
+  },
+  "zh": {
+    "page_title": "如何在没有美国银行账户的情况下收取国际付款（2026）| Wireloom",
+    "meta_description": "为没有美国银行账户、需要从国际客户处收款的自由职业者提供的实用指南——比较 Payoneer、Wise、Skrill 和加密货币。",
+    "nav_login": "登录",
+    "kicker": "指南",
+    "article_title": "如何在没有美国银行账户的情况下收取国际付款",
+    "article_meta": "2026年8月更新 · 阅读需7分钟",
+    "intro_p1": "如果你是一名为美国、欧洲或澳大利亚客户工作的自由职业者，你可能已经在注册某个客户管理工具时见过这句话：\"Sign up available in the US, Canada, UK, and Australia only.\"（仅限美国、加拿大、英国、澳大利亚注册）。没有美国银行账户，没有 SSN，没有 EIN——于是你在注册这一步就被拦下了。",
+    "intro_p2": "好消息是：你完全不需要这些东西，也能合法、可靠地收取国际付款。本文比较了自由职业者如今实际在用的四种最常见方式。",
+    "h2_why": "为什么这么多工具都要求美国银行账户？",
+    "why_p1": "像 HoneyBook 或 Dubsado 这样的平台是为直接处理付款而设计的——也就是说，钱要先经过他们自己的系统，然后才到你手里。要在美国做到这一点，他们需要你有美国或加拿大银行账户来连接。这只是支付处理模式本身的限制，并不是收取国际汇款在技术上真正存在的限制。",
+    "why_p2": "另一种做法——也是大多数从事国际远程工作的自由职业者真正在用的做法——是保留你已经拥有的收款方式，只需要一个地方来发送带有指向该方式的付款链接的发票。",
+    "h2_methods": "收取国际付款的4种最常见方式",
+    "method1_title": "1. Payoneer",
+    "method1_text": "最常见的选择，尤其是如果你曾在 Upwork 或 Fiverr 上接过项目——这两个平台都支持通过 Payoneer 直接提现。Payoneer 支持向190多个国家转账，并内置「Payment Request」功能，可直接向客户发送付款链接，无需通过任何平台。",
+    "method2_title": "2. Wise",
+    "method2_text": "最大亮点是货币兑换费用明显低于 Payoneer 或 PayPal——通常只有 0.5%-1%，而不是 3%-4%。Wise 还支持通过多币种账户持有和接收多种货币，如果你的客户分布在多个地区（美国的美元、欧洲的欧元），会非常实用。",
+    "method3_title": "3. Skrill",
+    "method3_text": "提及较少，但值得了解：Skrill 明确将越南、印度尼西亚、泰国、菲律宾、孟加拉国和印度列入其支持收款的国家名单——恰好覆盖东南亚/南亚地区。作为代价，Skrill 的货币兑换费用（约 3.99%）比 Wise 更高。",
+    "method4_title": "4. 加密货币（USDT、USDC）",
+    "method4_text": "对于客户已经习惯使用加密货币的自由职业者来说，这种方式越来越受欢迎——付款几乎是即时到账，不受银行工作时间限制。需要注意：各国对加密货币交易的监管规定差异很大，且在许多地方仍在不断完善中，因此在将其作为主要收款方式之前，请先了解你所在地区的现行规定。",
+    "h2_table": "快速对比",
+    "th_method": "方式",
+    "th_fee": "兑换费",
+    "th_bestfor": "最适合",
+    "row1_bestfor": "已在 Upwork/Fiverr 上习惯使用",
+    "row2_bestfor": "想要最低费用，多币种收款",
+    "row3_bestfor": "客户在东南亚/南亚，需要明确的区域覆盖",
+    "row4_bestfor": "客户熟悉加密货币，需要速度",
+    "row4_fee": "网络手续费",
+    "callout": "<strong>重要提示：</strong>无论选择哪种方式，都要始终保留完整记录（发票、收款日期、金额）——这正是你在年底申报个人所得税时所需要的数据，即使收入来自国外也是如此。",
+    "h2_manage": "那整个流程该怎么管理？",
+    "manage_p1": "选好收款方式只解决了一半问题。另一半是：发送提案、签署合同、开具带正确付款链接的发票，以及在客户忘记付款时进行跟进——这些通常分散在 Google 文档、Canva 和 WhatsApp 消息里。",
+    "manage_p2": "<a href=\"/\">Wireloom</a> 把整个流程整合到一个地方——发票自带指向你所选 Payoneer、Wise、Skrill 或加密货币的现成链接，平台不持有资金，注册也无需美国银行账户。",
+    "cta_title": "正在寻找专为此打造的客户管理工具？",
+    "cta_text": "提案、合同和带 Payoneer/Wise/Skrill/加密货币付款链接的发票 —— 专为没有美国银行账户的自由职业者打造。",
+    "cta_button": "获取抢先体验 →",
+    "footer_text": "© 2026 Wireloom。本文仅供参考，不构成财务或法律建议。"
+  },
+  "hi": {
+    "page_title": "बिना अमेरिकी बैंक खाते के अंतरराष्ट्रीय भुगतान कैसे प्राप्त करें (2026) | Wireloom",
+    "meta_description": "अमेरिकी बैंक खाते के बिना अंतरराष्ट्रीय क्लाइंट्स से भुगतान पाने वाले फ्रीलांसरों के लिए व्यावहारिक गाइड — Payoneer, Wise, Skrill, और क्रिप्टो की तुलना।",
+    "nav_login": "लॉग इन",
+    "kicker": "गाइड",
+    "article_title": "बिना अमेरिकी बैंक खाते के अंतरराष्ट्रीय भुगतान कैसे प्राप्त करें",
+    "article_meta": "अगस्त 2026 में अपडेट किया गया · 7 मिनट का पढ़ने का समय",
+    "intro_p1": "अगर आप एक फ्रीलांसर हैं जो अमेरिका, यूरोप, या ऑस्ट्रेलिया के क्लाइंट्स के साथ काम करते हैं, तो शायद आपने किसी क्लाइंट मैनेजमेंट टूल में साइन अप करते समय यह लाइन देखी होगी: \"Sign up available in the US, Canada, UK, and Australia only.\" कोई अमेरिकी बैंक खाता नहीं, कोई SSN नहीं, कोई EIN नहीं — और आप साइन अप के पहले कदम पर ही अटक जाते हैं।",
+    "intro_p2": "अच्छी खबर: वैध और भरोसेमंद तरीके से अंतरराष्ट्रीय भुगतान पाने के लिए आपको इनमें से कुछ भी नहीं चाहिए। यह गाइड आज फ्रीलांसरों द्वारा वास्तव में इस्तेमाल किए जाने वाले 4 सबसे आम तरीकों की तुलना करता है।",
+    "h2_why": "इतने सारे टूल अमेरिकी बैंक खाता क्यों माँगते हैं?",
+    "why_p1": "HoneyBook या Dubsado जैसे प्लेटफ़ॉर्म सीधे पेमेंट प्रोसेस करने के लिए बनाए गए हैं — यानी पैसा पहले उनके अपने सिस्टम से गुज़रता है, फिर आप तक पहुँचता है। अमेरिका में ऐसा करने के लिए, उन्हें कनेक्ट करने के लिए आपके पास अमेरिकी या कनाडाई बैंक खाता चाहिए होता है। यह पेमेंट-प्रोसेसिंग मॉडल की सीमा है, अंतरराष्ट्रीय पैसा पाने की असली तकनीकी सीमा नहीं।",
+    "why_p2": "दूसरा तरीका — जो ज़्यादातर इंटरनेशनल रिमोट वर्क करने वाले फ्रीलांसर असल में इस्तेमाल करते हैं — वह है अपना मौजूदा पेमेंट तरीका बनाए रखना, और सिर्फ एक जगह चाहिए जहाँ से उसी की तरफ़ जाने वाला पेमेंट लिंक वाला इनवॉइस भेजा जा सके।",
+    "h2_methods": "अंतरराष्ट्रीय भुगतान पाने के 4 सबसे आम तरीके",
+    "method1_title": "1. Payoneer",
+    "method1_text": "सबसे जाना-पहचाना विकल्प, खासकर अगर आपने Upwork या Fiverr के ज़रिए काम किया है — दोनों प्लेटफ़ॉर्म Payoneer के ज़रिए सीधे निकासी सपोर्ट करते हैं। Payoneer 190 से ज़्यादा देशों में ट्रांसफ़र सपोर्ट करता है, और इसमें बना-बनाया \"Payment Request\" फ़ीचर है जिससे क्लाइंट को सीधे पेमेंट लिंक भेजा जा सकता है, किसी मार्केटप्लेस की ज़रूरत नहीं।",
+    "method2_title": "2. Wise",
+    "method2_text": "Payoneer या PayPal से काफ़ी कम करेंसी कन्वर्ज़न फ़ीस के लिए जाना जाता है — आमतौर पर 3-4% की जगह सिर्फ़ 0.5-1%। Wise मल्टी-करेंसी अकाउंट के ज़रिए कई तरह की करेंसी रखने और पाने को भी सपोर्ट करता है, जो काम आता है अगर आपके क्लाइंट कई इलाकों में हों (अमेरिका से USD, यूरोप से EUR)।",
+    "method3_title": "3. Skrill",
+    "method3_text": "कम चर्चित, लेकिन जानना ज़रूरी: Skrill अपने सपोर्टेड पाने वाले देशों की सूची में साफ़ तौर पर वियतनाम, इंडोनेशिया, थाईलैंड, फिलीपींस, बांग्लादेश, और भारत को शामिल करता है — यानी ठीक SEA/दक्षिण एशिया क्षेत्र को कवर करता है। बदले में, Skrill की करेंसी कन्वर्ज़न फ़ीस (लगभग 3.99%) Wise से ज़्यादा है।",
+    "method4_title": "4. क्रिप्टो (USDT, USDC)",
+    "method4_text": "उन फ्रीलांसरों में तेज़ी से लोकप्रिय हो रहा है जिनके क्लाइंट पहले से क्रिप्टो में सहज हैं — पेमेंट लगभग तुरंत पहुँचता है, बैंकिंग घंटों पर निर्भर नहीं। ध्यान दें: क्रिप्टो लेन-देन के नियम देश-दर-देश काफ़ी अलग हैं और कई जगहों पर अभी भी विकसित हो रहे हैं, इसलिए इसे अपना मुख्य पेमेंट तरीका बनाने से पहले अपने देश के मौजूदा नियम अच्छी तरह जान लें।",
+    "h2_table": "त्वरित तुलना",
+    "th_method": "तरीका",
+    "th_fee": "कन्वर्ज़न फ़ीस",
+    "th_bestfor": "सबसे उपयुक्त जब",
+    "row1_bestfor": "Upwork/Fiverr से पहले से आदत",
+    "row2_bestfor": "सबसे कम फ़ीस चाहिए, मल्टी-करेंसी रिसीविंग",
+    "row3_bestfor": "SEA/दक्षिण एशिया में क्लाइंट, साफ़ रीजनल कवरेज चाहिए",
+    "row4_bestfor": "क्रिप्टो से परिचित क्लाइंट, स्पीड चाहिए",
+    "row4_fee": "नेटवर्क फ़ीस",
+    "callout": "<strong>ज़रूरी बात:</strong> आप कोई भी तरीका चुनें, हमेशा पूरा रिकॉर्ड रखें (इनवॉइस, पेमेंट की तारीखें, रकम) — साल के आख़िर में पर्सनल इनकम टैक्स फ़ाइल करते समय आपको ठीक यही डेटा चाहिए होगा, भले ही आमदनी विदेश से हो।",
+    "h2_manage": "तो पूरी प्रक्रिया को मैनेज कैसे करें?",
+    "manage_p1": "पेमेंट तरीका चुनना सिर्फ़ आधी समस्या है। बाक़ी आधी: प्रपोज़ल भेजना, कॉन्ट्रैक्ट साइन करना, सही पेमेंट लिंक वाला इनवॉइस बनाना, और क्लाइंट भूल जाए तो फ़ॉलो-अप करना — ये सब आमतौर पर Google Docs, Canva, और WhatsApp मैसेज में बिखरा रहता है।",
+    "manage_p2": "<a href=\"/\">Wireloom</a> इस पूरी प्रक्रिया को एक ही जगह ले आता है — इनवॉइस के साथ आपके चुने हुए Payoneer, Wise, Skrill, या क्रिप्टो का बना-बनाया लिंक आता है, प्लेटफ़ॉर्म पैसा नहीं रोकता, और साइन अप के लिए अमेरिकी बैंक खाते की ज़रूरत नहीं।",
+    "cta_title": "इसके लिए बना क्लाइंट मैनेजमेंट टूल ढूँढ रहे हैं?",
+    "cta_text": "Payoneer/Wise/Skrill/क्रिप्टो पेमेंट लिंक वाले प्रपोज़ल, कॉन्ट्रैक्ट, और इनवॉइस — अमेरिकी बैंक खाता न रखने वाले फ्रीलांसरों के लिए बनाया गया।",
+    "cta_button": "जल्दी एक्सेस पाएं →",
+    "footer_text": "© 2026 Wireloom। यह लेख केवल जानकारी के लिए है, वित्तीय या कानूनी सलाह नहीं है।"
+  },
+  "pt": {
+    "page_title": "Como receber pagamentos internacionais sem conta bancária nos EUA (2026) | Wireloom",
+    "meta_description": "Um guia prático para freelancers que recebem de clientes internacionais sem conta bancária nos EUA — comparando Payoneer, Wise, Skrill e cripto.",
+    "nav_login": "Entrar",
+    "kicker": "Guia",
+    "article_title": "Como receber pagamentos internacionais sem conta bancária nos EUA",
+    "article_meta": "Atualizado em agosto de 2026 · 7 min de leitura",
+    "intro_p1": "Se você é freelancer e trabalha com clientes nos EUA, na Europa ou na Austrália, provavelmente já viu esta frase ao se cadastrar em uma ferramenta de gestão de clientes: \"Sign up available in the US, Canada, UK, and Australia only.\" Sem conta bancária nos EUA, sem SSN, sem EIN — e você fica bloqueado logo no cadastro.",
+    "intro_p2": "Boa notícia: você não precisa de nada disso para receber pagamentos internacionais de forma legítima e confiável. Este guia compara os quatro métodos mais comuns que freelancers realmente usam hoje.",
+    "h2_why": "Por que tantas ferramentas exigem conta bancária nos EUA?",
+    "why_p1": "Plataformas como HoneyBook ou Dubsado são feitas para processar pagamentos diretamente — ou seja, o dinheiro passa pelo sistema delas antes de chegar até você. Para fazer isso nos EUA, elas precisam que você tenha uma conta bancária americana ou canadense para conectar. Essa é uma limitação do modelo de processamento de pagamentos, não um limite técnico real para receber dinheiro internacional.",
+    "why_p2": "A outra abordagem — e a que a maioria dos freelancers em trabalho remoto internacional realmente usa — é manter o método de pagamento que você já tem, e só precisar de um lugar para enviar uma fatura com um link de pagamento apontando para ele.",
+    "h2_methods": "As 4 formas mais comuns de receber pagamentos internacionais",
+    "method1_title": "1. Payoneer",
+    "method1_text": "A opção mais familiar, especialmente se você já trabalhou pela Upwork ou Fiverr — ambas as plataformas oferecem suporte a saques diretos via Payoneer. O Payoneer oferece suporte a transferências para mais de 190 países e tem um recurso integrado de \"Payment Request\" para enviar um link de pagamento diretamente a um cliente, sem precisar de nenhum marketplace.",
+    "method2_title": "2. Wise",
+    "method2_text": "Se destaca por taxas de conversão de moeda bem mais baixas que Payoneer ou PayPal — geralmente cerca de 0.5-1% em vez de 3-4%. O Wise também permite manter e receber várias moedas por meio de uma conta multimoeda, útil se você tem clientes em várias regiões (USD dos EUA, EUR da Europa).",
+    "method3_title": "3. Skrill",
+    "method3_text": "Menos falado, mas vale a pena conhecer: o Skrill lista explicitamente Vietnã, Indonésia, Tailândia, Filipinas, Bangladesh e Índia entre os países com suporte para recebimento — cobrindo exatamente a região do Sudeste Asiático/Sul da Ásia. Em troca, a taxa de conversão de moeda do Skrill (cerca de 3.99%) é mais alta que a do Wise.",
+    "method4_title": "4. Cripto (USDT, USDC)",
+    "method4_text": "Cada vez mais popular entre freelancers cujos clientes já se sentem à vontade com cripto — os pagamentos chegam quase instantaneamente, sem depender do horário bancário. Vale notar: as regras sobre transações com criptomoedas variam bastante de país para país e ainda estão evoluindo em muitos lugares, então verifique as regras vigentes onde você mora antes de torná-lo seu método de pagamento principal.",
+    "h2_table": "Comparação rápida",
+    "th_method": "Método",
+    "th_fee": "Taxa de conversão",
+    "th_bestfor": "Ideal para",
+    "row1_bestfor": "Já acostumado via Upwork/Fiverr",
+    "row2_bestfor": "Quer as taxas mais baixas, multimoeda",
+    "row3_bestfor": "Clientes no Sudeste Asiático/Sul da Ásia, cobertura regional clara",
+    "row4_bestfor": "Clientes familiarizados com cripto, precisa de velocidade",
+    "row4_fee": "Taxa de rede",
+    "callout": "<strong>Importante:</strong> qualquer que seja o método escolhido, sempre mantenha um registro completo (faturas, datas de pagamento, valores) — são exatamente os dados que você vai precisar ao declarar o imposto de renda pessoal no fim do ano, mesmo para renda vinda do exterior.",
+    "h2_manage": "Então, como gerenciar todo esse processo?",
+    "manage_p1": "Escolher um método de pagamento é só metade do problema. A outra metade: enviar propostas, assinar contratos, emitir faturas com o link de pagamento certo e cobrar quando um cliente esquece de pagar — tudo isso geralmente espalhado entre Google Docs, Canva e mensagens no WhatsApp.",
+    "manage_p2": "<a href=\"/\">Wireloom</a> reúne todo esse processo em um só lugar — as faturas vêm com um link pronto para o Payoneer, Wise, Skrill ou cripto que você escolheu, sem que a plataforma retenha fundos, e sem exigir conta bancária nos EUA para se cadastrar.",
+    "cta_title": "Procurando uma ferramenta de gestão de clientes feita para isso?",
+    "cta_text": "Propostas, contratos e faturas com links de pagamento Payoneer/Wise/Skrill/cripto — feito para freelancers sem conta bancária nos EUA.",
+    "cta_button": "Obter acesso antecipado →",
+    "footer_text": "© 2026 Wireloom. Este artigo é apenas para fins informativos, não é consultoria financeira ou jurídica."
+  },
+  "id": {
+    "page_title": "Cara Terima Bayaran Internasional Tanpa Rekening Bank AS (2026) | Wireloom",
+    "meta_description": "Panduan praktis untuk freelancer yang terima bayaran dari klien internasional tanpa rekening bank AS — membandingkan Payoneer, Wise, Skrill, dan kripto.",
+    "nav_login": "Masuk",
+    "kicker": "Panduan",
+    "article_title": "Cara Terima Bayaran Internasional Tanpa Rekening Bank AS",
+    "article_meta": "Diperbarui Agustus 2026 · 7 menit membaca",
+    "intro_p1": "Kalau kamu freelancer yang kerja dengan klien di AS, Eropa, atau Australia, kamu mungkin pernah lihat kalimat ini saat daftar ke tool manajemen klien: \"Sign up available in the US, Canada, UK, and Australia only.\" Nggak punya rekening bank AS, nggak ada SSN, nggak ada EIN — dan kamu langsung ketahan di langkah pendaftaran.",
+    "intro_p2": "Kabar baiknya: kamu nggak butuh semua itu untuk terima bayaran internasional secara sah dan bisa diandalkan. Panduan ini membandingkan 4 metode paling umum yang benar-benar dipakai freelancer sekarang.",
+    "h2_why": "Kenapa banyak tool mengharuskan rekening bank AS?",
+    "why_p1": "Platform seperti HoneyBook atau Dubsado dibuat untuk memproses pembayaran secara langsung — artinya uang mengalir lewat sistem mereka sendiri dulu sebelum sampai ke kamu. Untuk melakukan itu di AS, mereka butuh kamu punya rekening bank AS atau Kanada untuk dihubungkan. Ini keterbatasan model pemrosesan pembayaran, bukan keterbatasan teknis nyata untuk terima uang internasional.",
+    "why_p2": "Pendekatan lain — dan yang benar-benar dipakai kebanyakan freelancer kerja remote internasional — adalah tetap pakai metode pembayaran yang sudah kamu punya, dan cuma butuh satu tempat untuk kirim invoice dengan link pembayaran yang mengarah ke situ.",
+    "h2_methods": "4 Cara Paling Umum untuk Terima Bayaran Internasional",
+    "method1_title": "1. Payoneer",
+    "method1_text": "Opsi yang paling familiar, apalagi kalau kamu pernah kerja lewat Upwork atau Fiverr — kedua platform ini mendukung penarikan langsung via Payoneer. Payoneer mendukung transfer ke lebih dari 190 negara, dan punya fitur bawaan \"Payment Request\" untuk kirim link pembayaran langsung ke klien, tanpa perlu marketplace apa pun.",
+    "method2_title": "2. Wise",
+    "method2_text": "Unggul karena biaya konversi mata uang jauh lebih rendah dibanding Payoneer atau PayPal — biasanya cuma sekitar 0.5-1% bukan 3-4%. Wise juga mendukung menyimpan dan menerima berbagai mata uang lewat akun multi-currency, berguna kalau klien kamu tersebar di beberapa wilayah (USD dari AS, EUR dari Eropa).",
+    "method3_title": "3. Skrill",
+    "method3_text": "Kurang sering dibahas tapi patut diketahui: Skrill secara eksplisit mencantumkan Vietnam, Indonesia, Thailand, Filipina, Bangladesh, dan India dalam daftar negara yang didukung untuk menerima uang — mencakup persis wilayah SEA/Asia Selatan. Sebagai gantinya, biaya konversi mata uang Skrill (sekitar 3.99%) lebih tinggi dari Wise.",
+    "method4_title": "4. Kripto (USDT, USDC)",
+    "method4_text": "Makin populer di kalangan freelancer yang kliennya sudah terbiasa dengan kripto — pembayaran masuk hampir seketika, nggak tergantung jam kerja bank. Perlu diingat: aturan transaksi kripto berbeda-beda cukup jauh antar negara dan masih terus berkembang di banyak tempat, jadi cek dulu aturan yang berlaku di tempat kamu tinggal sebelum menjadikannya metode pembayaran utama.",
+    "h2_table": "Perbandingan Cepat",
+    "th_method": "Metode",
+    "th_fee": "Biaya konversi",
+    "th_bestfor": "Paling cocok untuk",
+    "row1_bestfor": "Sudah terbiasa dari Upwork/Fiverr",
+    "row2_bestfor": "Mau biaya paling rendah, terima multi-currency",
+    "row3_bestfor": "Klien di SEA/Asia Selatan, butuh cakupan wilayah jelas",
+    "row4_bestfor": "Klien akrab dengan kripto, butuh kecepatan",
+    "row4_fee": "Biaya jaringan",
+    "callout": "<strong>Penting:</strong> metode apa pun yang kamu pilih, selalu simpan catatan lengkap (invoice, tanggal pembayaran, jumlah) — ini persis data yang kamu butuhkan saat lapor pajak penghasilan pribadi di akhir tahun, meski penghasilannya dari luar negeri.",
+    "h2_manage": "Jadi bagaimana cara mengelola seluruh prosesnya?",
+    "manage_p1": "Memilih metode pembayaran cuma separuh masalah. Separuh lainnya: kirim proposal, tanda tangan kontrak, terbitkan invoice dengan link pembayaran yang benar, dan follow up saat klien lupa bayar — biasanya berantakan tersebar di Google Docs, Canva, dan pesan WhatsApp.",
+    "manage_p2": "<a href=\"/\">Wireloom</a> menyatukan seluruh proses itu jadi satu tempat — invoice datang dengan link siap pakai ke Payoneer, Wise, Skrill, atau kripto yang kamu pilih, tanpa platform menahan dana, dan tanpa perlu rekening bank AS untuk daftar.",
+    "cta_title": "Sedang cari tool manajemen klien yang dibuat untuk ini?",
+    "cta_text": "Proposal, kontrak, dan invoice dengan link pembayaran Payoneer/Wise/Skrill/kripto — dibuat untuk freelancer tanpa rekening bank AS.",
+    "cta_button": "Daftar Early Access →",
+    "footer_text": "© 2026 Wireloom. Artikel ini hanya untuk tujuan informasi, bukan nasihat keuangan atau hukum."
+  },
+  "th": {
+    "page_title": "วิธีรับเงินจากต่างประเทศโดยไม่ต้องมีบัญชีธนาคารสหรัฐฯ (2026) | Wireloom",
+    "meta_description": "คู่มือปฏิบัติสำหรับฟรีแลนซ์ที่รับเงินจากลูกค้าต่างประเทศโดยไม่มีบัญชีธนาคารสหรัฐฯ — เปรียบเทียบ Payoneer, Wise, Skrill และคริปโต",
+    "nav_login": "เข้าสู่ระบบ",
+    "kicker": "คู่มือ",
+    "article_title": "วิธีรับเงินจากต่างประเทศโดยไม่ต้องมีบัญชีธนาคารสหรัฐฯ",
+    "article_meta": "อัปเดตเดือนสิงหาคม 2026 · อ่าน 7 นาที",
+    "intro_p1": "ถ้าคุณเป็นฟรีแลนซ์ที่ทำงานกับลูกค้าในสหรัฐฯ ยุโรป หรือออสเตรเลีย คุณอาจเคยเห็นข้อความนี้ตอนสมัครใช้เครื่องมือจัดการลูกค้า: \"Sign up available in the US, Canada, UK, and Australia only.\" ไม่มีบัญชีธนาคารสหรัฐฯ ไม่มี SSN ไม่มี EIN — แล้วคุณก็ถูกกันไว้ตั้งแต่ขั้นตอนสมัครสมาชิก",
+    "intro_p2": "ข่าวดีคือ: คุณไม่จำเป็นต้องมีสิ่งเหล่านั้นเลยเพื่อรับเงินจากต่างประเทศอย่างถูกต้องและน่าเชื่อถือ บทความนี้เปรียบเทียบ 4 วิธีที่ฟรีแลนซ์ใช้กันจริงมากที่สุดในตอนนี้",
+    "h2_why": "ทำไมเครื่องมือหลายตัวถึงต้องการบัญชีธนาคารสหรัฐฯ?",
+    "why_p1": "แพลตฟอร์มอย่าง HoneyBook หรือ Dubsado ถูกสร้างมาเพื่อประมวลผลการชำระเงินโดยตรง — หมายความว่าเงินจะไหลผ่านระบบของพวกเขาก่อนถึงคุณ การจะทำแบบนั้นในสหรัฐฯ พวกเขาต้องการให้คุณมีบัญชีธนาคารสหรัฐฯ หรือแคนาดาเพื่อเชื่อมต่อ นี่คือข้อจำกัดของโมเดลการประมวลผลการชำระเงิน ไม่ใช่ข้อจำกัดทางเทคนิคที่แท้จริงของการรับเงินจากต่างประเทศ",
+    "why_p2": "อีกแนวทางหนึ่ง — และเป็นวิธีที่ฟรีแลนซ์ที่ทำงานรีโมทกับต่างประเทศส่วนใหญ่ใช้จริง — คือการใช้ช่องทางรับเงินที่คุณมีอยู่แล้วต่อไป แล้วแค่ต้องการที่เดียวสำหรับส่งใบแจ้งหนี้พร้อมลิงก์ชำระเงินที่ชี้ไปยังช่องทางนั้น",
+    "h2_methods": "4 วิธียอดนิยมในการรับเงินจากต่างประเทศ",
+    "method1_title": "1. Payoneer",
+    "method1_text": "ตัวเลือกที่คุ้นเคยที่สุด โดยเฉพาะถ้าคุณเคยทำงานผ่าน Upwork หรือ Fiverr — ทั้งสองแพลตฟอร์มรองรับการถอนเงินโดยตรงผ่าน Payoneer โดย Payoneer รองรับการโอนเงินไปกว่า 190 ประเทศ และมีฟีเจอร์ \"Payment Request\" ในตัวสำหรับส่งลิงก์ชำระเงินตรงถึงลูกค้า ไม่ต้องผ่านมาร์เก็ตเพลสใดๆ",
+    "method2_title": "2. Wise",
+    "method2_text": "โดดเด่นเรื่องค่าธรรมเนียมแปลงสกุลเงินที่ต่ำกว่า Payoneer หรือ PayPal อย่างเห็นได้ชัด — โดยทั่วไปอยู่ที่ประมาณ 0.5-1% แทนที่จะเป็น 3-4% Wise ยังรองรับการถือและรับเงินหลายสกุลผ่านบัญชีมัลติเคอเรนซี เหมาะถ้าคุณมีลูกค้าอยู่หลายภูมิภาค (USD จากสหรัฐฯ, EUR จากยุโรป)",
+    "method3_title": "3. Skrill",
+    "method3_text": "พูดถึงน้อยกว่าแต่น่าสนใจ: Skrill ระบุชัดเจนว่ารองรับเวียดนาม อินโดนีเซีย ไทย ฟิลิปปินส์ บังกลาเทศ และอินเดียในรายชื่อประเทศที่รับเงินได้ — ครอบคลุมภูมิภาค SEA/เอเชียใต้พอดี แลกกับค่าธรรมเนียมแปลงสกุลเงินของ Skrill (ประมาณ 3.99%) ที่สูงกว่า Wise",
+    "method4_title": "4. คริปโต (USDT, USDC)",
+    "method4_text": "ได้รับความนิยมมากขึ้นในหมู่ฟรีแลนซ์ที่ลูกค้าคุ้นเคยกับคริปโตอยู่แล้ว — เงินเข้าเกือบจะทันที ไม่ขึ้นกับเวลาทำการของธนาคาร ข้อควรรู้: กฎระเบียบเรื่องธุรกรรมคริปโตแตกต่างกันมากในแต่ละประเทศและยังคงพัฒนาอยู่ในหลายพื้นที่ ควรตรวจสอบกฎที่ใช้อยู่ในประเทศของคุณก่อนใช้เป็นช่องทางรับเงินหลัก",
+    "h2_table": "ตารางเปรียบเทียบ",
+    "th_method": "วิธี",
+    "th_fee": "ค่าธรรมเนียมแปลงสกุลเงิน",
+    "th_bestfor": "เหมาะที่สุดเมื่อ",
+    "row1_bestfor": "คุ้นเคยจาก Upwork/Fiverr อยู่แล้ว",
+    "row2_bestfor": "ต้องการค่าธรรมเนียมต่ำสุด รับหลายสกุลเงิน",
+    "row3_bestfor": "ลูกค้าอยู่ใน SEA/เอเชียใต้ ต้องการความครอบคลุมภูมิภาคที่ชัดเจน",
+    "row4_bestfor": "ลูกค้าคุ้นเคยกับคริปโต ต้องการความรวดเร็ว",
+    "row4_fee": "ค่าธรรมเนียมเครือข่าย",
+    "callout": "<strong>ข้อควรจำ:</strong> ไม่ว่าจะเลือกวิธีไหน ให้เก็บบันทึกที่ครบถ้วนไว้เสมอ (ใบแจ้งหนี้ วันที่รับเงิน จำนวนเงิน) — นี่คือข้อมูลที่คุณจะต้องใช้ตอนยื่นภาษีเงินได้บุคคลธรรมดาปลายปี แม้รายได้จะมาจากต่างประเทศก็ตาม",
+    "h2_manage": "แล้วจะจัดการกระบวนการทั้งหมดนี้อย่างไร?",
+    "manage_p1": "การเลือกวิธีรับเงินเป็นแค่ครึ่งหนึ่งของปัญหา อีกครึ่งหนึ่งคือ: การส่งใบเสนอราคา เซ็นสัญญา ออกใบแจ้งหนี้ที่มีลิงก์ชำระเงินถูกต้อง และติดตามทวงเมื่อลูกค้าลืมจ่าย — ซึ่งมักกระจัดกระจายอยู่ใน Google Docs, Canva และข้อความ WhatsApp",
+    "manage_p2": "<a href=\"/\">Wireloom</a> รวมกระบวนการทั้งหมดนี้ไว้ที่เดียว — ใบแจ้งหนี้มาพร้อมลิงก์สำเร็จรูปไปยัง Payoneer, Wise, Skrill หรือคริปโตที่คุณเลือก โดยแพลตฟอร์มไม่ถือเงินไว้ และไม่ต้องมีบัญชีธนาคารสหรัฐฯ ในการสมัคร",
+    "cta_title": "กำลังมองหาเครื่องมือจัดการลูกค้าที่สร้างมาเพื่อสิ่งนี้อยู่ใช่ไหม?",
+    "cta_text": "ใบเสนอราคา สัญญา และใบแจ้งหนี้พร้อมลิงก์ชำระเงิน Payoneer/Wise/Skrill/คริปโต — สร้างมาเพื่อฟรีแลนซ์ที่ไม่มีบัญชีธนาคารสหรัฐฯ",
+    "cta_button": "สมัครใช้งานก่อนใคร →",
+    "footer_text": "© 2026 Wireloom บทความนี้มีไว้เพื่อให้ข้อมูลเท่านั้น ไม่ใช่คำแนะนำทางการเงินหรือกฎหมาย"
+  }
+};
+
+  function applyLang(lang){
+    if (!translations[lang]) lang = 'en';
+    document.documentElement.lang = lang;
+
+    const titleEl = document.querySelector('title[data-i18n]');
+    if (titleEl && translations[lang][titleEl.getAttribute('data-i18n')]) {
+      document.title = translations[lang][titleEl.getAttribute('data-i18n')];
+    }
+    const metaDesc = document.querySelector('meta[data-i18n-content]');
+    if (metaDesc) {
+      const key = metaDesc.getAttribute('data-i18n-content');
+      if (translations[lang][key]) metaDesc.setAttribute('content', translations[lang][key]);
+    }
+
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      if (el.tagName === 'TITLE') return;
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang][key] !== undefined) el.textContent = translations[lang][key];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el){
+      const key = el.getAttribute('data-i18n-html');
+      if (translations[lang][key] !== undefined) el.innerHTML = translations[lang][key];
+    });
+
+    document.getElementById('lang-select').value = lang;
+    try { localStorage.setItem('wireloom_lang', lang); } catch(e) {}
+  }
+
+  function detectInitialLang(){
+    try {
+      const saved = localStorage.getItem('wireloom_lang');
+      if (saved && translations[saved]) return saved;
+    } catch(e) {}
+    const browser = (navigator.language || 'vi').slice(0,2).toLowerCase();
+    return translations[browser] ? browser : 'vi';
+  }
+
+  document.getElementById('lang-select').addEventListener('change', function(e){
+    applyLang(e.target.value);
+  });
+
+  applyLang(detectInitialLang());
+</script>
 
 </body>
 </html>
