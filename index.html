@@ -314,6 +314,21 @@
   .guide-card p{font-size:14px;color:var(--text-dim);line-height:1.6;}
   .guide-arrow{font-size:20px;color:var(--crimson);flex-shrink:0;}
 
+  /* JOBS GRID */
+  .jobs-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+  }
+  .job-card{
+    background:var(--card);border:1px solid var(--border);border-radius:10px;
+    padding:18px 20px;font-size:14px;font-weight:600;color:var(--text);
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    transition:border-color .15s ease, transform .15s ease;
+  }
+  .job-card:hover{border-color:var(--crimson-dim);transform:translateY(-2px);text-decoration:none;color:#fff;}
+  .jobs-compare-link{margin-top:20px;font-size:13.5px;}
+  .jobs-compare-link a{color:var(--text-dim);text-decoration:underline;text-decoration-color:var(--border);}
+  .jobs-compare-link a:hover{color:#fff;}
+
   footer{padding:48px 0;position:relative;z-index:1;}
   .footer-inner{
     display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
@@ -396,6 +411,7 @@
     .mobile-drawer{display:flex;}
     table{font-size:13px;}
     thead th, tbody td{padding:14px 12px;}
+    .jobs-grid{grid-template-columns:repeat(2,1fr);}
   }
   @media (min-width: 861px){
     .mobile-overlay, .mobile-drawer{display:none;}
@@ -409,7 +425,7 @@
 
 <header>
   <nav>
-    <div class="logo"><img src="/logo.jpg" alt="SeeGlance" class="mark-img">SeeGlance</div>
+    <div class="logo"><img src="/logo.jpeg" alt="SeeGlance" class="mark-img">SeeGlance</div>
     <div class="nav-links">
       <a href="#features" data-i18n="nav_features">Features</a>
       <a href="#compare" data-i18n="nav_why">Why SeeGlance</a>
@@ -642,6 +658,45 @@
     </div>
   </section>
 
+  <section id="jobs">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker" data-i18n="jobs_kicker">Built for your work</div>
+        <h2 data-i18n="jobs_h2">See exactly how SeeGlance fits your field.</h2>
+        <p class="section-sub" data-i18n="jobs_sub">Same core hub — proposals, contracts, invoices, client portal — with the details that matter for what you actually do.</p>
+      </div>
+      <div class="jobs-grid">
+        <a href="https://wireloom.vercel.app/for/photographers" class="job-card">
+          <span data-i18n="job_photographers">Photographers</span> →
+        </a>
+        <a href="https://wireloom.vercel.app/for/developers" class="job-card">
+          <span data-i18n="job_developers">Developers</span> →
+        </a>
+        <a href="https://wireloom.vercel.app/for/consultants" class="job-card">
+          <span data-i18n="job_consultants">Consultants</span> →
+        </a>
+        <a href="https://wireloom.vercel.app/for/virtual-assistants" class="job-card">
+          <span data-i18n="job_virtual_assistants">Virtual Assistants</span> →
+        </a>
+        <a href="https://wireloom.vercel.app/for/copywriters" class="job-card">
+          <span data-i18n="job_copywriters">Copywriters</span> →
+        </a>
+        <a href="https://wireloom.vercel.app/for/video-editors" class="job-card">
+          <span data-i18n="job_video_editors">Video Editors</span> →
+        </a>
+        <a href="https://wireloom.vercel.app/for/translators" class="job-card">
+          <span data-i18n="job_translators">Translators</span> →
+        </a>
+        <a href="https://wireloom.vercel.app/for/social-media-managers" class="job-card">
+          <span data-i18n="job_social_media_managers">Social Media Managers</span> →
+        </a>
+      </div>
+      <p class="jobs-compare-link">
+        <a href="https://wireloom.vercel.app/vs" data-i18n="jobs_compare_link">See how SeeGlance compares to HoneyBook and Dubsado →</a>
+      </p>
+    </div>
+  </section>
+
   <section id="guides">
     <div class="wrap">
       <div class="section-head">
@@ -708,7 +763,7 @@
 
 <footer>
   <div class="wrap footer-inner">
-    <div class="footer-logo"><img src="/logo.jpg" alt="SeeGlance" class="mark-img footer-mark-img">SeeGlance</div>
+    <div class="footer-logo"><img src="/logo.jpeg" alt="SeeGlance" class="mark-img footer-mark-img">SeeGlance</div>
     <p class="footer-note" data-i18n="footer_note">SeeGlance is currently in development. This page exists to validate the idea with real freelancers — thanks for taking a look. Working name; subject to change before launch.</p>
   </div>
 </footer>
@@ -833,7 +888,19 @@
     "guides_h2": "Practical answers, not just a pitch.",
     "guides_sub": "Real questions freelancers working with international clients actually search for.",
     "guide1_title": "How to get paid internationally without a US bank account",
-    "guide1_excerpt": "A comparison of Payoneer, Wise, Skrill, and crypto for freelancers working with clients abroad — no US bank account required."
+    "guide1_excerpt": "A comparison of Payoneer, Wise, Skrill, and crypto for freelancers working with clients abroad — no US bank account required.",
+    "jobs_kicker": "Built for your work",
+    "jobs_h2": "See exactly how SeeGlance fits your field.",
+    "jobs_sub": "Same core hub — proposals, contracts, invoices, client portal — with the details that matter for what you actually do.",
+    "job_photographers": "Photographers",
+    "job_developers": "Developers",
+    "job_consultants": "Consultants",
+    "job_virtual_assistants": "Virtual Assistants",
+    "job_copywriters": "Copywriters",
+    "job_video_editors": "Video Editors",
+    "job_translators": "Translators",
+    "job_social_media_managers": "Social Media Managers",
+    "jobs_compare_link": "See how SeeGlance compares to HoneyBook and Dubsado →"
   },
   "vi": {
     "page_title": "SeeGlance — Trung tâm quản lý khách hàng cho freelancer không biên giới",
@@ -952,7 +1019,19 @@
     "guides_h2": "Câu trả lời thực tế, không chỉ là quảng cáo.",
     "guides_sub": "Những câu hỏi thật mà freelancer làm việc với khách quốc tế hay tìm kiếm.",
     "guide1_title": "Cách nhận thanh toán quốc tế không cần tài khoản ngân hàng Mỹ",
-    "guide1_excerpt": "So sánh Payoneer, Wise, Skrill, và crypto cho freelancer làm việc với khách nước ngoài — không cần tài khoản ngân hàng Mỹ."
+    "guide1_excerpt": "So sánh Payoneer, Wise, Skrill, và crypto cho freelancer làm việc với khách nước ngoài — không cần tài khoản ngân hàng Mỹ.",
+    "jobs_kicker": "Xây dựng cho công việc của bạn",
+    "jobs_h2": "Xem chính xác SeeGlance phù hợp với nghề của bạn thế nào.",
+    "jobs_sub": "Cùng 1 hub cốt lõi — proposal, hợp đồng, invoice, cổng thông tin khách hàng — với chi tiết đúng cho đúng công việc bạn làm.",
+    "job_photographers": "Photographer",
+    "job_developers": "Developer",
+    "job_consultants": "Consultant",
+    "job_virtual_assistants": "Virtual Assistant",
+    "job_copywriters": "Copywriter",
+    "job_video_editors": "Video Editor",
+    "job_translators": "Biên/phiên dịch",
+    "job_social_media_managers": "Social Media Manager",
+    "jobs_compare_link": "Xem SeeGlance so với HoneyBook và Dubsado thế nào →"
   },
   "fr": {
     "page_title": "SeeGlance — Le hub client des freelances sans frontières",
@@ -1071,7 +1150,19 @@
     "guides_h2": "Des réponses concrètes, pas juste un argumentaire.",
     "guides_sub": "Des questions réelles que se posent les freelances travaillant avec des clients internationaux.",
     "guide1_title": "Comment être payé à l'international sans compte bancaire américain",
-    "guide1_excerpt": "Comparaison de Payoneer, Wise, Skrill et crypto pour les freelances travaillant avec des clients à l'étranger — sans compte bancaire américain."
+    "guide1_excerpt": "Comparaison de Payoneer, Wise, Skrill et crypto pour les freelances travaillant avec des clients à l'étranger — sans compte bancaire américain.",
+    "jobs_kicker": "Conçu pour votre métier",
+    "jobs_h2": "Découvrez exactement comment SeeGlance s'adapte à votre métier.",
+    "jobs_sub": "Le même hub central — propositions, contrats, factures, portail client — avec les détails qui comptent pour votre métier.",
+    "job_photographers": "Photographes",
+    "job_developers": "Développeurs",
+    "job_consultants": "Consultants",
+    "job_virtual_assistants": "Assistants virtuels",
+    "job_copywriters": "Rédacteurs",
+    "job_video_editors": "Monteurs vidéo",
+    "job_translators": "Traducteurs",
+    "job_social_media_managers": "Gestionnaires de réseaux sociaux",
+    "jobs_compare_link": "Voyez comment SeeGlance se compare à HoneyBook et Dubsado →"
   },
   "es": {
     "page_title": "SeeGlance — El hub de clientes para freelancers sin fronteras",
@@ -1190,7 +1281,19 @@
     "guides_h2": "Respuestas prácticas, no solo un discurso de venta.",
     "guides_sub": "Preguntas reales que buscan los freelancers que trabajan con clientes internacionales.",
     "guide1_title": "Cómo cobrar internacionalmente sin una cuenta bancaria en EE. UU.",
-    "guide1_excerpt": "Comparación de Payoneer, Wise, Skrill y cripto para freelancers que trabajan con clientes en el extranjero — sin cuenta bancaria en EE. UU."
+    "guide1_excerpt": "Comparación de Payoneer, Wise, Skrill y cripto para freelancers que trabajan con clientes en el extranjero — sin cuenta bancaria en EE. UU.",
+    "jobs_kicker": "Diseñado para tu trabajo",
+    "jobs_h2": "Descubre exactamente cómo SeeGlance se adapta a tu profesión.",
+    "jobs_sub": "El mismo hub central — propuestas, contratos, facturas, portal de cliente — con los detalles que importan para lo que realmente haces.",
+    "job_photographers": "Fotógrafos",
+    "job_developers": "Desarrolladores",
+    "job_consultants": "Consultores",
+    "job_virtual_assistants": "Asistentes virtuales",
+    "job_copywriters": "Redactores",
+    "job_video_editors": "Editores de video",
+    "job_translators": "Traductores",
+    "job_social_media_managers": "Gestores de redes sociales",
+    "jobs_compare_link": "Mira cómo se compara SeeGlance con HoneyBook y Dubsado →"
   },
   "zh": {
     "page_title": "SeeGlance — 无国界自由职业者的客户管理中心",
@@ -1309,7 +1412,19 @@
     "guides_h2": "实用的答案，而不只是推销话术。",
     "guides_sub": "与国际客户合作的自由职业者真正会搜索的问题。",
     "guide1_title": "如何在没有美国银行账户的情况下收取国际付款",
-    "guide1_excerpt": "为与海外客户合作的自由职业者比较 Payoneer、Wise、Skrill 和加密货币 —— 无需美国银行账户。"
+    "guide1_excerpt": "为与海外客户合作的自由职业者比较 Payoneer、Wise、Skrill 和加密货币 —— 无需美国银行账户。",
+    "jobs_kicker": "为你的工作而生",
+    "jobs_h2": "看看 SeeGlance 究竟如何契合你的行业。",
+    "jobs_sub": "同一个核心中心——提案、合同、发票、客户门户——加上真正贴合你实际工作的细节。",
+    "job_photographers": "摄影师",
+    "job_developers": "开发者",
+    "job_consultants": "顾问",
+    "job_virtual_assistants": "虚拟助理",
+    "job_copywriters": "文案撰稿人",
+    "job_video_editors": "视频剪辑师",
+    "job_translators": "翻译",
+    "job_social_media_managers": "社交媒体经理",
+    "jobs_compare_link": "看看 SeeGlance 与 HoneyBook 和 Dubsado 相比如何 →"
   },
   "hi": {
     "page_title": "SeeGlance — बिना सीमाओं वाले फ्रीलांसरों के लिए क्लाइंट हब",
@@ -1428,7 +1543,19 @@
     "guides_h2": "व्यावहारिक जवाब, सिर्फ पिच नहीं।",
     "guides_sub": "असली सवाल जो अंतरराष्ट्रीय क्लाइंट्स के साथ काम करने वाले फ्रीलांसर सच में सर्च करते हैं।",
     "guide1_title": "बिना अमेरिकी बैंक खाते के अंतरराष्ट्रीय भुगतान कैसे प्राप्त करें",
-    "guide1_excerpt": "विदेशी क्लाइंट्स के साथ काम करने वाले फ्रीलांसरों के लिए Payoneer, Wise, Skrill, और क्रिप्टो की तुलना — अमेरिकी बैंक खाते की ज़रूरत नहीं।"
+    "guide1_excerpt": "विदेशी क्लाइंट्स के साथ काम करने वाले फ्रीलांसरों के लिए Payoneer, Wise, Skrill, और क्रिप्टो की तुलना — अमेरिकी बैंक खाते की ज़रूरत नहीं।",
+    "jobs_kicker": "आपके काम के लिए बनाया गया",
+    "jobs_h2": "देखें कि SeeGlance ठीक कैसे आपके क्षेत्र के लिए फिट बैठता है।",
+    "jobs_sub": "वही मुख्य हब — प्रपोज़ल, कॉन्ट्रैक्ट, इनवॉइस, क्लाइंट पोर्टल — साथ ही वे डिटेल्स जो आपके असली काम के लिए मायने रखते हैं।",
+    "job_photographers": "फ़ोटोग्राफ़र",
+    "job_developers": "डेवलपर",
+    "job_consultants": "कंसल्टेंट",
+    "job_virtual_assistants": "वर्चुअल असिस्टेंट",
+    "job_copywriters": "कॉपीराइटर",
+    "job_video_editors": "वीडियो एडिटर",
+    "job_translators": "अनुवादक",
+    "job_social_media_managers": "सोशल मीडिया मैनेजर",
+    "jobs_compare_link": "देखें SeeGlance की तुलना HoneyBook और Dubsado से कैसे होती है →"
   },
   "pt": {
     "page_title": "SeeGlance — O hub de clientes para freelancers sem fronteiras",
@@ -1547,7 +1674,19 @@
     "guides_h2": "Respostas práticas, não apenas um discurso de vendas.",
     "guides_sub": "Perguntas reais que freelancers que trabalham com clientes internacionais realmente pesquisam.",
     "guide1_title": "Como receber pagamentos internacionais sem conta bancária nos EUA",
-    "guide1_excerpt": "Uma comparação entre Payoneer, Wise, Skrill e cripto para freelancers que trabalham com clientes no exterior — sem necessidade de conta bancária nos EUA."
+    "guide1_excerpt": "Uma comparação entre Payoneer, Wise, Skrill e cripto para freelancers que trabalham com clientes no exterior — sem necessidade de conta bancária nos EUA.",
+    "jobs_kicker": "Feito para o seu trabalho",
+    "jobs_h2": "Veja exatamente como o SeeGlance se encaixa na sua área.",
+    "jobs_sub": "O mesmo hub principal — propostas, contratos, faturas, portal do cliente — com os detalhes que importam para o que você realmente faz.",
+    "job_photographers": "Fotógrafos",
+    "job_developers": "Desenvolvedores",
+    "job_consultants": "Consultores",
+    "job_virtual_assistants": "Assistentes virtuais",
+    "job_copywriters": "Redatores",
+    "job_video_editors": "Editores de vídeo",
+    "job_translators": "Tradutores",
+    "job_social_media_managers": "Gestores de redes sociais",
+    "jobs_compare_link": "Veja como o SeeGlance se compara ao HoneyBook e Dubsado →"
   },
   "id": {
     "page_title": "SeeGlance — Hub klien untuk freelancer tanpa batas negara",
@@ -1666,7 +1805,19 @@
     "guides_h2": "Jawaban praktis, bukan cuma promosi.",
     "guides_sub": "Pertanyaan asli yang benar-benar dicari freelancer yang kerja dengan klien internasional.",
     "guide1_title": "Cara terima bayaran internasional tanpa rekening bank AS",
-    "guide1_excerpt": "Perbandingan Payoneer, Wise, Skrill, dan kripto untuk freelancer yang kerja dengan klien luar negeri — tanpa perlu rekening bank AS."
+    "guide1_excerpt": "Perbandingan Payoneer, Wise, Skrill, dan kripto untuk freelancer yang kerja dengan klien luar negeri — tanpa perlu rekening bank AS.",
+    "jobs_kicker": "Dibuat untuk pekerjaanmu",
+    "jobs_h2": "Lihat persis bagaimana SeeGlance cocok untuk bidang kamu.",
+    "jobs_sub": "Hub inti yang sama — proposal, kontrak, invoice, portal klien — dengan detail yang penting untuk pekerjaan kamu yang sebenarnya.",
+    "job_photographers": "Fotografer",
+    "job_developers": "Developer",
+    "job_consultants": "Konsultan",
+    "job_virtual_assistants": "Virtual Assistant",
+    "job_copywriters": "Copywriter",
+    "job_video_editors": "Video Editor",
+    "job_translators": "Penerjemah",
+    "job_social_media_managers": "Social Media Manager",
+    "jobs_compare_link": "Lihat perbandingan SeeGlance dengan HoneyBook dan Dubsado →"
   },
   "th": {
     "page_title": "SeeGlance — ศูนย์กลางจัดการลูกค้าสำหรับฟรีแลนซ์ไร้พรมแดน",
@@ -1785,7 +1936,19 @@
     "guides_h2": "คำตอบที่ใช้ได้จริง ไม่ใช่แค่คำโฆษณา",
     "guides_sub": "คำถามจริงที่ฟรีแลนซ์ที่ทำงานกับลูกค้าต่างประเทศค้นหาจริงๆ",
     "guide1_title": "วิธีรับเงินจากต่างประเทศโดยไม่ต้องมีบัญชีธนาคารสหรัฐฯ",
-    "guide1_excerpt": "เปรียบเทียบ Payoneer, Wise, Skrill และคริปโตสำหรับฟรีแลนซ์ที่ทำงานกับลูกค้าต่างประเทศ — ไม่ต้องมีบัญชีธนาคารสหรัฐฯ"
+    "guide1_excerpt": "เปรียบเทียบ Payoneer, Wise, Skrill และคริปโตสำหรับฟรีแลนซ์ที่ทำงานกับลูกค้าต่างประเทศ — ไม่ต้องมีบัญชีธนาคารสหรัฐฯ",
+    "jobs_kicker": "สร้างมาเพื่องานของคุณ",
+    "jobs_h2": "ดูว่า SeeGlance เหมาะกับสายงานของคุณอย่างไรบ้าง",
+    "jobs_sub": "ศูนย์กลางหลักเดียวกัน — ใบเสนอราคา สัญญา ใบแจ้งหนี้ พอร์ทัลลูกค้า — พร้อมรายละเอียดที่สำคัญกับงานจริงของคุณ",
+    "job_photographers": "ช่างภาพ",
+    "job_developers": "นักพัฒนา",
+    "job_consultants": "ที่ปรึกษา",
+    "job_virtual_assistants": "ผู้ช่วยเสมือน",
+    "job_copywriters": "ก็อปปี้ไรเตอร์",
+    "job_video_editors": "ตัดต่อวิดีโอ",
+    "job_translators": "นักแปล",
+    "job_social_media_managers": "ผู้จัดการโซเชียลมีเดีย",
+    "jobs_compare_link": "ดูว่า SeeGlance เทียบกับ HoneyBook และ Dubsado อย่างไร →"
   }
 };
 
