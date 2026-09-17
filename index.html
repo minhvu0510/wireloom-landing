@@ -305,10 +305,11 @@
   .faq-item[open]{border-color:var(--crimson-dim);}
 
   /* GUIDES */
+  .guides-list{display:flex;flex-direction:column;gap:14px;max-width:800px;}
   .guide-card{
     display:flex;align-items:center;justify-content:space-between;gap:24px;
     background:var(--card);border:1px solid var(--border);border-radius:12px;
-    padding:28px 30px;max-width:800px;
+    padding:28px 30px;
     transition:border-color .15s ease, transform .15s ease;
   }
   .guide-card:hover{border-color:var(--crimson-dim);transform:translateY(-2px);text-decoration:none;}
@@ -432,7 +433,7 @@
       <a href="#features" data-i18n="nav_features">Features</a>
       <a href="#compare" data-i18n="nav_why">Why SeeGlance</a>
       <a href="#faq" data-i18n="nav_faq">FAQ</a>
-      <a href="/guides/nhan-thanh-toan-quoc-te-khong-can-bank-my.html" data-i18n="nav_guides">Guides</a>
+      <a href="/guides/how-to-get-paid-internationally-without-us-bank-account.html" data-i18n="nav_guides">Guides</a>
     </div>
     <div class="nav-right">
       <div class="lang-switch">
@@ -463,7 +464,7 @@
   <a href="#features" data-i18n="nav_features">Features</a>
   <a href="#compare" data-i18n="nav_why">Why SeeGlance</a>
   <a href="#faq" data-i18n="nav_faq">FAQ</a>
-  <a href="/guides/nhan-thanh-toan-quoc-te-khong-can-bank-my.html" data-i18n="nav_guides">Guides</a>
+  <a href="/guides/how-to-get-paid-internationally-without-us-bank-account.html" data-i18n="nav_guides">Guides</a>
   <a href="https://wireloom.vercel.app/login" data-i18n="nav_login">Log in</a>
   <div class="mobile-lang">
     <select id="mobile-lang-select" aria-label="Language">
@@ -706,13 +707,22 @@
         <h2 data-i18n="guides_h2">Practical answers, not just a pitch.</h2>
         <p class="section-sub" data-i18n="guides_sub">Real questions freelancers working with international clients actually search for.</p>
       </div>
-      <a href="/guides/nhan-thanh-toan-quoc-te-khong-can-bank-my.html" class="guide-card">
-        <div>
-          <h3 data-i18n="guide1_title">How to get paid internationally without a US bank account</h3>
-          <p data-i18n="guide1_excerpt">A comparison of Payoneer, Wise, Skrill, and crypto for freelancers working with clients abroad — no US bank account required.</p>
-        </div>
-        <span class="guide-arrow">→</span>
-      </a>
+      <div class="guides-list">
+        <a href="/guides/how-to-get-paid-internationally-without-us-bank-account.html" class="guide-card">
+          <div>
+            <h3 data-i18n="guide1_title">How to get paid internationally without a US bank account</h3>
+            <p data-i18n="guide1_excerpt">A comparison of Payoneer, Wise, Skrill, and crypto for freelancers working with clients abroad — no US bank account required.</p>
+          </div>
+          <span class="guide-arrow">→</span>
+        </a>
+        <a href="/guides/from-full-time-to-freelance-first-90-days-after-layoff.html" class="guide-card">
+          <div>
+            <h3 data-i18n="guide2_title">From full-time to freelance: your first 90 days after a layoff</h3>
+            <p data-i18n="guide2_excerpt">A practical guide for recently laid-off professionals considering freelance work — pricing, first clients, and the mistakes most first-timers make.</p>
+          </div>
+          <span class="guide-arrow">→</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -902,7 +912,9 @@
     "job_video_editors": "Video Editors",
     "job_translators": "Translators",
     "job_social_media_managers": "Social Media Managers",
-    "jobs_compare_link": "See how SeeGlance compares to HoneyBook and Dubsado →"
+    "jobs_compare_link": "See how SeeGlance compares to HoneyBook and Dubsado →",
+    "guide2_title": "From full-time to freelance: your first 90 days after a layoff",
+    "guide2_excerpt": "A practical guide for recently laid-off professionals considering freelance work — pricing, first clients, and the mistakes most first-timers make."
   },
   "vi": {
     "page_title": "SeeGlance — Trung tâm quản lý khách hàng cho freelancer không biên giới",
@@ -1033,7 +1045,9 @@
     "job_video_editors": "Video Editor",
     "job_translators": "Biên/phiên dịch",
     "job_social_media_managers": "Social Media Manager",
-    "jobs_compare_link": "Xem SeeGlance so với HoneyBook và Dubsado thế nào →"
+    "jobs_compare_link": "Xem SeeGlance so với HoneyBook và Dubsado thế nào →",
+    "guide2_title": "Từ full-time thành freelancer: 90 ngày đầu sau khi mất việc",
+    "guide2_excerpt": "Hướng dẫn thực tế cho người vừa mất việc đang cân nhắc chuyển sang freelance — định giá, tìm khách đầu tiên, và các sai lầm người mới hay gặp."
   },
   "fr": {
     "page_title": "SeeGlance — Le hub client des freelances sans frontières",
@@ -1164,7 +1178,9 @@
     "job_video_editors": "Monteurs vidéo",
     "job_translators": "Traducteurs",
     "job_social_media_managers": "Gestionnaires de réseaux sociaux",
-    "jobs_compare_link": "Voyez comment SeeGlance se compare à HoneyBook et Dubsado →"
+    "jobs_compare_link": "Voyez comment SeeGlance se compare à HoneyBook et Dubsado →",
+    "guide2_title": "De salarié à freelance : vos 90 premiers jours après un licenciement",
+    "guide2_excerpt": "Un guide pratique pour les professionnels récemment licenciés qui envisagent le freelance — tarification, premiers clients, et erreurs les plus courantes."
   },
   "es": {
     "page_title": "SeeGlance — El hub de clientes para freelancers sin fronteras",
@@ -1295,7 +1311,9 @@
     "job_video_editors": "Editores de video",
     "job_translators": "Traductores",
     "job_social_media_managers": "Gestores de redes sociales",
-    "jobs_compare_link": "Mira cómo se compara SeeGlance con HoneyBook y Dubsado →"
+    "jobs_compare_link": "Mira cómo se compara SeeGlance con HoneyBook y Dubsado →",
+    "guide2_title": "De empleado a freelancer: tus primeros 90 días tras un despido",
+    "guide2_excerpt": "Una guía práctica para profesionales recientemente despedidos que consideran el trabajo freelance — precios, primeros clientes y errores comunes."
   },
   "zh": {
     "page_title": "SeeGlance — 无国界自由职业者的客户管理中心",
@@ -1426,7 +1444,9 @@
     "job_video_editors": "视频剪辑师",
     "job_translators": "翻译",
     "job_social_media_managers": "社交媒体经理",
-    "jobs_compare_link": "看看 SeeGlance 与 HoneyBook 和 Dubsado 相比如何 →"
+    "jobs_compare_link": "看看 SeeGlance 与 HoneyBook 和 Dubsado 相比如何 →",
+    "guide2_title": "从全职到自由职业：被裁员后的头90天",
+    "guide2_excerpt": "为刚被裁员、考虑转做自由职业的专业人士提供的实用指南——定价、首位客户，以及新手常犯的错误。"
   },
   "hi": {
     "page_title": "SeeGlance — बिना सीमाओं वाले फ्रीलांसरों के लिए क्लाइंट हब",
@@ -1557,7 +1577,9 @@
     "job_video_editors": "वीडियो एडिटर",
     "job_translators": "अनुवादक",
     "job_social_media_managers": "सोशल मीडिया मैनेजर",
-    "jobs_compare_link": "देखें SeeGlance की तुलना HoneyBook और Dubsado से कैसे होती है →"
+    "jobs_compare_link": "देखें SeeGlance की तुलना HoneyBook और Dubsado से कैसे होती है →",
+    "guide2_title": "फुल-टाइम से फ्रीलांस तक: छंटनी के बाद आपके पहले 90 दिन",
+    "guide2_excerpt": "हाल ही में नौकरी गँवा चुके पेशेवरों के लिए व्यावहारिक गाइड — प्राइसिंग, पहले क्लाइंट, और नए लोगों की आम गलतियाँ।"
   },
   "pt": {
     "page_title": "SeeGlance — O hub de clientes para freelancers sem fronteiras",
@@ -1688,7 +1710,9 @@
     "job_video_editors": "Editores de vídeo",
     "job_translators": "Tradutores",
     "job_social_media_managers": "Gestores de redes sociais",
-    "jobs_compare_link": "Veja como o SeeGlance se compara ao HoneyBook e Dubsado →"
+    "jobs_compare_link": "Veja como o SeeGlance se compara ao HoneyBook e Dubsado →",
+    "guide2_title": "De CLT a freelancer: seus primeiros 90 dias após uma demissão",
+    "guide2_excerpt": "Um guia prático para profissionais recém-demitidos que consideram o freelance — precificação, primeiros clientes e erros comuns."
   },
   "id": {
     "page_title": "SeeGlance — Hub klien untuk freelancer tanpa batas negara",
@@ -1819,7 +1843,9 @@
     "job_video_editors": "Video Editor",
     "job_translators": "Penerjemah",
     "job_social_media_managers": "Social Media Manager",
-    "jobs_compare_link": "Lihat perbandingan SeeGlance dengan HoneyBook dan Dubsado →"
+    "jobs_compare_link": "Lihat perbandingan SeeGlance dengan HoneyBook dan Dubsado →",
+    "guide2_title": "Dari Karyawan Tetap ke Freelancer: 90 Hari Pertama Setelah PHK",
+    "guide2_excerpt": "Panduan praktis untuk profesional yang baru kena PHK dan mempertimbangkan freelance — harga, klien pertama, dan kesalahan umum pemula."
   },
   "th": {
     "page_title": "SeeGlance — ศูนย์กลางจัดการลูกค้าสำหรับฟรีแลนซ์ไร้พรมแดน",
@@ -1950,7 +1976,9 @@
     "job_video_editors": "ตัดต่อวิดีโอ",
     "job_translators": "นักแปล",
     "job_social_media_managers": "ผู้จัดการโซเชียลมีเดีย",
-    "jobs_compare_link": "ดูว่า SeeGlance เทียบกับ HoneyBook และ Dubsado อย่างไร →"
+    "jobs_compare_link": "ดูว่า SeeGlance เทียบกับ HoneyBook และ Dubsado อย่างไร →",
+    "guide2_title": "จากพนักงานประจำสู่ฟรีแลนซ์: 90 วันแรกหลังถูกเลิกจ้าง",
+    "guide2_excerpt": "คู่มือปฏิบัติสำหรับมืออาชีพที่เพิ่งถูกเลิกจ้างและกำลังพิจารณาทำฟรีแลนซ์ — การตั้งราคา ลูกค้ารายแรก และข้อผิดพลาดที่มือใหม่มักทำ"
   }
 };
 
