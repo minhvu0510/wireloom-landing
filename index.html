@@ -799,6 +799,7 @@
 </footer>
 
 
+<script src="/config.js"></script>
 <script>
   const translations = {
   "en": {
@@ -2158,8 +2159,11 @@
   //
   // 2. Paste your project's URL and anon (public) key below.
   //    Find them in Supabase: Project Settings > API.
-  const SUPABASE_URL = 'https://YOUR-PROJECT-REF.supabase.co';
-  const SUPABASE_ANON_KEY = 'YOUR-ANON-PUBLIC-KEY';
+  // URL + key now live in a separate /config.js file (see README note), so
+  // replacing this index.html never wipes them out again.
+  const CFG = window.SEEGLANCE_CONFIG || {};
+  const SUPABASE_URL = CFG.supabaseUrl || '';
+  const SUPABASE_KEY = CFG.supabaseKey || '';
 
   const form = document.getElementById('access-form');
   const thankYou = document.getElementById('thank-you');
@@ -2181,18 +2185,32 @@
     };
 
     try {
+      if (!SUPABASE_URL || !SUPABASE_KEY || SUPABASE_URL.includes('YOUR-') || SUPABASE_KEY.includes('YOUR-')) {
+        throw new Error('Missing Supabase config: create /config.js with supabaseUrl and supabaseKey.');
+      }
+
+      const headers = {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_KEY,
+        'Prefer': 'return=minimal'
+      };
+      // Legacy anon keys are JWTs and can also go in Authorization. The newer
+      // sb_publishable_... keys are NOT JWTs and must be sent in `apikey` only,
+      // otherwise Supabase rejects the request with "Invalid JWT".
+      if (SUPABASE_KEY.startsWith('eyJ')) {
+        headers['Authorization'] = `Bearer ${SUPABASE_KEY}`;
+      }
+
       const res = await fetch(`${SUPABASE_URL}/rest/v1/early_access_signups`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'apikey': SUPABASE_ANON_KEY,
-          'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-          'Prefer': 'return=minimal'
-        },
+        headers: headers,
         body: JSON.stringify(payload)
       });
 
-      if (!res.ok) throw new Error(`Supabase insert failed: ${res.status}`);
+      if (!res.ok) {
+        const detail = await res.text().catch(() => '');
+        throw new Error(`Supabase insert failed: ${res.status} ${detail}`);
+      }
 
       form.style.display = 'none';
       thankYou.style.display = 'block';
