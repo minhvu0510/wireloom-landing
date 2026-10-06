@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing | SeeGlance</title>
+<meta name="description" content="Simple pricing for SeeGlance: a free plan for running your client work and a $9/month Pro plan with AI tools.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://seeglance.com/pricing/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0b; --bg-alt:#111113; --card:#151518;
+    --border:#242428; --border-soft:#1c1c20;
+    --crimson:#dc143c; --crimson-dim:#8f0e28;
+    --text:#f2f2f3; --text-dim:#9a9aa2; --text-faint:#5f5f68;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.7;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+  .wrap.wide{max-width:920px;}
+  a{color:var(--crimson);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  header{border-bottom:1px solid var(--border-soft);padding:16px 0;}
+  .header-inner{max-width:920px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+  .logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;color:#fff;}
+  .logo:hover{color:#fff;text-decoration:none;}
+  .mark-img{width:26px;height:26px;border-radius:6px;object-fit:contain;flex-shrink:0;background:#c82b24;}
+  .hnav{display:flex;align-items:center;gap:18px;font-size:13.5px;font-weight:600;flex-wrap:wrap;}
+  .hnav a{color:var(--text-dim);}
+  .hnav a:hover{color:#fff;text-decoration:none;}
+  .hnav a.cta{background:var(--crimson);color:#fff;padding:8px 14px;border-radius:6px;}
+  main{padding:56px 0 72px;}
+  h1{font-size:34px;font-weight:800;letter-spacing:-0.02em;line-height:1.25;color:#fff;margin-bottom:10px;}
+  .updated{font-size:13.5px;color:var(--text-faint);margin-bottom:34px;}
+  .lead{font-size:17px;color:var(--text-dim);max-width:640px;margin-bottom:8px;}
+  h2{font-size:20px;font-weight:700;color:#fff;margin:36px 0 12px;letter-spacing:-0.01em;}
+  h3{font-size:16px;font-weight:700;color:#fff;margin:22px 0 8px;}
+  p{font-size:15.5px;color:var(--text-dim);margin-bottom:14px;}
+  ul{margin:0 0 14px 20px;color:var(--text-dim);font-size:15.5px;}
+  li{margin-bottom:7px;}
+  strong{color:var(--text);}
+  .notice{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--crimson);border-radius:8px;padding:16px 18px;margin:18px 0;font-size:14.5px;color:var(--text-dim);}
+  .notice p{font-size:14.5px;margin-bottom:0;}
+  table{width:100%;border-collapse:collapse;margin:16px 0 22px;font-size:14px;}
+  th{text-align:left;padding:10px 12px;background:var(--bg-alt);color:var(--text-dim);font-size:12px;text-transform:uppercase;letter-spacing:0.03em;border-bottom:1px solid var(--border);}
+  td{padding:10px 12px;border-bottom:1px solid var(--border-soft);color:var(--text-dim);vertical-align:top;}
+  td:first-child{color:#fff;font-weight:600;white-space:nowrap;}
+  .plans{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:32px 0 20px;}
+  .plan{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;display:flex;flex-direction:column;}
+  .plan.pro{border-color:var(--crimson-dim);}
+  .plan h2{margin:0 0 4px;font-size:18px;}
+  .plan .tag{font-size:13px;color:var(--text-dim);}
+  .price{font-size:40px;font-weight:800;color:#fff;margin:14px 0 2px;letter-spacing:-0.02em;}
+  .price small{font-size:14px;font-weight:500;color:var(--text-dim);letter-spacing:0;}
+  .plan ul{list-style:none;margin:18px 0 24px;padding:0;flex:1;}
+  .plan li{padding-left:24px;position:relative;font-size:14.5px;}
+  .plan li::before{content:"\2713";position:absolute;left:0;color:var(--crimson);font-weight:700;}
+  .plan .sub{font-size:12.5px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--text-faint);margin:2px 0 -8px;}
+  .btn{display:block;text-align:center;padding:12px 18px;border-radius:7px;font-weight:700;font-size:14.5px;}
+  .btn:hover{text-decoration:none;}
+  .btn.primary{background:var(--crimson);color:#fff;}
+  .btn.primary:hover{background:#c01133;}
+  .btn.ghost{border:1px solid var(--border);color:#fff;}
+  .btn.ghost:hover{border-color:var(--text-faint);}
+  footer{border-top:1px solid var(--border-soft);padding:30px 0 40px;}
+  .flinks{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13.5px;margin-bottom:14px;}
+  .flinks a{color:var(--text-dim);}
+  .flinks a:hover{color:#fff;text-decoration:none;}
+  .paddle-note{font-size:12.5px;color:var(--text-faint);max-width:640px;margin-bottom:8px;}
+  .copy{font-size:12.5px;color:var(--text-faint);margin:0;}
+  @media (max-width:700px){
+    h1{font-size:26px;}
+    main{padding:38px 0 56px;}
+    .plans{grid-template-columns:1fr;}
+    td:first-child{white-space:normal;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo"><img src="/logo.jpeg" alt="SeeGlance" class="mark-img">SeeGlance</a>
+    <nav class="hnav">
+      <a href="/pricing/">Pricing</a>
+      <a href="/terms/">Terms</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/refund/">Refunds</a>
+      <a href="https://app.seeglance.com/signup" class="cta">Get started free</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap wide">
+
+    <h1>Simple pricing</h1>
+    <p class="lead">Start free. Upgrade to Pro when you want the AI tools. No US bank account needed for either plan.</p>
+
+    <div class="plans">
+      <div class="plan">
+        <h2>Free</h2>
+        <div class="tag">For running your client work</div>
+        <div class="price">$0<small> / month</small></div>
+        <ul>
+          <li>Clients, deals, proposals, e-signed contracts and invoices</li>
+          <li>Client portal with file sharing</li>
+          <li>Invoice payment links for Payoneer, Wise, Skrill or crypto</li>
+          <li>Automatic reminders for overdue invoices</li>
+          <li>Rate calculator for first-time freelancers</li>
+          <li>Warm-contact stage in your deal pipeline</li>
+          <li>Invoice data export for MISA, Viettel and VNPT</li>
+          <li>Exchange-rate insight on your invoices</li>
+        </ul>
+        <a class="btn ghost" href="https://app.seeglance.com/signup">Get started free</a>
+      </div>
+
+      <div class="plan pro">
+        <h2>Pro</h2>
+        <div class="tag">For winning the next client faster</div>
+        <div class="price">$9<small> / month</small></div>
+        <p class="sub">Everything in Free, plus</p>
+        <ul>
+          <li>AI case studies generated from your completed deals (published only with client consent)</li>
+          <li>AI proposal translation (Vietnamese &harr; English) with plain-language risk flags</li>
+          <li>Tax treaty assistant: a plain-language overview of the treaty between your country and your client's</li>
+          <li>Fair-use limit of 50 AI actions per rolling 30 days</li>
+        </ul>
+        <a class="btn primary" href="https://app.seeglance.com/signup">Start free, upgrade anytime</a>
+      </div>
+    </div>
+
+    <p>Prices are in US dollars. Pro is billed monthly and renews until you cancel. Applicable taxes (such as VAT or GST) may be added at checkout. Early-access sign-ups get founding-member pricing locked in. See our <a href="/refund/">Refund Policy</a> and <a href="/terms/">Terms of Service</a>.</p>
+
+    <h2>Questions</h2>
+    <h3>Do you take a cut of what my clients pay me?</h3>
+    <p>No. SeeGlance never holds or processes payments between you and your clients. Your invoice links point to your own Payoneer, Wise, Skrill or crypto account. The only money we handle is the Pro subscription.</p>
+    <h3>Who processes the Pro subscription payment?</h3>
+    <p>Paddle.com is our Merchant of Record. Paddle takes the payment, handles sales tax and sends your receipt. Cards and other payment methods available in your region are shown at checkout.</p>
+    <h3>Can I cancel anytime?</h3>
+    <p>Yes. Email <a href="mailto:support@seeglance.com">support@seeglance.com</a> and we will cancel it. You keep Pro until the end of the period you've paid for. Any charge can be refunded within 30 days, see the <a href="/refund/">Refund Policy</a>.</p>
+    <h3>Do I need a US bank account?</h3>
+    <p>No. That is the point of SeeGlance. You choose how you get paid, and we link to it.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap wide">
+    <nav class="flinks">
+      <a href="/pricing/">Pricing</a>
+      <a href="/terms/">Terms of Service</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/refund/">Refund Policy</a>
+      <a href="mailto:support@seeglance.com">support@seeglance.com</a>
+    </nav>
+    <p class="paddle-note">Our order process is conducted by our online reseller Paddle.com. Paddle.com is the Merchant of Record for all our orders. Paddle handles billing inquiries and refunds for these orders.</p>
+    <p class="copy">&copy; 2026 SeeGlance. Built for freelancers with international clients.</p>
+  </div>
+</footer>
+
+</body>
+</html>
