@@ -145,6 +145,13 @@
   }
   .btn-primary:hover{background:#c01133;box-shadow:0 0 0 4px rgba(220,20,60,0.15);}
   .hero-meta{font-size:13.5px;color:var(--text-faint);}
+  .hero-pills{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:22px;}
+  .pills-label{font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--text-faint);margin-right:4px;}
+  .hero-pill{
+    font-size:12.5px;font-weight:600;color:var(--text-dim);
+    background:var(--card);border:1px solid var(--border);border-radius:99px;
+    padding:6px 12px;white-space:nowrap;
+  }
   .hero-meta strong{color:var(--text-dim);font-weight:600;}
 
   .hero-strip{
@@ -486,17 +493,27 @@
   <section class="hero" style="border-bottom:1px solid var(--border-soft);">
     <div class="wrap">
       <div class="eyebrow" data-i18n="hero_eyebrow">For freelancers with international clients</div>
-      <h1 data-i18n-html="hero_h1">Every finished project should sell the next one.<br>SeeGlance turns your work history with clients into <span class="accent">proof.</span></h1>
-      <p class="hero-sub" data-i18n="hero_sub">Proposals, contracts, invoices, and a client portal — plus a verified track record badge built from your real payment history, not self-reported claims. Affordably priced for freelancers. Get paid through Payoneer, Wise, or crypto — no US bank account required.</p>
+      <h1 data-i18n-html="hero_h1">Every client. Every deal. Every payment.<br><span class="accent">At a glance.</span></h1>
+      <p class="hero-sub" data-i18n="hero_sub">Proposals, e-signed contracts, invoices with Payoneer, Wise, Skrill or crypto payment links, and a client portal — plus a verified reputation badge, auto case studies, a rate calculator, and a tax-treaty assistant. No US bank account required.</p>
       <div class="hero-actions">
         <a href="#early-access" class="btn-primary" data-i18n="hero_cta">Get Early Access →</a>
-        <div class="hero-meta" data-i18n-html="hero_meta"><strong>$12–15/mo</strong> · No credit card required · Founding-member pricing for early sign-ups</div>
+        <div class="hero-meta" data-i18n-html="hero_meta"><strong>$9/mo</strong> · No credit card required · Founding-member pricing for early sign-ups</div>
       </div>
 
       <div class="hero-strip">
         <div><strong data-i18n="strip1_title">Proposal → Contract</strong><span data-i18n="strip1_text">Send a proposal, get it e-signed, and it becomes a binding contract automatically.</span></div>
         <div><strong data-i18n="strip2_title">Invoice → Payment link</strong><span data-i18n="strip2_text">Every invoice links straight to your Payoneer, Wise, or crypto payout — no bank lock-in.</span></div>
         <div><strong data-i18n="strip3_title">Client Portal</strong><span data-i18n="strip3_text">Your client sees status, files, and invoices in one branded page — not five email threads.</span></div>
+      </div>
+
+      <div class="hero-pills">
+        <span class="pills-label" data-i18n="pills_label">Also included</span>
+        <span class="hero-pill" data-i18n="pill_rate">Rate Calculator</span>
+        <span class="hero-pill" data-i18n="pill_warm">Warm Contacts</span>
+        <span class="hero-pill" data-i18n="pill_tax">Tax Treaty Assistant</span>
+        <span class="hero-pill" data-i18n="pill_fx">FX Rate Insight</span>
+        <span class="hero-pill" data-i18n="pill_einvoice">MISA/Viettel/VNPT Export</span>
+        <span class="hero-pill" data-i18n="pill_review">AI Proposal Review</span>
       </div>
     </div>
   </section>
@@ -505,7 +522,7 @@
     <div class="wrap">
       <div class="section-head">
         <div class="kicker" data-i18n="features_kicker">What you get</div>
-        <h2 data-i18n="features_h2">Three tools. One hub. No spreadsheet gymnastics.</h2>
+        <h2 data-i18n="features_h2">From proposal to payment. One hub. No spreadsheet gymnastics.</h2>
         <p class="section-sub" data-i18n="features_sub">Everything you need to look professional to a client abroad — without stitching together a Google Doc, a PayPal.me link, and a WhatsApp thread.</p>
       </div>
       <div class="features">
@@ -608,7 +625,7 @@
           <tbody>
             <tr>
               <td data-i18n="row_price">Starting price</td>
-              <td class="wireloom-cell">$12–15/mo</td>
+              <td class="wireloom-cell">$9/mo</td>
               <td>$29–82/mo</td>
               <td>$20–40/mo</td>
             </tr>
@@ -669,7 +686,7 @@
         </details>
         <details class="faq-item">
           <summary data-i18n="faq5_q">What will it cost?</summary>
-          <div class="faq-answer" data-i18n="faq5_a">We're targeting $12–15/month, with founding-member pricing locked in for early sign-ups before public launch. Final pricing isn't set in stone yet — early access members get a say in that.</div>
+          <div class="faq-answer" data-i18n="faq5_a">Pro is $9/month, with founding-member pricing locked in for early sign-ups. The core hub — proposals, contracts, invoices, and the client portal — also has a free tier. Early access members get a say in what we build next.</div>
         </details>
         <details class="faq-item">
           <summary data-i18n="faq6_q">When can I actually use it?</summary>
@@ -809,10 +826,10 @@
     "nav_faq": "FAQ",
     "nav_cta": "Get Early Access",
     "hero_eyebrow": "For freelancers with international clients",
-    "hero_h1": "Every finished project should sell the next one.<br>SeeGlance turns your work history with clients into <span class=\"accent\">proof.</span>",
-    "hero_sub": "Proposals, contracts, invoices, and a client portal — plus a verified track record badge built from your real payment history, not self-reported claims. Affordably priced for freelancers. Get paid through Payoneer, Wise, or crypto — no US bank account required.",
+    "hero_h1": "Every client. Every deal. Every payment.<br><span class=\"accent\">At a glance.</span>",
+    "hero_sub": "Proposals, e-signed contracts, invoices with Payoneer, Wise, Skrill or crypto payment links, and a client portal — plus a verified reputation badge, auto case studies, a rate calculator, and a tax-treaty assistant. No US bank account required.",
     "hero_cta": "Get Early Access →",
-    "hero_meta": "<strong>$12–15/mo</strong> · No credit card required · Founding-member pricing for early sign-ups",
+    "hero_meta": "<strong>$9/mo</strong> · No credit card required · Founding-member pricing for early sign-ups",
     "strip1_title": "Proposal → Contract",
     "strip1_text": "Send a proposal, get it e-signed, and it becomes a binding contract automatically.",
     "strip2_title": "Invoice → Payment link",
@@ -820,7 +837,7 @@
     "strip3_title": "Client Portal",
     "strip3_text": "Your client sees status, files, and invoices in one branded page — not five email threads.",
     "features_kicker": "What you get",
-    "features_h2": "Three tools. One hub. No spreadsheet gymnastics.",
+    "features_h2": "From proposal to payment. One hub. No spreadsheet gymnastics.",
     "features_sub": "Everything you need to look professional to a client abroad — without stitching together a Google Doc, a PayPal.me link, and a WhatsApp thread.",
     "feature1_title": "Proposal & Contract",
     "feature1_text": "Send a branded proposal in minutes, let the client e-sign it, and it converts straight into a contract — with timestamps and an audit trail. No more chasing signed PDFs over email.",
@@ -872,7 +889,7 @@
     "faq4_q": "What about taxes — does SeeGlance help with that?",
     "faq4_a": "SeeGlance isn't a tax tool and won't file anything for you. What it does do: every invoice keeps a clean, exportable record of what was billed and paid, so you're not reconstructing income from bank statements and chat threads when it's time to declare.",
     "faq5_q": "What will it cost?",
-    "faq5_a": "We're targeting $12–15/month, with founding-member pricing locked in for early sign-ups before public launch. Final pricing isn't set in stone yet — early access members get a say in that.",
+    "faq5_a": "Pro is $9/month, with founding-member pricing locked in for early sign-ups. The core hub — proposals, contracts, invoices, and the client portal — also has a free tier. Early access members get a say in what we build next.",
     "faq6_q": "When can I actually use it?",
     "faq6_a": "SeeGlance is in early validation — this page exists to gauge real interest before we build. Join early access and we'll email you as soon as there's something to try, with founding-member pricing.",
     "cta_kicker": "Early access",
@@ -940,7 +957,14 @@
     "feature8_text": "A pipeline stage before \"Lead\" — track outreach to former coworkers, past vendors, and industry contacts before they become an actual deal. Warm outreach lands first clients faster than cold platform bidding.",
     "tag_free": "Free",
     "tag_firsttimer": "Built for first-timers",
-    "tag_pipeline": "Pipeline stage"
+    "tag_pipeline": "Pipeline stage",
+    "pills_label": "Also included",
+    "pill_rate": "Rate Calculator",
+    "pill_warm": "Warm Contacts",
+    "pill_tax": "Tax Treaty Assistant",
+    "pill_fx": "FX Rate Insight",
+    "pill_einvoice": "MISA/Viettel/VNPT Export",
+    "pill_review": "AI Proposal Review"
   },
   "vi": {
     "page_title": "SeeGlance — Trung tâm quản lý khách hàng cho freelancer không biên giới",
@@ -949,10 +973,10 @@
     "nav_faq": "Câu hỏi thường gặp",
     "nav_cta": "Đăng ký dùng thử sớm",
     "hero_eyebrow": "Dành cho freelancer làm việc với khách hàng quốc tế",
-    "hero_h1": "Mỗi dự án đã hoàn thành nên giúp bạn chốt dự án tiếp theo.<br>SeeGlance biến lịch sử làm việc với khách hàng của bạn thành <span class=\"accent\">bằng chứng.</span>",
-    "hero_sub": "Proposal, hợp đồng, hoá đơn, cổng thông tin khách hàng — cộng thêm badge uy tín đã xác thực dựng từ lịch sử thanh toán thật, không phải tự khai báo. Giá hợp lý cho freelancer. Nhận thanh toán qua Payoneer, Wise, hoặc crypto — không cần tài khoản ngân hàng Mỹ.",
+    "hero_h1": "Mọi khách hàng. Mọi deal. Mọi khoản thanh toán.<br><span class=\"accent\">Nhìn là thấy.</span>",
+    "hero_sub": "Proposal, hợp đồng ký điện tử, invoice kèm link thanh toán Payoneer, Wise, Skrill hoặc crypto, và cổng thông tin khách hàng — cộng thêm badge uy tín đã xác thực, case study tự động, công cụ tính giá và trợ lý hiệp định thuế. Không cần tài khoản ngân hàng Mỹ.",
     "hero_cta": "Đăng ký dùng thử sớm →",
-    "hero_meta": "<strong>$12–15/tháng</strong> · Không cần thẻ tín dụng · Giá ưu đãi thành viên sáng lập cho người đăng ký sớm",
+    "hero_meta": "<strong>$9/tháng</strong> · Không cần thẻ tín dụng · Giá ưu đãi thành viên sáng lập cho người đăng ký sớm",
     "strip1_title": "Proposal → Hợp đồng",
     "strip1_text": "Gửi proposal, để khách ký điện tử, và nó tự động trở thành hợp đồng ràng buộc.",
     "strip2_title": "Hoá đơn → Link thanh toán",
@@ -960,7 +984,7 @@
     "strip3_title": "Cổng thông tin khách hàng",
     "strip3_text": "Khách hàng xem tiến độ, file, và hoá đơn trên 1 trang mang thương hiệu của bạn — không phải 5 luồng email.",
     "features_kicker": "Bạn nhận được gì",
-    "features_h2": "3 công cụ. 1 nơi duy nhất. Không cần vật lộn với spreadsheet.",
+    "features_h2": "Từ proposal đến thanh toán. 1 nơi duy nhất. Không cần vật lộn với spreadsheet.",
     "features_sub": "Mọi thứ bạn cần để trông chuyên nghiệp trước khách hàng nước ngoài — không cần chắp vá Google Doc, link PayPal.me, và tin nhắn WhatsApp.",
     "feature1_title": "Proposal & Hợp đồng",
     "feature1_text": "Gửi proposal mang thương hiệu chỉ trong vài phút, để khách ký điện tử, và nó chuyển thẳng thành hợp đồng — có dấu thời gian và lịch sử theo dõi. Không còn phải đòi PDF đã ký qua email.",
@@ -1012,7 +1036,7 @@
     "faq4_q": "Còn về thuế — SeeGlance có hỗ trợ không?",
     "faq4_a": "SeeGlance không phải công cụ thuế và không khai thuế thay bạn. Nhưng nó làm được: mọi hoá đơn đều lưu lại 1 bản ghi rõ ràng, xuất được, về những gì đã lập hoá đơn và đã thanh toán — để bạn không phải dựng lại thu nhập từ sao kê ngân hàng và tin nhắn khi tới lúc kê khai.",
     "faq5_q": "Giá bao nhiêu?",
-    "faq5_a": "Chúng tôi đang nhắm mức $12–15/tháng, với giá thành viên sáng lập khoá cố định cho người đăng ký sớm trước khi ra mắt công khai. Giá cuối cùng chưa chốt hẳn — thành viên early access sẽ có tiếng nói trong việc này.",
+    "faq5_a": "Pro là $9/tháng, với giá thành viên sáng lập được khoá cố định cho người đăng ký sớm. Phần cốt lõi — proposal, hợp đồng, invoice và cổng thông tin khách hàng — còn có gói miễn phí. Thành viên early access sẽ có tiếng nói trong việc chúng tôi xây gì tiếp theo.",
     "faq6_q": "Khi nào tôi dùng được thật?",
     "faq6_a": "SeeGlance đang trong giai đoạn kiểm chứng ban đầu — trang này tồn tại để đo mức độ quan tâm thật trước khi chúng tôi xây dựng. Đăng ký early access và chúng tôi sẽ gửi email ngay khi có bản để dùng thử, cùng giá thành viên sáng lập.",
     "cta_kicker": "Truy cập sớm",
@@ -1080,7 +1104,14 @@
     "feature8_text": "1 giai đoạn trong pipeline trước \"Lead\" — theo dõi outreach tới đồng nghiệp cũ, đối tác cũ, và liên hệ trong ngành trước khi họ trở thành deal thật. Outreach tới người quen mang lại khách hàng đầu tiên nhanh hơn nhiều so với apply job trên platform.",
     "tag_free": "Miễn phí",
     "tag_firsttimer": "Dành cho người mới",
-    "tag_pipeline": "Giai đoạn pipeline"
+    "tag_pipeline": "Giai đoạn pipeline",
+    "pills_label": "Có sẵn thêm",
+    "pill_rate": "Tính giá freelance",
+    "pill_warm": "Khách hàng quen tiềm năng",
+    "pill_tax": "Trợ lý hiệp định thuế",
+    "pill_fx": "Gợi ý tỷ giá",
+    "pill_einvoice": "Xuất MISA/Viettel/VNPT",
+    "pill_review": "Review proposal bằng AI"
   },
   "fr": {
     "page_title": "SeeGlance — Le hub client des freelances sans frontières",
@@ -1089,10 +1120,10 @@
     "nav_faq": "FAQ",
     "nav_cta": "Accès anticipé",
     "hero_eyebrow": "Pour les freelances avec des clients internationaux",
-    "hero_h1": "Chaque projet terminé devrait vous en apporter un autre.<br>SeeGlance transforme votre historique de collaboration avec vos clients en <span class=\"accent\">preuve.</span>",
-    "hero_sub": "Propositions, contrats, factures et portail client — plus un badge de réputation vérifié basé sur votre véritable historique de paiements, pas de déclarations non vérifiées. Un prix accessible pour les freelances. Soyez payé via Payoneer, Wise ou en crypto — sans compte bancaire américain requis.",
+    "hero_h1": "Chaque client. Chaque affaire. Chaque paiement.<br><span class=\"accent\">D'un coup d'œil.</span>",
+    "hero_sub": "Propositions, contrats signés électroniquement, factures avec liens de paiement Payoneer, Wise, Skrill ou crypto, et portail client — plus un badge de réputation vérifié, des études de cas automatiques, un calculateur de tarif et un assistant de conventions fiscales. Aucun compte bancaire américain requis.",
     "hero_cta": "Accès anticipé →",
-    "hero_meta": "<strong>12 à 15 $/mois</strong> · Aucune carte bancaire requise · Tarif membre fondateur pour les premiers inscrits",
+    "hero_meta": "<strong>9 $/mois</strong> · Aucune carte bancaire requise · Tarif membre fondateur pour les premiers inscrits",
     "strip1_title": "Proposition → Contrat",
     "strip1_text": "Envoyez une proposition, faites-la signer électroniquement, et elle devient automatiquement un contrat valide.",
     "strip2_title": "Facture → Lien de paiement",
@@ -1100,7 +1131,7 @@
     "strip3_title": "Portail client",
     "strip3_text": "Votre client voit l'avancement, les fichiers et les factures sur une seule page à votre image — pas cinq fils d'e-mails.",
     "features_kicker": "Ce que vous obtenez",
-    "features_h2": "Trois outils. Un seul hub. Fini les acrobaties Excel.",
+    "features_h2": "De la proposition au paiement. Un seul hub. Fini les acrobaties Excel.",
     "features_sub": "Tout ce qu'il faut pour paraître professionnel auprès d'un client à l'étranger — sans jongler entre un Google Doc, un lien PayPal.me et un fil WhatsApp.",
     "feature1_title": "Proposition et contrat",
     "feature1_text": "Envoyez une proposition personnalisée en quelques minutes, faites-la signer par le client, et elle se transforme directement en contrat — avec horodatage et historique. Fini la chasse aux PDF signés par e-mail.",
@@ -1152,7 +1183,7 @@
     "faq4_q": "Et les impôts — SeeGlance aide-t-il pour ça ?",
     "faq4_a": "SeeGlance n'est pas un outil fiscal et ne déclarera rien à votre place. Ce qu'il fait : chaque facture conserve un historique clair et exportable de ce qui a été facturé et payé, pour que vous n'ayez pas à reconstituer vos revenus à partir de relevés bancaires et de fils de discussion au moment de déclarer.",
     "faq5_q": "Combien ça coûtera ?",
-    "faq5_a": "Nous visons 12 à 15 $/mois, avec un tarif membre fondateur verrouillé pour les premiers inscrits avant le lancement public. Le prix final n'est pas encore gravé dans le marbre — les membres en accès anticipé auront leur mot à dire.",
+    "faq5_a": "Pro coûte 9 $/mois, avec un tarif membre fondateur verrouillé pour les premiers inscrits. Le cœur de l'outil — propositions, contrats, factures et portail client — dispose aussi d'une offre gratuite. Les membres en accès anticipé auront leur mot à dire sur la suite.",
     "faq6_q": "Quand pourrai-je réellement l'utiliser ?",
     "faq6_a": "SeeGlance en est encore à la phase de validation — cette page existe pour évaluer l'intérêt réel avant que nous développions le produit. Inscrivez-vous en accès anticipé et nous vous enverrons un e-mail dès qu'il y aura quelque chose à essayer, avec le tarif membre fondateur.",
     "cta_kicker": "Accès anticipé",
@@ -1220,7 +1251,14 @@
     "feature8_text": "Une étape du pipeline avant « Lead » — suivez la prospection auprès d'anciens collègues, prestataires et contacts du secteur avant qu'ils ne deviennent un vrai contrat. La prospection auprès de son réseau permet de décrocher les premiers clients plus vite que la prospection à froid sur une plateforme.",
     "tag_free": "Gratuit",
     "tag_firsttimer": "Pensé pour les débutants",
-    "tag_pipeline": "Étape du pipeline"
+    "tag_pipeline": "Étape du pipeline",
+    "pills_label": "Aussi inclus",
+    "pill_rate": "Calculateur de tarif",
+    "pill_warm": "Contacts chauds",
+    "pill_tax": "Assistant conventions fiscales",
+    "pill_fx": "Suivi des taux de change",
+    "pill_einvoice": "Export MISA/Viettel/VNPT",
+    "pill_review": "Revue IA des propositions"
   },
   "es": {
     "page_title": "SeeGlance — El hub de clientes para freelancers sin fronteras",
@@ -1229,10 +1267,10 @@
     "nav_faq": "Preguntas frecuentes",
     "nav_cta": "Acceso anticipado",
     "hero_eyebrow": "Para freelancers con clientes internacionales",
-    "hero_h1": "Cada proyecto terminado debería venderte el siguiente.<br>SeeGlance convierte tu historial de trabajo con clientes en <span class=\"accent\">prueba.</span>",
-    "hero_sub": "Propuestas, contratos, facturas y un portal de cliente — más una insignia de reputación verificada creada a partir de tu historial real de pagos, no de afirmaciones autodeclaradas. Precio accesible para freelancers. Cobra a través de Payoneer, Wise o cripto — sin necesidad de cuenta bancaria en EE. UU.",
+    "hero_h1": "Cada cliente. Cada trato. Cada pago.<br><span class=\"accent\">De un vistazo.</span>",
+    "hero_sub": "Propuestas, contratos con firma electrónica, facturas con enlaces de pago de Payoneer, Wise, Skrill o cripto, y un portal de cliente — además de una insignia de reputación verificada, casos de estudio automáticos, una calculadora de tarifas y un asistente de tratados fiscales. Sin necesidad de cuenta bancaria en EE. UU.",
     "hero_cta": "Acceso anticipado →",
-    "hero_meta": "<strong>$12–15/mes</strong> · No se requiere tarjeta de crédito · Precio de miembro fundador para quienes se registren pronto",
+    "hero_meta": "<strong>$9/mes</strong> · No se requiere tarjeta de crédito · Precio de miembro fundador para quienes se registren pronto",
     "strip1_title": "Propuesta → Contrato",
     "strip1_text": "Envía una propuesta, hazla firmar electrónicamente y se convierte automáticamente en un contrato vinculante.",
     "strip2_title": "Factura → Enlace de pago",
@@ -1240,7 +1278,7 @@
     "strip3_title": "Portal del cliente",
     "strip3_text": "Tu cliente ve el estado, los archivos y las facturas en una sola página con tu marca — no en cinco hilos de correo.",
     "features_kicker": "Qué obtienes",
-    "features_h2": "Tres herramientas. Un solo hub. Sin malabares con hojas de cálculo.",
+    "features_h2": "De la propuesta al pago. Un solo hub. Sin malabares con hojas de cálculo.",
     "features_sub": "Todo lo que necesitas para verte profesional ante un cliente en el extranjero — sin combinar un Google Doc, un enlace de PayPal.me y un chat de WhatsApp.",
     "feature1_title": "Propuesta y contrato",
     "feature1_text": "Envía una propuesta con tu marca en minutos, deja que el cliente la firme electrónicamente y se convierte directamente en un contrato — con marca de tiempo e historial de auditoría. Se acabó perseguir PDFs firmados por correo.",
@@ -1292,7 +1330,7 @@
     "faq4_q": "¿Y los impuestos? ¿SeeGlance ayuda con eso?",
     "faq4_a": "SeeGlance no es una herramienta fiscal y no presentará nada por ti. Lo que sí hace: cada factura mantiene un registro claro y exportable de lo facturado y pagado, para que no tengas que reconstruir tus ingresos a partir de extractos bancarios y chats a la hora de declarar.",
     "faq5_q": "¿Cuánto costará?",
-    "faq5_a": "Estamos apuntando a $12–15/mes, con precio de miembro fundador fijado para quienes se registren antes del lanzamiento público. El precio final aún no está definido — los miembros de acceso anticipado tendrán voz en eso.",
+    "faq5_a": "Pro cuesta $9/mes, con un precio de miembro fundador asegurado para quienes se registren pronto. El núcleo de la plataforma — propuestas, contratos, facturas y portal de cliente — también tiene un plan gratuito. Los miembros de acceso anticipado opinarán sobre qué construimos a continuación.",
     "faq6_q": "¿Cuándo podré usarlo de verdad?",
     "faq6_a": "SeeGlance está en fase de validación temprana — esta página existe para medir el interés real antes de construirlo. Únete al acceso anticipado y te escribiremos por correo en cuanto haya algo que probar, con precio de miembro fundador.",
     "cta_kicker": "Acceso anticipado",
@@ -1360,7 +1398,14 @@
     "feature8_text": "Una etapa del pipeline antes de \"Lead\" — haz seguimiento del contacto con antiguos compañeros, proveedores anteriores y contactos del sector antes de que se conviertan en un trato real. El contacto con conocidos consigue los primeros clientes más rápido que pujar en frío en una plataforma.",
     "tag_free": "Gratis",
     "tag_firsttimer": "Pensado para principiantes",
-    "tag_pipeline": "Etapa del pipeline"
+    "tag_pipeline": "Etapa del pipeline",
+    "pills_label": "También incluye",
+    "pill_rate": "Calculadora de tarifas",
+    "pill_warm": "Contactos cercanos",
+    "pill_tax": "Asistente de tratados fiscales",
+    "pill_fx": "Tipo de cambio",
+    "pill_einvoice": "Exportar MISA/Viettel/VNPT",
+    "pill_review": "Revisión de propuestas con IA"
   },
   "zh": {
     "page_title": "SeeGlance — 无国界自由职业者的客户管理中心",
@@ -1369,10 +1414,10 @@
     "nav_faq": "常见问题",
     "nav_cta": "获取抢先体验",
     "hero_eyebrow": "为拥有海外客户的自由职业者打造",
-    "hero_h1": "每一个完成的项目，都应该帮你拿下下一个。<br>SeeGlance 把你与客户的合作履历变成<span class=\"accent\">证明。</span>",
-    "hero_sub": "提案、合同、发票和客户门户 —— 还有基于真实付款记录（而非自我申报）自动生成的信誉认证徽章。定价对自由职业者友好。通过 Payoneer、Wise 或加密货币收款 —— 无需美国银行账户。",
+    "hero_h1": "每位客户，每笔交易，每次付款。<br><span class=\"accent\">一目了然。</span>",
+    "hero_sub": "提案、电子签署合同、带 Payoneer、Wise、Skrill 或加密货币付款链接的发票，以及客户门户——外加经过验证的信誉徽章、自动生成的案例研究、报价计算器和税收协定助手。无需美国银行账户。",
     "hero_cta": "获取抢先体验 →",
-    "hero_meta": "<strong>$12–15/月</strong> · 无需信用卡 · 早期注册享创始会员价",
+    "hero_meta": "<strong>$9/月</strong> · 无需信用卡 · 早期注册享创始会员价",
     "strip1_title": "提案 → 合同",
     "strip1_text": "发送提案，获得电子签名，即自动生成具有约束力的合同。",
     "strip2_title": "发票 → 付款链接",
@@ -1380,7 +1425,7 @@
     "strip3_title": "客户门户",
     "strip3_text": "客户可以在一个专属品牌页面上查看进度、文件和发票 —— 而不是翻找五封邮件。",
     "features_kicker": "你将获得",
-    "features_h2": "三合一工具，一个平台。无需再用表格苦苦维护。",
+    "features_h2": "从提案到收款，一个平台。无需再用表格苦苦维护。",
     "features_sub": "让你在海外客户面前显得专业所需的一切 —— 无需再拼凑 Google 文档、PayPal.me 链接和 WhatsApp 聊天记录。",
     "feature1_title": "提案与合同",
     "feature1_text": "几分钟内发送带品牌的提案，让客户电子签名，随即直接转化为合同 —— 附带时间戳和审计记录。再也不用在邮件里追着要签好的 PDF。",
@@ -1432,7 +1477,7 @@
     "faq4_q": "那税务方面呢——SeeGlance 能帮上忙吗？",
     "faq4_a": "SeeGlance 不是税务工具，也不会替你报税。但它能做到：每张发票都保留清晰、可导出的开票与付款记录，让你在报税时不必从银行流水和聊天记录里重新拼凑收入。",
     "faq5_q": "费用是多少？",
-    "faq5_a": "我们的目标定价是每月 $12–15，公开发布前注册的用户可锁定创始会员价。最终定价尚未确定 —— 抢先体验用户将有发言权。",
+    "faq5_a": "Pro 版每月 $9，早期注册用户可锁定创始会员价。核心功能——提案、合同、发票和客户门户——另有免费版。抢先体验成员可以参与决定我们接下来做什么。",
     "faq6_q": "我什么时候才能真正使用它？",
     "faq6_a": "SeeGlance 目前正处于早期验证阶段 —— 这个页面的目的是在我们真正开发之前，先衡量真实的兴趣程度。加入抢先体验，一旦有可试用的版本，我们会立即通过邮件通知你，并提供创始会员价。",
     "cta_kicker": "抢先体验",
@@ -1500,7 +1545,14 @@
     "feature8_text": "在「Lead」之前新增的一个管道阶段——追踪对前同事、以往供应商和行业联系人的接触情况，在他们成为真正的成交之前。熟人推荐比在平台上冷投标更快拿到最初的客户。",
     "tag_free": "免费",
     "tag_firsttimer": "为新手打造",
-    "tag_pipeline": "管道阶段"
+    "tag_pipeline": "管道阶段",
+    "pills_label": "还包括",
+    "pill_rate": "报价计算器",
+    "pill_warm": "熟人联系人",
+    "pill_tax": "税收协定助手",
+    "pill_fx": "汇率提示",
+    "pill_einvoice": "导出 MISA/Viettel/VNPT",
+    "pill_review": "AI 提案审查"
   },
   "hi": {
     "page_title": "SeeGlance — बिना सीमाओं वाले फ्रीलांसरों के लिए क्लाइंट हब",
@@ -1509,10 +1561,10 @@
     "nav_faq": "सामान्य प्रश्न",
     "nav_cta": "जल्दी एक्सेस पाएं",
     "hero_eyebrow": "अंतरराष्ट्रीय क्लाइंट्स वाले फ्रीलांसरों के लिए",
-    "hero_h1": "हर पूरा हुआ प्रोजेक्ट अगले को जिताना चाहिए।<br>SeeGlance आपके क्लाइंट्स के साथ काम की हिस्ट्री को <span class=\"accent\">सबूत</span> में बदल देता है।",
-    "hero_sub": "प्रपोज़ल, कॉन्ट्रैक्ट, इनवॉइस, और क्लाइंट पोर्टल — साथ ही आपकी असली पेमेंट हिस्ट्री से बना एक वेरिफाइड ट्रैक-रिकॉर्ड बैज, खुद के दावे नहीं। फ्रीलांसरों के लिए किफायती कीमत। Payoneer, Wise, या क्रिप्टो से पेमेंट पाएं — अमेरिकी बैंक खाते की ज़रूरत नहीं।",
+    "hero_h1": "हर क्लाइंट। हर डील। हर पेमेंट।<br><span class=\"accent\">एक नज़र में।</span>",
+    "hero_sub": "प्रपोज़ल, ई-साइन्ड कॉन्ट्रैक्ट, Payoneer, Wise, Skrill या क्रिप्टो पेमेंट लिंक वाले इनवॉइस, और क्लाइंट पोर्टल — साथ में सत्यापित रेप्युटेशन बैज, ऑटो केस स्टडी, रेट कैलकुलेटर और टैक्स-ट्रीटी असिस्टेंट। अमेरिकी बैंक खाते की ज़रूरत नहीं।",
     "hero_cta": "जल्दी एक्सेस पाएं →",
-    "hero_meta": "<strong>$12–15/माह</strong> · क्रेडिट कार्ड की ज़रूरत नहीं · जल्दी साइन अप करने वालों के लिए फाउंडिंग-मेंबर प्राइसिंग",
+    "hero_meta": "<strong>$9/माह</strong> · क्रेडिट कार्ड की ज़रूरत नहीं · जल्दी साइन अप करने वालों के लिए फाउंडिंग-मेंबर प्राइसिंग",
     "strip1_title": "प्रपोज़ल → कॉन्ट्रैक्ट",
     "strip1_text": "प्रपोज़ल भेजें, ई-साइन करवाएं, और यह अपने-आप एक बाध्यकारी कॉन्ट्रैक्ट बन जाता है।",
     "strip2_title": "इनवॉइस → पेमेंट लिंक",
@@ -1520,7 +1572,7 @@
     "strip3_title": "क्लाइंट पोर्टल",
     "strip3_text": "आपका क्लाइंट स्टेटस, फाइलें और इनवॉइस एक ब्रांडेड पेज पर देखता है — पाँच अलग-अलग ईमेल थ्रेड में नहीं।",
     "features_kicker": "आपको क्या मिलता है",
-    "features_h2": "तीन टूल। एक हब। स्प्रेडशीट की जिम्नास्टिक नहीं।",
+    "features_h2": "प्रपोज़ल से पेमेंट तक। एक हब। स्प्रेडशीट की जिम्नास्टिक नहीं।",
     "features_sub": "विदेशी क्लाइंट के सामने प्रोफेशनल दिखने के लिए जो कुछ चाहिए वो सब — Google Doc, PayPal.me लिंक और WhatsApp थ्रेड को जोड़े बिना।",
     "feature1_title": "प्रपोज़ल और कॉन्ट्रैक्ट",
     "feature1_text": "मिनटों में ब्रांडेड प्रपोज़ल भेजें, क्लाइंट से ई-साइन करवाएं, और यह सीधे कॉन्ट्रैक्ट में बदल जाता है — टाइमस्टैम्प और ऑडिट ट्रेल के साथ। अब ईमेल पर साइन किए PDF के पीछे भागने की ज़रूरत नहीं।",
@@ -1572,7 +1624,7 @@
     "faq4_q": "टैक्स के बारे में क्या — क्या SeeGlance इसमें मदद करता है?",
     "faq4_a": "SeeGlance कोई टैक्स टूल नहीं है और आपकी तरफ से कुछ फाइल नहीं करता। यह क्या करता है: हर इनवॉइस का साफ, एक्सपोर्ट करने योग्य रिकॉर्ड रखता है कि क्या बिल किया गया और क्या भुगतान हुआ — ताकि डिक्लेयर करते समय आपको बैंक स्टेटमेंट और चैट थ्रेड से इनकम जोड़नी न पड़े।",
     "faq5_q": "इसकी कीमत क्या होगी?",
-    "faq5_a": "हमारा लक्ष्य $12–15/माह है, सार्वजनिक लॉन्च से पहले जल्दी साइन अप करने वालों के लिए फाउंडिंग-मेंबर प्राइसिंग लॉक कर दी जाएगी। अंतिम कीमत अभी तय नहीं है — अर्ली एक्सेस मेंबर्स की इसमें राय होगी।",
+    "faq5_a": "Pro की कीमत $9/माह है, और जल्दी साइन अप करने वालों के लिए फाउंडिंग-मेंबर प्राइसिंग लॉक रहेगी। मुख्य हब — प्रपोज़ल, कॉन्ट्रैक्ट, इनवॉइस और क्लाइंट पोर्टल — का एक मुफ़्त प्लान भी है। अर्ली एक्सेस सदस्यों की राय से तय होगा कि हम आगे क्या बनाएं।",
     "faq6_q": "मैं इसे वास्तव में कब इस्तेमाल कर पाऊंगा?",
     "faq6_a": "SeeGlance अभी शुरुआती वैलिडेशन चरण में है — यह पेज बनाने से पहले असली दिलचस्पी जांचने के लिए है। अर्ली एक्सेस जॉइन करें और जैसे ही ट्राई करने लायक कुछ तैयार होगा, हम आपको फाउंडिंग-मेंबर प्राइसिंग के साथ ईमेल करेंगे।",
     "cta_kicker": "अर्ली एक्सेस",
@@ -1640,7 +1692,14 @@
     "feature8_text": "\"Lead\" से पहले एक पाइपलाइन स्टेज — पुराने सहकर्मियों, पुराने वेंडर्स, और इंडस्ट्री कॉन्टैक्ट्स तक पहुंच को ट्रैक करें, इससे पहले कि वे असली डील बनें। वॉर्म आउटरीच कोल्ड प्लेटफ़ॉर्म बिडिंग से कहीं तेज़ी से पहले क्लाइंट दिलाता है।",
     "tag_free": "मुफ़्त",
     "tag_firsttimer": "नए लोगों के लिए बनाया गया",
-    "tag_pipeline": "पाइपलाइन स्टेज"
+    "tag_pipeline": "पाइपलाइन स्टेज",
+    "pills_label": "साथ में शामिल",
+    "pill_rate": "रेट कैलकुलेटर",
+    "pill_warm": "जान-पहचान वाले क्लाइंट",
+    "pill_tax": "टैक्स-ट्रीटी असिस्टेंट",
+    "pill_fx": "एक्सचेंज रेट इनसाइट",
+    "pill_einvoice": "MISA/Viettel/VNPT एक्सपोर्ट",
+    "pill_review": "AI प्रपोज़ल रिव्यू"
   },
   "pt": {
     "page_title": "SeeGlance — O hub de clientes para freelancers sem fronteiras",
@@ -1649,10 +1708,10 @@
     "nav_faq": "Perguntas frequentes",
     "nav_cta": "Obter acesso antecipado",
     "hero_eyebrow": "Para freelancers com clientes internacionais",
-    "hero_h1": "Todo projeto concluído deveria vender o próximo.<br>O SeeGlance transforma seu histórico de trabalho com clientes em <span class=\"accent\">prova.</span>",
-    "hero_sub": "Propostas, contratos, faturas e um portal do cliente — além de um selo de reputação verificado, construído a partir do seu histórico real de pagamentos, não de afirmações autodeclaradas. Preço acessível para freelancers. Receba via Payoneer, Wise ou cripto — sem necessidade de conta bancária nos EUA.",
+    "hero_h1": "Cada cliente. Cada negócio. Cada pagamento.<br><span class=\"accent\">Num relance.</span>",
+    "hero_sub": "Propostas, contratos com assinatura eletrônica, faturas com links de pagamento Payoneer, Wise, Skrill ou cripto, e um portal do cliente — além de um selo de reputação verificado, estudos de caso automáticos, uma calculadora de taxas e um assistente de tratados fiscais. Sem necessidade de conta bancária nos EUA.",
     "hero_cta": "Obter acesso antecipado →",
-    "hero_meta": "<strong>US$12–15/mês</strong> · Não é necessário cartão de crédito · Preço de membro fundador para quem se inscrever cedo",
+    "hero_meta": "<strong>US$9/mês</strong> · Não é necessário cartão de crédito · Preço de membro fundador para quem se inscrever cedo",
     "strip1_title": "Proposta → Contrato",
     "strip1_text": "Envie uma proposta, colete a assinatura eletrônica e ela vira automaticamente um contrato vinculativo.",
     "strip2_title": "Fatura → Link de pagamento",
@@ -1660,7 +1719,7 @@
     "strip3_title": "Portal do cliente",
     "strip3_text": "Seu cliente vê status, arquivos e faturas em uma única página com sua marca — não em cinco threads de e-mail.",
     "features_kicker": "O que você recebe",
-    "features_h2": "Três ferramentas. Um só hub. Sem ginástica de planilha.",
+    "features_h2": "Da proposta ao pagamento. Um só hub. Sem ginástica de planilha.",
     "features_sub": "Tudo que você precisa para parecer profissional diante de um cliente no exterior — sem ter que juntar um Google Doc, um link do PayPal.me e uma conversa no WhatsApp.",
     "feature1_title": "Proposta e contrato",
     "feature1_text": "Envie uma proposta com sua marca em minutos, deixe o cliente assiná-la eletronicamente, e ela se transforma direto em contrato — com registro de data/hora e trilha de auditoria. Chega de correr atrás de PDFs assinados por e-mail.",
@@ -1712,7 +1771,7 @@
     "faq4_q": "E os impostos — o SeeGlance ajuda com isso?",
     "faq4_a": "O SeeGlance não é uma ferramenta fiscal e não vai declarar nada por você. O que ele faz: cada fatura mantém um registro claro e exportável do que foi cobrado e pago, para que você não precise reconstruir sua renda a partir de extratos bancários e conversas na hora de declarar.",
     "faq5_q": "Quanto vai custar?",
-    "faq5_a": "Estamos mirando US$12–15/mês, com preço de membro fundador travado para quem se cadastrar cedo, antes do lançamento público. O preço final ainda não está definido — membros do acesso antecipado terão voz nisso.",
+    "faq5_a": "O Pro custa US$9/mês, com preço de membro fundador garantido para quem se inscrever cedo. O núcleo da plataforma — propostas, contratos, faturas e portal do cliente — também tem um plano gratuito. Os membros do acesso antecipado opinam sobre o que construiremos a seguir.",
     "faq6_q": "Quando poderei realmente usá-lo?",
     "faq6_a": "O SeeGlance está em validação inicial — esta página existe para medir o interesse real antes de construirmos. Entre no acesso antecipado e enviaremos um e-mail assim que houver algo para testar, com preço de membro fundador.",
     "cta_kicker": "Acesso antecipado",
@@ -1780,7 +1839,14 @@
     "feature8_text": "Uma etapa do pipeline antes de \"Lead\" — rastreie a prospecção a antigos colegas, fornecedores anteriores e contatos do setor antes que virem um negócio de verdade. O contato com conhecidos traz os primeiros clientes mais rápido do que disputar vagas frias em plataformas.",
     "tag_free": "Grátis",
     "tag_firsttimer": "Feito para iniciantes",
-    "tag_pipeline": "Etapa do pipeline"
+    "tag_pipeline": "Etapa do pipeline",
+    "pills_label": "Também inclui",
+    "pill_rate": "Calculadora de taxas",
+    "pill_warm": "Contatos próximos",
+    "pill_tax": "Assistente de tratados fiscais",
+    "pill_fx": "Insight de câmbio",
+    "pill_einvoice": "Exportar MISA/Viettel/VNPT",
+    "pill_review": "Revisão de propostas com IA"
   },
   "id": {
     "page_title": "SeeGlance — Hub klien untuk freelancer tanpa batas negara",
@@ -1789,10 +1855,10 @@
     "nav_faq": "FAQ",
     "nav_cta": "Daftar Early Access",
     "hero_eyebrow": "Untuk freelancer dengan klien internasional",
-    "hero_h1": "Setiap project yang selesai harusnya bisa mendatangkan yang berikutnya.<br>SeeGlance mengubah riwayat kerja kamu dengan klien jadi <span class=\"accent\">bukti.</span>",
-    "hero_sub": "Proposal, kontrak, invoice, dan portal klien — plus badge rekam jejak terverifikasi yang dibuat dari riwayat pembayaran asli kamu, bukan klaim yang kamu tulis sendiri. Harga terjangkau untuk freelancer. Terima bayaran lewat Payoneer, Wise, atau kripto — tanpa perlu rekening bank AS.",
+    "hero_h1": "Setiap klien. Setiap deal. Setiap pembayaran.<br><span class=\"accent\">Sekali pandang.</span>",
+    "hero_sub": "Proposal, kontrak tanda tangan elektronik, invoice dengan link pembayaran Payoneer, Wise, Skrill atau kripto, dan portal klien — plus badge reputasi terverifikasi, studi kasus otomatis, kalkulator tarif, dan asisten perjanjian pajak. Tanpa perlu rekening bank AS.",
     "hero_cta": "Daftar Early Access →",
-    "hero_meta": "<strong>$12–15/bln</strong> · Tanpa kartu kredit · Harga founding-member untuk pendaftar awal",
+    "hero_meta": "<strong>$9/bln</strong> · Tanpa kartu kredit · Harga founding-member untuk pendaftar awal",
     "strip1_title": "Proposal → Kontrak",
     "strip1_text": "Kirim proposal, minta tanda tangan elektronik, dan otomatis jadi kontrak yang mengikat.",
     "strip2_title": "Invoice → Link pembayaran",
@@ -1800,7 +1866,7 @@
     "strip3_title": "Portal Klien",
     "strip3_text": "Klien kamu lihat status, file, dan invoice di satu halaman branded — bukan lima email berantai.",
     "features_kicker": "Apa yang kamu dapat",
-    "features_h2": "Tiga alat. Satu hub. Tanpa ribetnya spreadsheet.",
+    "features_h2": "Dari proposal sampai pembayaran. Satu hub. Tanpa ribetnya spreadsheet.",
     "features_sub": "Semua yang kamu butuh untuk terlihat profesional di mata klien luar negeri — tanpa harus gabung-gabungin Google Doc, link PayPal.me, dan chat WhatsApp.",
     "feature1_title": "Proposal & Kontrak",
     "feature1_text": "Kirim proposal branded dalam hitungan menit, klien tanda tangan elektronik, langsung jadi kontrak — lengkap dengan timestamp dan jejak audit. Tidak perlu lagi kejar-kejaran PDF bertanda tangan via email.",
@@ -1852,7 +1918,7 @@
     "faq4_q": "Bagaimana soal pajak — apakah SeeGlance bantu urus itu?",
     "faq4_a": "SeeGlance bukan tool pajak dan tidak akan melapor apa pun untuk kamu. Yang kami lakukan: setiap invoice menyimpan catatan rapi dan bisa diekspor tentang apa yang ditagih dan dibayar, jadi kamu tidak perlu menyusun ulang pendapatan dari mutasi rekening dan chat saat lapor pajak.",
     "faq5_q": "Berapa harganya nanti?",
-    "faq5_a": "Target kami $12–15/bulan, dengan harga founding-member yang terkunci untuk pendaftar awal sebelum peluncuran publik. Harga final belum final — anggota early access ikut menentukan.",
+    "faq5_a": "Pro seharga $9/bulan, dengan harga founding-member yang dikunci untuk pendaftar awal. Inti platform — proposal, kontrak, invoice, dan portal klien — juga punya paket gratis. Anggota early access ikut menentukan apa yang kami bangun berikutnya.",
     "faq6_q": "Kapan saya bisa benar-benar memakainya?",
     "faq6_a": "SeeGlance masih tahap validasi awal — halaman ini ada untuk mengukur minat asli sebelum kami membangunnya. Gabung early access dan kami akan email kamu begitu ada yang bisa dicoba, lengkap dengan harga founding-member.",
     "cta_kicker": "Early access",
@@ -1920,7 +1986,14 @@
     "feature8_text": "Tahap pipeline sebelum \"Lead\" — lacak outreach ke mantan rekan kerja, vendor lama, dan kontak industri sebelum mereka jadi deal beneran. Outreach hangat mendatangkan klien pertama lebih cepat daripada bidding dingin di platform.",
     "tag_free": "Gratis",
     "tag_firsttimer": "Dibuat untuk pemula",
-    "tag_pipeline": "Tahap pipeline"
+    "tag_pipeline": "Tahap pipeline",
+    "pills_label": "Juga termasuk",
+    "pill_rate": "Kalkulator Tarif",
+    "pill_warm": "Kontak Kenalan",
+    "pill_tax": "Asisten Perjanjian Pajak",
+    "pill_fx": "Info Kurs",
+    "pill_einvoice": "Ekspor MISA/Viettel/VNPT",
+    "pill_review": "Review Proposal AI"
   },
   "th": {
     "page_title": "SeeGlance — ศูนย์กลางจัดการลูกค้าสำหรับฟรีแลนซ์ไร้พรมแดน",
@@ -1929,10 +2002,10 @@
     "nav_faq": "คำถามที่พบบ่อย",
     "nav_cta": "สมัครใช้งานก่อนใคร",
     "hero_eyebrow": "สำหรับฟรีแลนซ์ที่มีลูกค้าต่างประเทศ",
-    "hero_h1": "ทุกโปรเจกต์ที่เสร็จสมบูรณ์ควรช่วยปิดงานต่อไปได้<br>SeeGlance เปลี่ยนประวัติการทำงานกับลูกค้าของคุณให้เป็น<span class=\"accent\">หลักฐาน</span>",
-    "hero_sub": "ใบเสนอราคา สัญญา ใบแจ้งหนี้ และพอร์ทัลลูกค้า — พร้อมแบดจ์ประวัติผลงานที่ผ่านการยืนยัน สร้างจากประวัติการชำระเงินจริงของคุณ ไม่ใช่คำกล่าวอ้างเอง ราคาเหมาะสมสำหรับฟรีแลนซ์ รับเงินผ่าน Payoneer, Wise หรือคริปโต — ไม่ต้องมีบัญชีธนาคารสหรัฐฯ",
+    "hero_h1": "ทุกลูกค้า ทุกดีล ทุกการชำระเงิน<br><span class=\"accent\">ดูได้ในแวบเดียว</span>",
+    "hero_sub": "ใบเสนอราคา สัญญาเซ็นอิเล็กทรอนิกส์ ใบแจ้งหนี้พร้อมลิงก์ชำระเงิน Payoneer, Wise, Skrill หรือคริปโต และพอร์ทัลลูกค้า — พร้อมป้ายความน่าเชื่อถือที่ยืนยันแล้ว เคสสตัดดีอัตโนมัติ เครื่องคำนวณอัตราค่าบริการ และผู้ช่วยด้านอนุสัญญาภาษี ไม่ต้องมีบัญชีธนาคารสหรัฐฯ",
     "hero_cta": "สมัครใช้งานก่อนใคร →",
-    "hero_meta": "<strong>$12–15/เดือน</strong> · ไม่ต้องใช้บัตรเครดิต · ราคาสมาชิกผู้ก่อตั้งสำหรับผู้สมัครก่อนใคร",
+    "hero_meta": "<strong>$9/เดือน</strong> · ไม่ต้องใช้บัตรเครดิต · ราคาสมาชิกผู้ก่อตั้งสำหรับผู้สมัครก่อนใคร",
     "strip1_title": "ใบเสนอราคา → สัญญา",
     "strip1_text": "ส่งใบเสนอราคา ให้เซ็นแบบอิเล็กทรอนิกส์ แล้วมันจะกลายเป็นสัญญาที่มีผลผูกพันโดยอัตโนมัติ",
     "strip2_title": "ใบแจ้งหนี้ → ลิงก์ชำระเงิน",
@@ -1940,7 +2013,7 @@
     "strip3_title": "พอร์ทัลลูกค้า",
     "strip3_text": "ลูกค้าของคุณเห็นสถานะงาน ไฟล์ และใบแจ้งหนี้ในหน้าเดียวที่มีแบรนด์ของคุณ — ไม่ใช่อีเมลห้าสาย",
     "features_kicker": "สิ่งที่คุณจะได้รับ",
-    "features_h2": "สามเครื่องมือ หนึ่งศูนย์กลาง ไม่ต้องปวดหัวกับสเปรดชีต",
+    "features_h2": "ตั้งแต่ใบเสนอราคาจนถึงรับเงิน หนึ่งศูนย์กลาง ไม่ต้องปวดหัวกับสเปรดชีต",
     "features_sub": "ทุกอย่างที่คุณต้องการเพื่อดูเป็นมืออาชีพในสายตาลูกค้าต่างประเทศ — โดยไม่ต้องปะติดปะต่อ Google Doc ลิงก์ PayPal.me และแชท WhatsApp",
     "feature1_title": "ใบเสนอราคาและสัญญา",
     "feature1_text": "ส่งใบเสนอราคาที่มีแบรนด์ของคุณภายในไม่กี่นาที ให้ลูกค้าเซ็นแบบอิเล็กทรอนิกส์ แล้วแปลงเป็นสัญญาทันที — พร้อมประทับเวลาและบันทึกตรวจสอบ ไม่ต้องตามไล่ล่า PDF ที่เซ็นแล้วทางอีเมลอีกต่อไป",
@@ -1992,7 +2065,7 @@
     "faq4_q": "แล้วเรื่องภาษีล่ะ — SeeGlance ช่วยได้ไหม?",
     "faq4_a": "SeeGlance ไม่ใช่เครื่องมือด้านภาษีและจะไม่ยื่นภาษีให้คุณ สิ่งที่มันทำได้คือ ใบแจ้งหนี้ทุกใบจะเก็บบันทึกที่ชัดเจนและส่งออกได้ว่าเรียกเก็บและจ่ายอะไรไปบ้าง เพื่อที่คุณจะได้ไม่ต้องมานั่งไล่รวมรายได้จากรายการเดินบัญชีและแชทตอนถึงเวลายื่นภาษี",
     "faq5_q": "ราคาจะเป็นเท่าไหร่?",
-    "faq5_a": "เราตั้งเป้าไว้ที่ $12–15 ต่อเดือน โดยล็อกราคาสมาชิกผู้ก่อตั้งไว้ให้ผู้สมัครก่อนใครก่อนเปิดตัวสู่สาธารณะ ราคาสุดท้ายยังไม่ได้ตายตัว — สมาชิก early access จะมีส่วนร่วมในการตัดสินใจนั้นด้วย",
+    "faq5_a": "Pro ราคา $9 ต่อเดือน โดยผู้สมัครก่อนใครจะได้ราคาสมาชิกผู้ก่อตั้งแบบล็อกราคาไว้ ส่วนหลัก — ใบเสนอราคา สัญญา ใบแจ้งหนี้ และพอร์ทัลลูกค้า — ก็มีแพ็กเกจฟรีด้วย สมาชิก early access จะมีส่วนร่วมกำหนดว่าเราจะสร้างอะไรต่อไป",
     "faq6_q": "จะได้ใช้งานจริงเมื่อไหร่?",
     "faq6_a": "SeeGlance อยู่ในขั้นตอนตรวจสอบความต้องการช่วงต้น — หน้านี้มีไว้เพื่อวัดความสนใจจริงก่อนที่เราจะสร้างมันขึ้นมา สมัคร early access แล้วเราจะอีเมลหาคุณทันทีที่มีอะไรให้ลองใช้ พร้อมราคาสมาชิกผู้ก่อตั้ง",
     "cta_kicker": "Early access",
@@ -2060,7 +2133,14 @@
     "feature8_text": "ขั้นตอนไปป์ไลน์ก่อน \"Lead\" — ติดตามการติดต่ออดีตเพื่อนร่วมงาน ผู้ขายเดิม และผู้ติดต่อในวงการ ก่อนที่พวกเขาจะกลายเป็นดีลจริง การติดต่อคนที่รู้จักได้ลูกค้ารายแรกเร็วกว่าการประมูลงานเย็นชาบนแพลตฟอร์ม",
     "tag_free": "ฟรี",
     "tag_firsttimer": "สร้างมาเพื่อมือใหม่",
-    "tag_pipeline": "ขั้นตอนไปป์ไลน์"
+    "tag_pipeline": "ขั้นตอนไปป์ไลน์",
+    "pills_label": "ยังมีให้ด้วย",
+    "pill_rate": "เครื่องคำนวณราคา",
+    "pill_warm": "รายชื่อคนรู้จัก",
+    "pill_tax": "ผู้ช่วยอนุสัญญาภาษี",
+    "pill_fx": "ข้อมูลอัตราแลกเปลี่ยน",
+    "pill_einvoice": "ส่งออก MISA/Viettel/VNPT",
+    "pill_review": "รีวิวใบเสนอราคาด้วย AI"
   }
 };
 
