@@ -200,6 +200,22 @@
   }
   .feature-card h3{font-size:19px;font-weight:700;color:#fff;margin-bottom:10px;letter-spacing:-0.01em;}
   .feature-card p{font-size:14.5px;color:var(--text-dim);line-height:1.6;}
+
+  .new-banner{
+    display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;
+    font-size:13px;font-weight:600;color:var(--text-dim);
+    background:var(--card);border:1px solid var(--border);border-radius:99px;padding:5px 14px 5px 6px;
+    transition:border-color .15s ease;
+  }
+  .new-banner:hover{border-color:var(--crimson-dim);color:var(--text);}
+  .new-banner b{
+    font-size:10.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;
+    color:#fff;background:var(--crimson);border-radius:99px;padding:3px 9px;
+  }
+  .new-card{padding:26px 24px;}
+  .new-card h3{font-size:17px;padding-right:56px;}
+  .new-card p{font-size:14px;}
+  .new-note{margin-top:28px;font-size:13.5px;color:var(--text-faint);line-height:1.6;max-width:760px;}
   .feature-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;}
   .tag{
     font-size:12px;color:var(--text-dim);background:var(--bg-alt);
@@ -459,7 +475,7 @@
           <option value="th">ภาษาไทย</option>
         </select>
       </div>
-      <a href="https://wireloom.vercel.app/login" class="nav-login" data-i18n="nav_login">Log in</a>
+      <a href="https://app.seeglance.com/login" class="nav-login" data-i18n="nav_login">Log in</a>
       <a href="#early-access" class="nav-cta" data-i18n="nav_cta">Get Early Access</a>
       <button class="hamburger" id="hamburger-btn" aria-label="Menu">
         <span></span>
@@ -475,7 +491,7 @@
   <a href="#compare" data-i18n="nav_why">Why SeeGlance</a>
   <a href="#faq" data-i18n="nav_faq">FAQ</a>
   <a href="#guides" data-i18n="nav_guides">Guides</a>
-  <a href="https://wireloom.vercel.app/login" data-i18n="nav_login">Log in</a>
+  <a href="https://app.seeglance.com/login" data-i18n="nav_login">Log in</a>
   <div class="mobile-lang">
     <select id="mobile-lang-select" aria-label="Language">
       <option value="en">English</option>
@@ -495,6 +511,7 @@
 <main>
   <section class="hero" style="border-bottom:1px solid var(--border-soft);">
     <div class="wrap">
+      <a href="#whats-new" class="new-banner"><b data-i18n="banner_new">New</b><span data-i18n="banner_text">Change orders, retainers, lead forms &amp; more</span></a>
       <div class="eyebrow" data-i18n="hero_eyebrow">For freelancers with international clients</div>
       <h1 data-i18n-html="hero_h1">Every client. Every deal. Every payment.<br><span class="accent">At a glance.</span></h1>
       <p class="hero-sub" data-i18n="hero_sub">Proposals, e-signed contracts, invoices with Payoneer, Wise, Skrill or crypto payment links, and a client portal — plus a verified reputation badge, auto case studies, a rate calculator, and a tax-treaty assistant. No US bank account required.</p>
@@ -607,6 +624,72 @@
     </div>
   </section>
 
+  <section id="whats-new">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker" data-i18n="new_kicker">New in SeeGlance</div>
+        <h2 data-i18n="new_h2">Built for the work after the signature.</h2>
+        <p class="section-sub" data-i18n="new_sub">Scope creep, late payments, quiet leads, tax paperwork. The parts of freelancing that cost real money now have tools.</p>
+      </div>
+      <div class="features">
+        <div class="feature-card new-card">
+          <div class="pro-badge" data-i18n="pro_badge">Pro plan</div>
+          <h3 data-i18n="n1_t">Change orders + AI scope guard</h3>
+          <p data-i18n="n1_d">Paste the client's “quick extra”. AI checks it against your signed scope, then drafts the change order and a polite reply.</p>
+        </div>
+        <div class="feature-card new-card">
+          <h3 data-i18n="n2_t">Deposits &amp; milestones</h3>
+          <p data-i18n="n2_d">Split a project 50/50 or 30/40/30 and invoice each part in one click — emailed straight to your client.</p>
+        </div>
+        <div class="feature-card new-card">
+          <h3 data-i18n="n3_t">Retainers &amp; recurring invoices</h3>
+          <p data-i18n="n3_d">Monthly work bills itself: created, emailed and chased automatically.</p>
+        </div>
+        <div class="feature-card new-card">
+          <h3 data-i18n="n4_t">Smarter payment reminders</h3>
+          <p data-i18n="n4_d">A friendly nudge before the due date, firmer ones after — five stages, sent in your name.</p>
+        </div>
+        <div class="feature-card new-card">
+          <h3 data-i18n="n5_t">Lead form + follow-up nudges</h3>
+          <p data-i18n="n5_d">A public form turns visitors into leads. Daily nudges keep warm contacts from going cold, with AI-drafted messages on Pro.</p>
+        </div>
+        <div class="feature-card new-card">
+          <h3 data-i18n="n6_t">Time tracking → invoice</h3>
+          <p data-i18n="n6_d">Start a timer, tick the hours, and turn them into an invoice.</p>
+        </div>
+        <div class="feature-card new-card">
+          <h3 data-i18n="n7_t">Net-after-fees estimator</h3>
+          <p data-i18n="n7_d">See what you really keep from a $1,000 invoice on PayPal, Wise, Payoneer or a bank wire.</p>
+        </div>
+        <div class="feature-card new-card">
+          <h3 data-i18n="n8_t">W-8BEN helper</h3>
+          <p data-i18n="n8_d">Fill in the US tax form line by line, and get a reminder before it expires.</p>
+        </div>
+        <div class="feature-card new-card">
+          <div class="pro-badge" data-i18n="pro_badge">Pro plan</div>
+          <h3 data-i18n="n9_t">Translate into 15 languages</h3>
+          <p data-i18n="n9_d">Proposals and contracts in the client's language, with the risks explained in yours.</p>
+        </div>
+        <div class="feature-card new-card">
+          <div class="pro-badge" data-i18n="pro_badge">Pro plan</div>
+          <h3 data-i18n="n10_t">Public track-record page</h3>
+          <p data-i18n="n10_d">One link with your verified on-time rate, client testimonials and case studies.</p>
+        </div>
+        <div class="feature-card new-card">
+          <div class="pro-badge" data-i18n="pro_badge">Pro plan</div>
+          <h3 data-i18n="n11_t">Webhooks &amp; calendar sync</h3>
+          <p data-i18n="n11_d">Send events to Zapier, Make or n8n, and see due dates in Google Calendar.</p>
+        </div>
+        <div class="feature-card new-card">
+          <div class="pro-badge" data-i18n="pro_badge">Pro plan</div>
+          <h3 data-i18n="n12_t">White-label portal</h3>
+          <p data-i18n="n12_d">Your logo, your color, your own domain. Remove “Powered by SeeGlance”.</p>
+        </div>
+      </div>
+      <p class="new-note" data-i18n="new_note">Free includes manual change orders, payment schedules, retainers, time tracking, the lead form, the fee estimator, the W-8BEN helper and calendar sync. Pro adds AI, webhooks, the public profile and white-label.</p>
+    </div>
+  </section>
+
   <section id="compare">
     <div class="wrap">
       <div class="section-head">
@@ -707,33 +790,33 @@
         <p class="section-sub" data-i18n="jobs_sub">Same core hub — proposals, contracts, invoices, client portal — with the details that matter for what you actually do.</p>
       </div>
       <div class="jobs-grid">
-        <a href="https://wireloom.vercel.app/for/photographers" class="job-card">
+        <a href="https://app.seeglance.com/for/photographers" class="job-card">
           <span data-i18n="job_photographers">Photographers</span> →
         </a>
-        <a href="https://wireloom.vercel.app/for/developers" class="job-card">
+        <a href="https://app.seeglance.com/for/developers" class="job-card">
           <span data-i18n="job_developers">Developers</span> →
         </a>
-        <a href="https://wireloom.vercel.app/for/consultants" class="job-card">
+        <a href="https://app.seeglance.com/for/consultants" class="job-card">
           <span data-i18n="job_consultants">Consultants</span> →
         </a>
-        <a href="https://wireloom.vercel.app/for/virtual-assistants" class="job-card">
+        <a href="https://app.seeglance.com/for/virtual-assistants" class="job-card">
           <span data-i18n="job_virtual_assistants">Virtual Assistants</span> →
         </a>
-        <a href="https://wireloom.vercel.app/for/copywriters" class="job-card">
+        <a href="https://app.seeglance.com/for/copywriters" class="job-card">
           <span data-i18n="job_copywriters">Copywriters</span> →
         </a>
-        <a href="https://wireloom.vercel.app/for/video-editors" class="job-card">
+        <a href="https://app.seeglance.com/for/video-editors" class="job-card">
           <span data-i18n="job_video_editors">Video Editors</span> →
         </a>
-        <a href="https://wireloom.vercel.app/for/translators" class="job-card">
+        <a href="https://app.seeglance.com/for/translators" class="job-card">
           <span data-i18n="job_translators">Translators</span> →
         </a>
-        <a href="https://wireloom.vercel.app/for/social-media-managers" class="job-card">
+        <a href="https://app.seeglance.com/for/social-media-managers" class="job-card">
           <span data-i18n="job_social_media_managers">Social Media Managers</span> →
         </a>
       </div>
       <p class="jobs-compare-link">
-        <a href="https://wireloom.vercel.app/vs" data-i18n="jobs_compare_link">See how SeeGlance compares to HoneyBook and Dubsado →</a>
+        <a href="https://app.seeglance.com/vs" data-i18n="jobs_compare_link">See how SeeGlance compares to HoneyBook and Dubsado →</a>
       </p>
     </div>
   </section>
@@ -977,7 +1060,37 @@
     "footer_pricing": "Pricing",
     "footer_terms": "Terms",
     "footer_privacy": "Privacy",
-    "footer_refund": "Refunds"
+    "footer_refund": "Refunds",
+    "new_kicker": "New in SeeGlance",
+    "new_h2": "Built for the work after the signature.",
+    "new_sub": "Scope creep, late payments, quiet leads, tax paperwork. The parts of freelancing that cost real money now have tools.",
+    "n1_t": "Change orders + AI scope guard",
+    "n1_d": "Paste the client's “quick extra”. AI checks it against your signed scope, then drafts the change order and a polite reply.",
+    "n2_t": "Deposits & milestones",
+    "n2_d": "Split a project 50/50 or 30/40/30 and invoice each part in one click — emailed straight to your client.",
+    "n3_t": "Retainers & recurring invoices",
+    "n3_d": "Monthly work bills itself: created, emailed and chased automatically.",
+    "n4_t": "Smarter payment reminders",
+    "n4_d": "A friendly nudge before the due date, firmer ones after — five stages, sent in your name.",
+    "n5_t": "Lead form + follow-up nudges",
+    "n5_d": "A public form turns visitors into leads. Daily nudges keep warm contacts from going cold, with AI-drafted messages on Pro.",
+    "n6_t": "Time tracking → invoice",
+    "n6_d": "Start a timer, tick the hours, and turn them into an invoice.",
+    "n7_t": "Net-after-fees estimator",
+    "n7_d": "See what you really keep from a $1,000 invoice on PayPal, Wise, Payoneer or a bank wire.",
+    "n8_t": "W-8BEN helper",
+    "n8_d": "Fill in the US tax form line by line, and get a reminder before it expires.",
+    "n9_t": "Translate into 15 languages",
+    "n9_d": "Proposals and contracts in the client's language, with the risks explained in yours.",
+    "n10_t": "Public track-record page",
+    "n10_d": "One link with your verified on-time rate, client testimonials and case studies.",
+    "n11_t": "Webhooks & calendar sync",
+    "n11_d": "Send events to Zapier, Make or n8n, and see due dates in Google Calendar.",
+    "n12_t": "White-label portal",
+    "n12_d": "Your logo, your color, your own domain. Remove “Powered by SeeGlance”.",
+    "new_note": "Free includes manual change orders, payment schedules, retainers, time tracking, the lead form, the fee estimator, the W-8BEN helper and calendar sync. Pro adds AI, webhooks, the public profile and white-label.",
+    "banner_new": "New",
+    "banner_text": "Change orders, retainers, lead forms & more"
   },
   "vi": {
     "page_title": "SeeGlance — Trung tâm quản lý khách hàng cho freelancer không biên giới",
@@ -1128,7 +1241,37 @@
     "footer_pricing": "Bảng giá",
     "footer_terms": "Điều khoản",
     "footer_privacy": "Bảo mật",
-    "footer_refund": "Hoàn tiền"
+    "footer_refund": "Hoàn tiền",
+    "new_kicker": "Mới trong SeeGlance",
+    "new_h2": "Dành cho phần việc sau khi ký hợp đồng.",
+    "new_sub": "Phát sinh ngoài phạm vi, thanh toán trễ, lead nguội, giấy tờ thuế. Những chỗ freelancer mất tiền thật giờ đã có công cụ.",
+    "n1_t": "Change order + AI soát phạm vi",
+    "n1_d": "Dán yêu cầu “làm thêm chút xíu” của khách. AI đối chiếu với phạm vi đã ký, rồi soạn change order và câu trả lời lịch sự.",
+    "n2_t": "Đặt cọc & chia đợt thanh toán",
+    "n2_d": "Chia dự án 50/50 hoặc 30/40/30 và xuất hoá đơn từng đợt chỉ bằng một cú click — tự email cho khách.",
+    "n3_t": "Retainer & hoá đơn định kỳ",
+    "n3_d": "Việc hàng tháng tự lập hoá đơn: tự tạo, tự gửi email, tự nhắc.",
+    "n4_t": "Nhắc thanh toán thông minh hơn",
+    "n4_d": "Nhắc nhẹ trước hạn, nhắc cứng hơn khi quá hạn — 5 mức, gửi dưới tên bạn.",
+    "n5_t": "Form nhận lead + nhắc follow-up",
+    "n5_d": "Form công khai biến người truy cập thành lead. Nhắc mỗi ngày để lead nguội không bị bỏ quên; gói Pro có AI soạn tin nhắn.",
+    "n6_t": "Bấm giờ → xuất hoá đơn",
+    "n6_d": "Bật đồng hồ, chọn các giờ đã làm và biến chúng thành hoá đơn.",
+    "n7_t": "Ước tính tiền thực nhận sau phí",
+    "n7_d": "Xem bạn thực giữ lại bao nhiêu từ hoá đơn $1,000 qua PayPal, Wise, Payoneer hoặc chuyển khoản ngân hàng.",
+    "n8_t": "Trợ lý điền W-8BEN",
+    "n8_d": "Điền mẫu thuế Mỹ từng dòng một và nhận nhắc trước khi hết hạn.",
+    "n9_t": "Dịch sang 15 ngôn ngữ",
+    "n9_d": "Proposal và hợp đồng bằng ngôn ngữ của khách, rủi ro được giải thích bằng ngôn ngữ của bạn.",
+    "n10_t": "Trang hồ sơ uy tín công khai",
+    "n10_d": "Một đường link với tỷ lệ trả đúng hạn đã xác thực, đánh giá của khách và case study.",
+    "n11_t": "Webhook & đồng bộ lịch",
+    "n11_d": "Gửi sự kiện sang Zapier, Make hoặc n8n, và xem hạn thanh toán trong Google Calendar.",
+    "n12_t": "Cổng khách hàng white-label",
+    "n12_d": "Logo, màu sắc và tên miền riêng của bạn. Gỡ dòng “Powered by SeeGlance”.",
+    "new_note": "Gói Free gồm change order thủ công, chia đợt thanh toán, retainer, bấm giờ, form lead, ước tính phí, trợ lý W-8BEN và đồng bộ lịch. Gói Pro thêm AI, webhook, trang hồ sơ công khai và white-label.",
+    "banner_new": "Mới",
+    "banner_text": "Change order, retainer, form nhận lead và nhiều hơn nữa"
   },
   "fr": {
     "page_title": "SeeGlance — Le hub client des freelances sans frontières",
@@ -1279,7 +1422,37 @@
     "footer_pricing": "Tarifs",
     "footer_terms": "Conditions",
     "footer_privacy": "Confidentialité",
-    "footer_refund": "Remboursements"
+    "footer_refund": "Remboursements",
+    "new_kicker": "Nouveau dans SeeGlance",
+    "new_h2": "Conçu pour le travail après la signature.",
+    "new_sub": "Dérives de périmètre, retards de paiement, prospects qui s'éteignent, paperasse fiscale. Ce qui coûte vraiment de l'argent aux freelances a enfin des outils.",
+    "n1_t": "Avenants + garde-fou IA du périmètre",
+    "n1_d": "Collez la demande « juste un petit extra » du client. L'IA la compare au périmètre signé, puis rédige l'avenant et une réponse polie.",
+    "n2_t": "Acomptes et jalons",
+    "n2_d": "Découpez un projet en 50/50 ou 30/40/30 et facturez chaque étape en un clic, envoyée par e-mail au client.",
+    "n3_t": "Retainers et factures récurrentes",
+    "n3_d": "Les missions mensuelles se facturent toutes seules : création, envoi et relances automatiques.",
+    "n4_t": "Relances de paiement plus malignes",
+    "n4_d": "Un rappel aimable avant l'échéance, puis des rappels plus fermes — cinq étapes, envoyées en votre nom.",
+    "n5_t": "Formulaire de prospects + relances",
+    "n5_d": "Un formulaire public transforme les visiteurs en prospects. Des rappels quotidiens évitent que les contacts tièdes refroidissent ; messages rédigés par l'IA avec Pro.",
+    "n6_t": "Suivi du temps → facture",
+    "n6_d": "Lancez un chrono, cochez les heures et transformez-les en facture.",
+    "n7_t": "Estimateur net après frais",
+    "n7_d": "Voyez ce que vous gardez vraiment d'une facture de 1 000 $ via PayPal, Wise, Payoneer ou virement bancaire.",
+    "n8_t": "Assistant W-8BEN",
+    "n8_d": "Remplissez le formulaire fiscal américain ligne par ligne et recevez un rappel avant son expiration.",
+    "n9_t": "Traduction en 15 langues",
+    "n9_d": "Propositions et contrats dans la langue du client, avec les risques expliqués dans la vôtre.",
+    "n10_t": "Page publique de références",
+    "n10_d": "Un lien avec votre taux de paiement à temps vérifié, des témoignages clients et des études de cas.",
+    "n11_t": "Webhooks et synchro agenda",
+    "n11_d": "Envoyez des événements vers Zapier, Make ou n8n et retrouvez vos échéances dans Google Agenda.",
+    "n12_t": "Portail en marque blanche",
+    "n12_d": "Votre logo, votre couleur, votre propre domaine. Retirez « Powered by SeeGlance ».",
+    "new_note": "Le plan gratuit inclut avenants manuels, échéanciers, retainers, suivi du temps, formulaire de prospects, estimateur de frais, assistant W-8BEN et synchro agenda. Pro ajoute l'IA, les webhooks, la page publique et la marque blanche.",
+    "banner_new": "Nouveau",
+    "banner_text": "Avenants, retainers, formulaire de prospects et plus"
   },
   "es": {
     "page_title": "SeeGlance — El hub de clientes para freelancers sin fronteras",
@@ -1430,7 +1603,37 @@
     "footer_pricing": "Precios",
     "footer_terms": "Términos",
     "footer_privacy": "Privacidad",
-    "footer_refund": "Reembolsos"
+    "footer_refund": "Reembolsos",
+    "new_kicker": "Novedades de SeeGlance",
+    "new_h2": "Hecho para el trabajo que viene después de la firma.",
+    "new_sub": "Cambios de alcance, pagos tardíos, leads que se enfrían, papeleo fiscal. Lo que más dinero le cuesta a un freelancer ahora tiene herramientas.",
+    "n1_t": "Órdenes de cambio + guardián de alcance con IA",
+    "n1_d": "Pega el «pequeño extra» que pide el cliente. La IA lo compara con el alcance firmado y redacta la orden de cambio y una respuesta cortés.",
+    "n2_t": "Anticipos e hitos de pago",
+    "n2_d": "Divide un proyecto en 50/50 o 30/40/30 y factura cada parte con un clic, enviada por correo al cliente.",
+    "n3_t": "Retainers y facturas recurrentes",
+    "n3_d": "El trabajo mensual se factura solo: se crea, se envía y se recuerda automáticamente.",
+    "n4_t": "Recordatorios de pago más inteligentes",
+    "n4_d": "Un aviso amable antes del vencimiento y otros más firmes después: cinco etapas, enviadas en tu nombre.",
+    "n5_t": "Formulario de leads + recordatorios de seguimiento",
+    "n5_d": "Un formulario público convierte visitantes en leads. Avisos diarios evitan que los contactos tibios se enfríen; mensajes redactados con IA en Pro.",
+    "n6_t": "Control de tiempo → factura",
+    "n6_d": "Inicia un cronómetro, marca las horas y conviértelas en factura.",
+    "n7_t": "Estimador de ingreso neto tras comisiones",
+    "n7_d": "Mira cuánto te queda realmente de una factura de 1.000 $ con PayPal, Wise, Payoneer o transferencia bancaria.",
+    "n8_t": "Asistente W-8BEN",
+    "n8_d": "Completa el formulario fiscal de EE. UU. línea por línea y recibe un aviso antes de que venza.",
+    "n9_t": "Traducción a 15 idiomas",
+    "n9_d": "Propuestas y contratos en el idioma del cliente, con los riesgos explicados en el tuyo.",
+    "n10_t": "Página pública de trayectoria",
+    "n10_d": "Un enlace con tu tasa de pago puntual verificada, testimonios de clientes y casos de éxito.",
+    "n11_t": "Webhooks y calendario",
+    "n11_d": "Envía eventos a Zapier, Make o n8n y ve los vencimientos en Google Calendar.",
+    "n12_t": "Portal de marca blanca",
+    "n12_d": "Tu logo, tu color, tu propio dominio. Quita «Powered by SeeGlance».",
+    "new_note": "El plan gratuito incluye órdenes de cambio manuales, hitos de pago, retainers, control de tiempo, formulario de leads, estimador de comisiones, asistente W-8BEN y calendario. Pro añade IA, webhooks, página pública y marca blanca.",
+    "banner_new": "Nuevo",
+    "banner_text": "Órdenes de cambio, retainers, formulario de leads y más"
   },
   "zh": {
     "page_title": "SeeGlance — 无国界自由职业者的客户管理中心",
@@ -1581,7 +1784,37 @@
     "footer_pricing": "价格",
     "footer_terms": "条款",
     "footer_privacy": "隐私",
-    "footer_refund": "退款"
+    "footer_refund": "退款",
+    "new_kicker": "SeeGlance 新功能",
+    "new_h2": "为签约之后的工作而生。",
+    "new_sub": "范围蔓延、付款拖延、线索变冷、税务表格。自由职业者真正会损失金钱的环节，现在都有了工具。",
+    "n1_t": "变更单 + AI 范围守卫",
+    "n1_d": "粘贴客户的“顺手加一点”。AI 会对照已签署的范围，生成变更单和一封礼貌的回复。",
+    "n2_t": "定金与里程碑付款",
+    "n2_d": "把项目拆成 50/50 或 30/40/30，一键开具每一期发票，并自动邮件发给客户。",
+    "n3_t": "长期合作与定期发票",
+    "n3_d": "每月的工作自动开票：自动创建、自动发送、自动催款。",
+    "n4_t": "更聪明的付款提醒",
+    "n4_d": "到期前友好提醒，逾期后语气渐强——共五个阶段，以你的名义发送。",
+    "n5_t": "线索表单 + 跟进提醒",
+    "n5_d": "公开表单把访客变成线索。每日提醒避免暖联系人变冷，Pro 还可用 AI 起草消息。",
+    "n6_t": "工时记录 → 发票",
+    "n6_d": "开始计时，勾选工时，一键生成发票。",
+    "n7_t": "扣费后到手金额估算",
+    "n7_d": "看清一张 1,000 美元的发票通过 PayPal、Wise、Payoneer 或银行电汇后，你实际能留下多少。",
+    "n8_t": "W-8BEN 填写助手",
+    "n8_d": "逐行填写美国税表，并在到期前收到提醒。",
+    "n9_t": "翻译成 15 种语言",
+    "n9_d": "提案和合同使用客户的语言，风险点用你的语言解释。",
+    "n10_t": "公开的业绩记录页",
+    "n10_d": "一个链接，展示经过验证的按时收款率、客户评价和案例。",
+    "n11_t": "Webhook 与日历同步",
+    "n11_d": "把事件发送到 Zapier、Make 或 n8n，并在 Google 日历里查看到期日。",
+    "n12_t": "白标客户门户",
+    "n12_d": "你的 Logo、你的颜色、你自己的域名。去掉“Powered by SeeGlance”。",
+    "new_note": "免费版包含手动变更单、付款计划、长期合作发票、工时记录、线索表单、费用估算、W-8BEN 助手和日历同步。Pro 另含 AI、Webhook、公开主页和白标。",
+    "banner_new": "新",
+    "banner_text": "变更单、长期合作发票、线索表单等"
   },
   "hi": {
     "page_title": "SeeGlance — बिना सीमाओं वाले फ्रीलांसरों के लिए क्लाइंट हब",
@@ -1732,7 +1965,37 @@
     "footer_pricing": "मूल्य",
     "footer_terms": "शर्तें",
     "footer_privacy": "गोपनीयता",
-    "footer_refund": "रिफ़ंड"
+    "footer_refund": "रिफ़ंड",
+    "new_kicker": "SeeGlance में नया",
+    "new_h2": "साइन के बाद के काम के लिए बना।",
+    "new_sub": "स्कोप का बढ़ना, देर से भुगतान, ठंडे होते लीड, टैक्स की कागज़ी कार्रवाई। फ्रीलांसर का असली पैसा जहाँ जाता है, वहाँ के लिए अब टूल हैं।",
+    "n1_t": "चेंज ऑर्डर + AI स्कोप गार्ड",
+    "n1_d": "क्लाइंट का “बस थोड़ा सा एक्स्ट्रा” वाला मैसेज पेस्ट करें। AI उसे साइन किए गए स्कोप से मिलाता है, फिर चेंज ऑर्डर और विनम्र जवाब का ड्राफ़्ट बनाता है।",
+    "n2_t": "डिपॉज़िट और माइलस्टोन",
+    "n2_d": "प्रोजेक्ट को 50/50 या 30/40/30 में बाँटें और हर हिस्से का इनवॉइस एक क्लिक में बनाएँ — क्लाइंट को ईमेल भी हो जाता है।",
+    "n3_t": "रिटेनर और आवर्ती इनवॉइस",
+    "n3_d": "हर महीने का काम खुद बिल हो जाता है: अपने आप बनता है, ईमेल होता है और याद दिलाया जाता है।",
+    "n4_t": "ज़्यादा समझदार भुगतान रिमाइंडर",
+    "n4_d": "देय तिथि से पहले हल्की याद दिलाई, उसके बाद थोड़ी सख़्त — पाँच चरण, आपके नाम से भेजे जाते हैं।",
+    "n5_t": "लीड फ़ॉर्म + फ़ॉलो-अप रिमाइंडर",
+    "n5_d": "सार्वजनिक फ़ॉर्म विज़िटर को लीड बनाता है। रोज़ की याद दिलाई गर्म संपर्कों को ठंडा होने से बचाती है; Pro में AI से मैसेज ड्राफ़्ट।",
+    "n6_t": "टाइम ट्रैकिंग → इनवॉइस",
+    "n6_d": "टाइमर चलाएँ, घंटे चुनें और उन्हें इनवॉइस में बदल दें।",
+    "n7_t": "फ़ीस काटने के बाद असली रकम का अनुमान",
+    "n7_d": "देखें कि PayPal, Wise, Payoneer या बैंक वायर से $1,000 के इनवॉइस में से आपके हाथ में असल में कितना आता है।",
+    "n8_t": "W-8BEN सहायक",
+    "n8_d": "अमेरिकी टैक्स फ़ॉर्म लाइन-दर-लाइन भरें और समाप्त होने से पहले रिमाइंडर पाएँ।",
+    "n9_t": "15 भाषाओं में अनुवाद",
+    "n9_d": "प्रस्ताव और अनुबंध क्लाइंट की भाषा में, जोखिम आपकी भाषा में समझाए गए।",
+    "n10_t": "सार्वजनिक ट्रैक-रिकॉर्ड पेज",
+    "n10_d": "एक लिंक, जिसमें आपकी सत्यापित समय पर भुगतान दर, क्लाइंट की राय और केस स्टडी हों।",
+    "n11_t": "वेबहुक और कैलेंडर सिंक",
+    "n11_d": "इवेंट Zapier, Make या n8n को भेजें और देय तिथियाँ Google Calendar में देखें।",
+    "n12_t": "व्हाइट-लेबल पोर्टल",
+    "n12_d": "आपका लोगो, आपका रंग, आपका अपना डोमेन। “Powered by SeeGlance” हटाएँ।",
+    "new_note": "फ़्री प्लान में मैन्युअल चेंज ऑर्डर, भुगतान शेड्यूल, रिटेनर, टाइम ट्रैकिंग, लीड फ़ॉर्म, फ़ीस अनुमान, W-8BEN सहायक और कैलेंडर सिंक शामिल हैं। Pro में AI, वेबहुक, सार्वजनिक प्रोफ़ाइल और व्हाइट-लेबल जुड़ते हैं।",
+    "banner_new": "नया",
+    "banner_text": "चेंज ऑर्डर, रिटेनर, लीड फ़ॉर्म और बहुत कुछ"
   },
   "pt": {
     "page_title": "SeeGlance — O hub de clientes para freelancers sem fronteiras",
@@ -1883,7 +2146,37 @@
     "footer_pricing": "Preços",
     "footer_terms": "Termos",
     "footer_privacy": "Privacidade",
-    "footer_refund": "Reembolsos"
+    "footer_refund": "Reembolsos",
+    "new_kicker": "Novidades no SeeGlance",
+    "new_h2": "Feito para o trabalho que vem depois da assinatura.",
+    "new_sub": "Escopo que cresce, pagamentos atrasados, leads que esfriam, burocracia fiscal. O que mais custa dinheiro a um freelancer agora tem ferramentas.",
+    "n1_t": "Ordens de mudança + guardião de escopo com IA",
+    "n1_d": "Cole o “só mais um extrazinho” do cliente. A IA compara com o escopo assinado e redige a ordem de mudança e uma resposta educada.",
+    "n2_t": "Sinal e marcos de pagamento",
+    "n2_d": "Divida o projeto em 50/50 ou 30/40/30 e fature cada parte com um clique, enviada por e-mail ao cliente.",
+    "n3_t": "Retainers e faturas recorrentes",
+    "n3_d": "O trabalho mensal se fatura sozinho: criado, enviado e cobrado automaticamente.",
+    "n4_t": "Lembretes de pagamento mais inteligentes",
+    "n4_d": "Um aviso gentil antes do vencimento e outros mais firmes depois — cinco etapas, enviadas em seu nome.",
+    "n5_t": "Formulário de leads + lembretes de follow-up",
+    "n5_d": "Um formulário público transforma visitantes em leads. Lembretes diários evitam que contatos mornos esfriem; mensagens redigidas por IA no Pro.",
+    "n6_t": "Controle de tempo → fatura",
+    "n6_d": "Inicie um cronômetro, marque as horas e transforme-as em fatura.",
+    "n7_t": "Estimativa do valor líquido após taxas",
+    "n7_d": "Veja quanto você realmente fica de uma fatura de US$ 1.000 via PayPal, Wise, Payoneer ou transferência bancária.",
+    "n8_t": "Assistente de W-8BEN",
+    "n8_d": "Preencha o formulário fiscal dos EUA linha por linha e receba um aviso antes de ele vencer.",
+    "n9_t": "Tradução para 15 idiomas",
+    "n9_d": "Propostas e contratos no idioma do cliente, com os riscos explicados no seu.",
+    "n10_t": "Página pública de histórico",
+    "n10_d": "Um link com sua taxa de pagamento em dia verificada, depoimentos de clientes e estudos de caso.",
+    "n11_t": "Webhooks e agenda",
+    "n11_d": "Envie eventos para Zapier, Make ou n8n e veja os vencimentos no Google Agenda.",
+    "n12_t": "Portal em marca branca",
+    "n12_d": "Seu logo, sua cor, seu próprio domínio. Remova o “Powered by SeeGlance”.",
+    "new_note": "O plano grátis inclui ordens de mudança manuais, marcos de pagamento, retainers, controle de tempo, formulário de leads, estimativa de taxas, assistente de W-8BEN e agenda. O Pro adiciona IA, webhooks, página pública e marca branca.",
+    "banner_new": "Novo",
+    "banner_text": "Ordens de mudança, retainers, formulário de leads e mais"
   },
   "id": {
     "page_title": "SeeGlance — Hub klien untuk freelancer tanpa batas negara",
@@ -2034,7 +2327,37 @@
     "footer_pricing": "Harga",
     "footer_terms": "Ketentuan",
     "footer_privacy": "Privasi",
-    "footer_refund": "Pengembalian dana"
+    "footer_refund": "Pengembalian dana",
+    "new_kicker": "Baru di SeeGlance",
+    "new_h2": "Dibuat untuk pekerjaan setelah tanda tangan.",
+    "new_sub": "Lingkup yang melebar, pembayaran telat, lead yang dingin, urusan pajak. Bagian yang paling menggerus uang freelancer kini punya alat bantu.",
+    "n1_t": "Change order + penjaga lingkup AI",
+    "n1_d": "Tempel permintaan “tambah sedikit aja” dari klien. AI membandingkannya dengan lingkup yang sudah ditandatangani, lalu menyusun change order dan balasan yang sopan.",
+    "n2_t": "DP dan termin pembayaran",
+    "n2_d": "Bagi proyek jadi 50/50 atau 30/40/30 dan tagih tiap bagian dengan satu klik — langsung dikirim lewat email ke klien.",
+    "n3_t": "Retainer & invoice berulang",
+    "n3_d": "Pekerjaan bulanan menagih dirinya sendiri: dibuat, dikirim, dan diingatkan otomatis.",
+    "n4_t": "Pengingat pembayaran yang lebih pintar",
+    "n4_d": "Pengingat ramah sebelum jatuh tempo, lalu lebih tegas setelahnya — lima tahap, dikirim atas namamu.",
+    "n5_t": "Formulir lead + pengingat tindak lanjut",
+    "n5_d": "Formulir publik mengubah pengunjung jadi lead. Pengingat harian mencegah kontak hangat jadi dingin; pesan disusun AI di paket Pro.",
+    "n6_t": "Pelacak waktu → invoice",
+    "n6_d": "Mulai timer, centang jam kerjanya, lalu ubah jadi invoice.",
+    "n7_t": "Estimasi bersih setelah biaya",
+    "n7_d": "Lihat berapa yang benar-benar kamu terima dari invoice $1.000 lewat PayPal, Wise, Payoneer, atau transfer bank.",
+    "n8_t": "Pemandu W-8BEN",
+    "n8_d": "Isi formulir pajak AS baris demi baris dan dapatkan pengingat sebelum kedaluwarsa.",
+    "n9_t": "Terjemahan ke 15 bahasa",
+    "n9_d": "Proposal dan kontrak dalam bahasa klien, dengan risiko dijelaskan dalam bahasamu.",
+    "n10_t": "Halaman rekam jejak publik",
+    "n10_d": "Satu tautan berisi tingkat bayar tepat waktu yang terverifikasi, testimoni klien, dan studi kasus.",
+    "n11_t": "Webhook & sinkron kalender",
+    "n11_d": "Kirim event ke Zapier, Make, atau n8n, dan lihat jatuh tempo di Google Calendar.",
+    "n12_t": "Portal white-label",
+    "n12_d": "Logo, warna, dan domain milikmu sendiri. Hapus “Powered by SeeGlance”.",
+    "new_note": "Paket Gratis mencakup change order manual, termin pembayaran, retainer, pelacak waktu, formulir lead, estimasi biaya, pemandu W-8BEN, dan sinkron kalender. Pro menambah AI, webhook, halaman publik, dan white-label.",
+    "banner_new": "Baru",
+    "banner_text": "Change order, retainer, formulir lead, dan lainnya"
   },
   "th": {
     "page_title": "SeeGlance — ศูนย์กลางจัดการลูกค้าสำหรับฟรีแลนซ์ไร้พรมแดน",
@@ -2185,7 +2508,37 @@
     "footer_pricing": "ราคา",
     "footer_terms": "ข้อกำหนด",
     "footer_privacy": "ความเป็นส่วนตัว",
-    "footer_refund": "การคืนเงิน"
+    "footer_refund": "การคืนเงิน",
+    "new_kicker": "ใหม่ใน SeeGlance",
+    "new_h2": "สร้างมาเพื่องานหลังเซ็นสัญญา",
+    "new_sub": "ขอบเขตงานที่บานปลาย การจ่ายเงินล่าช้า ลีดที่เย็นลง งานเอกสารภาษี ส่วนที่ทำให้ฟรีแลนซ์เสียเงินจริง ๆ ตอนนี้มีเครื่องมือรองรับแล้ว",
+    "n1_t": "Change order + AI ตรวจขอบเขตงาน",
+    "n1_d": "วางข้อความ “ขอเพิ่มนิดเดียว” จากลูกค้า AI จะเทียบกับขอบเขตที่เซ็นไว้ แล้วร่าง change order และคำตอบสุภาพให้",
+    "n2_t": "เงินมัดจำและงวดการชำระ",
+    "n2_d": "แบ่งโปรเจกต์เป็น 50/50 หรือ 30/40/30 แล้วออกใบแจ้งหนี้แต่ละงวดได้ในคลิกเดียว พร้อมส่งอีเมลถึงลูกค้า",
+    "n3_t": "รีเทนเนอร์และใบแจ้งหนี้ประจำ",
+    "n3_d": "งานรายเดือนเรียกเก็บเงินเอง: สร้าง ส่งอีเมล และทวงให้อัตโนมัติ",
+    "n4_t": "แจ้งเตือนชำระเงินที่ฉลาดขึ้น",
+    "n4_d": "เตือนเบา ๆ ก่อนครบกำหนด และเข้มขึ้นหลังจากนั้น มี 5 ขั้น ส่งในนามของคุณ",
+    "n5_t": "ฟอร์มรับลีด + แจ้งเตือนติดตามผล",
+    "n5_d": "ฟอร์มสาธารณะเปลี่ยนผู้เข้าชมเป็นลีด การแจ้งเตือนทุกวันช่วยไม่ให้รายชื่อที่สนใจเย็นลง และแพ็กเกจ Pro มี AI ช่วยร่างข้อความ",
+    "n6_t": "จับเวลา → ใบแจ้งหนี้",
+    "n6_d": "กดเริ่มจับเวลา เลือกชั่วโมงที่ทำ แล้วเปลี่ยนเป็นใบแจ้งหนี้",
+    "n7_t": "ประเมินยอดสุทธิหลังหักค่าธรรมเนียม",
+    "n7_d": "ดูว่าใบแจ้งหนี้ $1,000 ผ่าน PayPal, Wise, Payoneer หรือโอนธนาคาร คุณได้เงินจริงเท่าไร",
+    "n8_t": "ตัวช่วยกรอก W-8BEN",
+    "n8_d": "กรอกแบบฟอร์มภาษีสหรัฐฯ ทีละบรรทัด และรับการแจ้งเตือนก่อนหมดอายุ",
+    "n9_t": "แปลเป็น 15 ภาษา",
+    "n9_d": "ข้อเสนอและสัญญาเป็นภาษาของลูกค้า พร้อมอธิบายความเสี่ยงเป็นภาษาของคุณ",
+    "n10_t": "หน้าประวัติผลงานสาธารณะ",
+    "n10_d": "ลิงก์เดียวที่รวมอัตราจ่ายตรงเวลาที่ผ่านการยืนยัน รีวิวจากลูกค้า และเคสตัวอย่าง",
+    "n11_t": "Webhook และซิงก์ปฏิทิน",
+    "n11_d": "ส่งอีเวนต์ไป Zapier, Make หรือ n8n และดูวันครบกำหนดใน Google Calendar",
+    "n12_t": "พอร์ทัลไวต์เลเบล",
+    "n12_d": "โลโก้ สี และโดเมนของคุณเอง ลบข้อความ “Powered by SeeGlance” ได้",
+    "new_note": "แพ็กเกจฟรีมี change order แบบทำเอง งวดการชำระ รีเทนเนอร์ จับเวลา ฟอร์มรับลีด ตัวประเมินค่าธรรมเนียม ตัวช่วย W-8BEN และซิงก์ปฏิทิน ส่วน Pro เพิ่ม AI, webhook, หน้าโปรไฟล์สาธารณะ และไวต์เลเบล",
+    "banner_new": "ใหม่",
+    "banner_text": "Change order, รีเทนเนอร์, ฟอร์มรับลีด และอื่น ๆ"
   }
 };
 
