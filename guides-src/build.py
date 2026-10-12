@@ -86,6 +86,12 @@ def page(g):
     rel = "".join(
         f'<li><a href="/guides/{r}.html">{esc(by_slug[r]["h1"])}</a></li>' for r in g.get("related", []) if r in by_slug)
     rel_html = f'<h2 id="related">{L["related"]}</h2><ul class="rel">{rel}</ul>' if rel else ""
+    langsel = ""
+    if g.get("alt"):
+        a_lang, a_slug = g["alt"]
+        en_slug, vi_slug = (slug, a_slug) if lang == "en" else (a_slug, slug)
+        langsel = (f'<div class="lang-switch"><select aria-label="Language" onchange="try{{localStorage.setItem(\'wireloom_lang\',this.value)}}catch(e){{}};location.href=this.value===\'vi\'?\'/guides/{vi_slug}.html\':\'/guides/{en_slug}.html\'">'
+                   f'<option value="en"{" selected" if lang=="en" else ""}>English</option><option value="vi"{" selected" if lang=="vi" else ""}>Tiếng Việt</option></select></div>')
     cta_title = g.get("cta_title", "Chạy toàn bộ quy trình này trong một nơi?" if vi else "Run this whole workflow in one place?")
     cta_text = g.get("cta_text", "")
     return f"""<!DOCTYPE html>
@@ -118,6 +124,7 @@ def page(g):
   <div class="header-inner">
     <a href="/" class="logo"><img src="/logo.jpeg" alt="SeeGlance" class="mark-img" width="26" height="26">SeeGlance</a>
     <div class="header-right">
+      {langsel}
       <a href="/guides/" class="nav-link">{L["all"]}</a>
       <a href="{APP}/login" class="nav-link">{L["login"]}</a>
       <a href="{cta_href}" class="header-cta">{L["cta_btn"]}</a>
@@ -159,7 +166,7 @@ EXTRA = [
 def index_page():
     cards = []
     for g in GUIDES + EXTRA:
-        cards.append(f'<a class="gcard" href="/guides/{g["slug"]}.html"><span class="tag">{esc(g.get("tag","Guide"))}</span><strong>{esc(g["h1"])}</strong><span class="ex">{esc(g["desc"])}</span></a>')
+        cards.append(f'<a class="gcard" data-lang="{g.get("lang","all") if g in GUIDES else "all"}" href="/guides/{g["slug"]}.html"><span class="tag">{esc(g.get("tag","Guide"))}</span><strong>{esc(g["h1"])}</strong><span class="ex">{esc(g["desc"])}</span></a>')
     ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "SeeGlance guides for freelancers and small studios",
           "url": SITE + "/guides/", "hasPart": [{"@type": "Article", "headline": g["h1"], "url": f'{SITE}/guides/{g["slug"]}.html'} for g in GUIDES + EXTRA]}
     return f"""<!DOCTYPE html>
@@ -192,15 +199,30 @@ def index_page():
 <body>
 <header><div class="header-inner">
   <a href="/" class="logo"><img src="/logo.jpeg" alt="SeeGlance" class="mark-img" width="26" height="26">SeeGlance</a>
-  <div class="header-right"><a href="{APP}/login" class="nav-link">Log in</a>
+  <div class="header-right"><div class="lang-switch"><select id="lang" aria-label="Language"><option value="en">English</option><option value="vi">Tiếng Việt</option></select></div><a href="{APP}/login" class="nav-link">Log in</a>
   <a href="{APP}/signup?utm_source=guide&utm_medium=seo&utm_campaign=index" class="header-cta">Try SeeGlance →</a></div>
 </div></header>
 <article><div class="wrap">
   <div class="kicker">Guides</div>
   <h1>Guides and templates for freelancers and small studios</h1>
   <p class="lede">Written for people who work with international clients but sit outside the US, Canada, UK or Australia: how to scope, bill and get paid — and how to see whether a project actually made money.</p>
+  <p id="vi-note" class="hidden" style="color:var(--text-dim);margin-top:18px;font-size:14.5px">Hiện có 2 bài tiếng Việt riêng và 2 bài đa ngôn ngữ. Các bài còn lại chỉ có tiếng Anh. <a href="#" id="to-en">Xem tất cả bài tiếng Anh</a></p>
   <div class="grid">{''.join(cards)}</div>
 </div></article>
+<script>
+(function(){{
+  var sel=document.getElementById('lang'),cards=document.querySelectorAll('.gcard'),note=document.getElementById('vi-note');
+  function apply(l){{
+    cards.forEach(function(c){{var t=c.getAttribute('data-lang');c.classList.toggle('hidden',l==='vi'?!(t==='vi'||t==='all'):t==='vi');}});
+    note.classList.toggle('hidden',l!=='vi');sel.value=l;
+    try{{localStorage.setItem('wireloom_lang',l)}}catch(e){{}}
+  }}
+  var l='en';try{{var s=localStorage.getItem('wireloom_lang');if(s==='vi')l='vi';else if(!s&&(navigator.language||'').slice(0,2)==='vi')l='vi';}}catch(e){{}}
+  sel.addEventListener('change',function(){{apply(sel.value)}});
+  document.getElementById('to-en').addEventListener('click',function(e){{e.preventDefault();apply('en')}});
+  apply(l);
+}})();
+</script>
 <footer><div class="wrap"><p><a href="/">SeeGlance</a> · <a href="{APP}/vs">Comparisons</a> · <a href="/pricing/">Pricing</a></p><p>© 2026 SeeGlance. General information, not tax, legal or financial advice.</p></div></footer>
 </body></html>
 """
